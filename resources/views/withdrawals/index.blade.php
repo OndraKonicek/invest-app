@@ -2,13 +2,9 @@
 
 @section('content')
 
-<h1>HOMEPAGE</h1>
+<h1>Withdrawals</h1>
 
+
+   
+    
 @endsection
-
-
-
-
-
-
-

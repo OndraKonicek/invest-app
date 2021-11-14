@@ -20,3 +20,17 @@ Route::get('/', 'App\Http\Controllers\HomepageController@index');
 Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')
     ->middleware('auth')
     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+
+Route::get('/admin', 'App\Http\Controllers\AdminController@index');
+
+Route::get('/history', 'App\Http\Controllers\HistoryController@index')
+    ->middleware('auth')
+    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+
+Route::get('/deposits', 'App\Http\Controllers\DepositsController@deposits')
+    ->middleware('auth')
+    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+
+Route::get('/withdrawals', 'App\Http\Controllers\WithdrawalsController@withdrawals')
+    ->middleware('auth')
+    ->middleware(\App\Http\Middleware\CheckUserApproved::class);

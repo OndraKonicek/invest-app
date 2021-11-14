@@ -2,8 +2,7 @@
 
 @section('content')
 
-uyivatel neni schvalen
+<h1>WAITING FOR APPROVED</h1>
    
-    
 @endsection
 

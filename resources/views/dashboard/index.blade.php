@@ -2,13 +2,9 @@
 
 @section('content')
 
-    @if($user->date_approved == null)
-        uzitele musi povolit admin
-    @else
-        {{dd($user)}}
-    @endif
+    <h1>Dashboard</h1>
 
-    
+    {{-- {{dd($user)}} --}}
     
 @endsection
 
