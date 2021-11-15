@@ -20,6 +20,8 @@ class CreateAccountValuesTable extends Migration
             $table->double('value');
             $table->datetime('time');
             $table->timestamps();
+
+            $table->unique(['user_id', 'portfolio_id', 'time']);
         });
     }
 

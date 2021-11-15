@@ -19,6 +19,8 @@ class CreatePortfolioValuesTable extends Migration
             $table->double('value_change');
             $table->datetime('time');
             $table->timestamps();
+
+            $table->unique(['portfolio_id', 'time']);
         });
     }
 

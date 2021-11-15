@@ -17,7 +17,7 @@ class CheckUserApproved
     public function handle(Request $request, Closure $next)
     {
         $user = auth()->user();
-        if ($user->date_approved == null) {
+        if ($user->can('investor')) {
             return response()->view('not-approved');
 
         }
