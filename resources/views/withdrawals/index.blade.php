@@ -4,7 +4,4 @@
 
 <h1>Withdrawals</h1>
 
-
-   
-    
 @endsection

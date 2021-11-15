@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>HOMEPAGE</h1>
+<h1 class="homepage-nadpis">Welcome to Siance Invest App</h1>
 
 @endsection
 

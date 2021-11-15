@@ -16,7 +16,5 @@
     <input type="password" name="password_confirmation" value=""><br/><br/>
  
     <button>Register</button>
-
-    <a href="/login">Login</a>
  
 </form>
