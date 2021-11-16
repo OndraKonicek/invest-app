@@ -17,7 +17,7 @@ class CheckUserApproved
     public function handle(Request $request, Closure $next)
     {
         $user = auth()->user();
-        if ($user->can('investor')) {
+        if ($user->cannot('investor')) {
             return response()->view('not-approved');
 
         }

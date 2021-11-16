@@ -14,23 +14,29 @@ use Illuminate\Support\Facades\Route;
  */
 
 // all users
-Route::get('/', 'App\Http\Controllers\HomepageController@index');
+Route::get('/', 'HomepageController@index');
 
 // register users
-Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')
+Route::get('/dashboard', 'DashboardController@index')
     ->middleware('auth')
     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
 
-Route::get('/admin', 'App\Http\Controllers\AdminController@index');
-
-Route::get('/history', 'App\Http\Controllers\HistoryController@index')
+Route::get('/history', 'HistoryController@index')
     ->middleware('auth')
     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
 
-Route::get('/deposits', 'App\Http\Controllers\DepositsController@deposits')
+Route::get('/deposits', 'DepositsController@deposits')
     ->middleware('auth')
     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
 
-Route::get('/withdrawals', 'App\Http\Controllers\WithdrawalsController@withdrawals')
+Route::get('/withdrawals', 'WithdrawalsController@withdrawals')
     ->middleware('auth')
     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+
+Route::middleware(['can:admin'])->group(function () {
+
+    Route::get('/admin', 'AdminController@index');
+    Route::post('/admin/user/approve/{user_id}', 'Admin\UserController@approve');
+    Route::post('/admin/user/deny/{user_id}', 'Admin\UserController@deny');
+
+});
