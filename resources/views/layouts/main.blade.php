@@ -14,6 +14,7 @@
 
 
 
+
     <div class="login-register">
 
         {{-- pokud je uzivatel null zobrazi se login/register jinak se zobrazi logout --}}
@@ -23,6 +24,19 @@
                 <a class="register__btn" href="/register">Register</a>
             </div>
         @else
+            <div>  
+                @if (Auth::user()->hasRole('admin'))
+                    <a href="/admin">Users</a>
+                    
+            
+                @elseif (Auth::user()->hasRole('investor'))
+            
+                    <a href="/dashboard">Dashboard</a>
+                    <a href="/history">History</a>
+                  
+                @endif
+             </div>
+            
             <form action="{{ route('logout') }}" method="post">
             @csrf
             <button>Logout</button>
@@ -30,6 +44,8 @@
         @endif
         
     </div>
+
+    
 
 
     

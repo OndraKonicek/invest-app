@@ -10,7 +10,8 @@ User's List - Users waiting for an approval.
     @foreach ($users as $user)
         <li>
             {{ $user->first_name }} {{ $user->last_name }}, {{ $user->email }} 
-            
+
+            @if ($user->date_approved == null)
             <form action="{{ action('Admin\UserController@approve', $user->id) }}" method="post">
                 @csrf
                 <button>Accept</button> 
@@ -20,6 +21,13 @@ User's List - Users waiting for an approval.
                 @csrf
                 <button>Denied</button> 
             </form>
+            @else 
+
+            Date approved: {{$user->date_approved}}
+
+            @endif
+
+            
            
         </li>
     @endforeach
