@@ -1,23 +1,4 @@
-.homepage-nadpis {
-    margin-top: 350px;
-    color: rgb(66, 208, 255);
-    text-align: center;
-    font-size: 4rem;
-}
-
-.login__btn {
-    margin-left: 100rem;
-    padding-top: 3rem;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-.register__btn {
-    margin-left: 2rem;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-.login-register-btn {
-    margin-top: 2rem;
-}
+@import "homepage/homepage.scss";
+@import "loginpage/loginpage.scss";
+@import "registerpage/registerpage.scss";
+@import "navigation/navigation.scss";

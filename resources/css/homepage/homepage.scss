@@ -1,0 +1,36 @@
+.login-register-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+    width: 1000px;
+    font-size: 20px;
+}
+
+.login-register-btn a {
+    text-decoration: none;
+    padding: 0 1rem;
+    color: snow;
+}
+
+.login-register {
+    display: flex;
+    justify-content: center;
+    width: 99vw;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 99vw;
+}
+
+.body {
+    font-family: "Rubik", sans-serif;
+}
+
+.homepage-header {
+    color: #00a7e1;
+    font-size: 40px;
+}

@@ -1,25 +1,197 @@
-.homepage-nadpis {
-  margin-top: 350px;
-  color: #42d0ff;
-  text-align: center;
-  font-size: 4rem;
-}
-
-.login__btn {
-  margin-left: 100rem;
-  padding-top: 3rem;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.register__btn {
-  margin-left: 2rem;
-  font-size: 24px;
-  text-decoration: none;
-}
-
 .login-register-btn {
-  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2%;
+  width: 1000px;
+  font-size: 20px;
+}
+
+.login-register-btn a {
+  text-decoration: none;
+  padding: 0 1rem;
+  color: snow;
+}
+
+.login-register {
+  display: flex;
+  justify-content: center;
+  width: 99vw;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 99vw;
+}
+
+.body {
+  font-family: "Rubik", sans-serif;
+}
+
+.homepage-header {
+  color: #00a7e1;
+  font-size: 40px;
+}
+
+.login-body {
+  display: flex;
+  height: 97vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  color: #00a7e1;
+}
+
+.login-form {
+  background-color: #00a7e1;
+  padding: 5% 20%;
+  color: snow;
+  border-radius: 10px;
+}
+
+.email-label {
+  font-size: 16px;
+}
+
+.password-label {
+  font-size: 16px;
+}
+
+.login-button {
+  width: 172px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 2% 20%;
+  background-color: #00a7e1;
+  color: snow;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-form a {
+  color: snow;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+input {
+  border: 1px solid snow;
+  border-radius: 10px;
+  padding: 2%;
+  margin-top: 5px;
+}
+
+.registration-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigation-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #00a7e1;
+  width: 100vw;
+  z-index: 1;
+}
+
+.navigation {
+  width: 60%;
+}
+
+.navigation a {
+  color: snow;
+  float: left;
+  text-align: center;
+  padding: 24px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.navigation a:hover {
+  background-color: snow;
+  color: #00a7e1;
+}
+
+.login-register {
+  width: 100%;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: snow;
+  padding: 24px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: snow;
+  color: #00a7e1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: snow;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #00a7e1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #00a7e1;
+  color: snow;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: #00a7e1;
+  font-size: 17px;
+  padding: 12px 16px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #00a7e1;
+  color: snow;
 }
 
 /*# sourceMappingURL=app.css.map*/
