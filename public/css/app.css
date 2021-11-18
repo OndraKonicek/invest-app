@@ -194,4 +194,32 @@ input {
   color: snow;
 }
 
+table {
+  width: 50%;
+  margin: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.admin-dashboard {
+  width: 50%;
+  margin: auto;
+}
+
+.admin-list {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
 /*# sourceMappingURL=app.css.map*/

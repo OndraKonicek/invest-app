@@ -2,3 +2,33 @@
 @import "loginpage/loginpage.scss";
 @import "registerpage/registerpage.scss";
 @import "navigation/navigation.scss";
+
+table {
+    width: 50%;
+    margin: auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.action {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.admin-dashboard {
+    // display: flex;
+    // justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+.admin-list {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}

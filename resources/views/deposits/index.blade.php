@@ -4,10 +4,10 @@
 
     <h1>Deposits</h1>
 
-    @if($user->date_approved == null)
+    {{-- @if($user->date_approved == null)
         uzitele musi povolit admin
     @else
         {{dd($user)}}
-    @endif
+    @endif --}}
   
 @endsection

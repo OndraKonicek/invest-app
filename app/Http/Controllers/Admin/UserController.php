@@ -34,10 +34,10 @@ class UserController extends Controller
         $user = User::findOrFail($user_id);
 
         // set the property date_approved to current date
-        $user->date_approved = null;
+        // $user->date_approved = null;
 
         // save the updated user
-        $user->save();
+        $user->delete();
 
         // flash a success message
         session()->flash('User has been denied');

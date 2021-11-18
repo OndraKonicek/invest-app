@@ -45,12 +45,12 @@
                 
                 
                 <div class="dropdown">
-                    <button class="dropbtn">useremail@mail.com 🔽 
+                    <button class="dropbtn">{{Auth::user()->first_name}} {{Auth::user()->last_name}} 🔽 
                     <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                    <a href="#">Deposits</a>
-                    <a href="#">Withdrawals</a>
+                    <a href="/deposits">Deposits</a>
+                    <a href="/withdrawals">Withdrawals</a>
 
                     <form action="{{ route('logout') }}" method="post">
                     @csrf
