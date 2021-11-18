@@ -20,5 +20,5 @@
     @else
         {{dd($user)}}
     @endif --}}
-  
+
 @endsection
