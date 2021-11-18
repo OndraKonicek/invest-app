@@ -134,7 +134,7 @@ input {
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;
+  font-size: 19px;
   border: none;
   outline: none;
   color: snow;
@@ -192,6 +192,25 @@ input {
 .logout-button:hover {
   background-color: #00a7e1;
   color: snow;
+}
+
+.wrapper_approval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.approval_section {
+  width: 69%;
+}
+
+.wrapper_approval h1 {
+  margin-top: 3rem;
+}
+
+.wrapper_approval h2 {
+  color: #2ff82f;
 }
 
 table {
