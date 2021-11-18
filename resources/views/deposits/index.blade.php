@@ -2,23 +2,29 @@
 
 @section('content')
 
-    <h1>Deposits</h1>
+    <div class="wrapper_deposits">
 
-    <h3>Balanced portfolio</h3>
+        <section class="deposits_section">
 
+            <h1>Deposits</h1>
 
-    <form action="" method="post">
-            @csrf
-        <label for="deposit">Amount:</label>
-        <input type="text" id="deposit">
-    
-        <input type="submit">
-    </form>
+            <h3>Balanced portfolio</h3>
 
-    {{-- @if($user->date_approved == null)
-        uzitele musi povolit admin
-    @else
-        {{dd($user)}}
-    @endif --}}
+            <form action="" method="post">
+                    @csrf
+                <label for="deposit">Amount:</label>
+                <input type="text" id="deposit">
+            
+                <input type="submit">
+            </form>
 
+            {{-- @if($user->date_approved == null)
+                uzitele musi povolit admin
+            @else
+                {{dd($user)}}
+            @endif --}}
+
+        </section>
+
+    </div>
 @endsection

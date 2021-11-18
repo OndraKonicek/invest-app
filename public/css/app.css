@@ -61,7 +61,7 @@
 
 .login-button {
   width: 172px;
-  border: 1px solid white;
+  border: 1px solid snow;
   border-radius: 10px;
   padding: 2% 20%;
   background-color: #00a7e1;
@@ -70,13 +70,25 @@
   font-size: 14px;
 }
 
+.login-button:hover {
+  background-color: snow;
+  color: #00a7e1;
+}
+
 .login-form a {
   color: snow;
   text-decoration: none;
   font-size: 12px;
 }
 
-input {
+.email-input {
+  border: 1px solid snow;
+  border-radius: 10px;
+  padding: 2%;
+  margin-top: 5px;
+}
+
+.password-input {
   border: 1px solid snow;
   border-radius: 10px;
   padding: 2%;
@@ -211,6 +223,68 @@ input {
 
 .wrapper_approval h2 {
   color: #2ff82f;
+}
+
+.wrapper_dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dashboard_section {
+  width: 69%;
+  margin-top: 3rem;
+}
+
+.wrapper-history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.history_section {
+  width: 69%;
+  margin-top: 3rem;
+}
+
+.history_section h3 {
+  margin-top: 3rem;
+}
+
+.deposits-table {
+  margin: 0;
+  width: 100%;
+}
+
+.withdrawals-table {
+  margin: 0;
+  width: 100%;
+}
+
+.wrapper_deposits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.deposits_section {
+  width: 69%;
+  margin-top: 3rem;
+}
+
+.wrapper-withdrawals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.withdrawals_section {
+  width: 69%;
+  margin-top: 3rem;
 }
 
 table {

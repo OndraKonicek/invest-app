@@ -4,6 +4,11 @@
 
 
 @can('investor')
+
+<div class="wrapper_dashboard">
+
+    <section class="dashboard_section">
+
         <h1>Dashboard</h1>
     
     
@@ -15,7 +20,10 @@
             <a href="/deposits"> 
                 <button>Invest now!</button>
             </a>
-      
+
+    </section>
+
+</div>
     
     {{-- {{dd($user)}} --}}
 

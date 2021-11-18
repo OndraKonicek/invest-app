@@ -2,6 +2,14 @@
 
 @section('content')
 
-<h1>Withdrawals</h1>
+    <div class="wrapper-withdrawals">
+
+        <section class="withdrawals_section">
+
+            <h1>Withdrawals</h1>
+
+        </section>
+
+    </div>
 
 @endsection
