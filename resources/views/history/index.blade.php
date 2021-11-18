@@ -2,65 +2,75 @@
 
 @section('content')
 
-    <h1>Transaction History</h1>
+    <div>
+        <h1>Transaction History</h1>
+        <h2>Deposits</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Date + Time
+                    </th>
+                    <th>
+                        Transaction
+                    </th>
+                    <th>
+                        CZK
+                    </th>
+                    <th>
+                        EUR
+                    </th>
+                    <th>
+                        USD
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Auth::user()->deposits as $deposit)
+                <tr>
+                    <td>{{$deposit->time}}</td>
+                    <td>Deposit</td>
+                    <td> - {{$deposit->amount}}</td>
+                    <td> - {{($deposit->amount / 25.23)}} </td>
+                    <td> - {{$deposit->amount / 22.23}} </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    
+        <h2>Withdrawals</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Date + Time
+                    </th>
+                    <th>
+                        Transaction
+                    </th>
+                    <th>
+                        CZK
+                    </th>
+                    <th>
+                        EUR
+                    </th>
+                    <th>
+                        USD
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Auth::user()->withdrawals as $withdrawal)
+                <tr>
+                    <td>{{$withdrawal->time}}</td>
+                    <td>Withdrawal</td>
+                    <td> + {{$withdrawal->amount}}</td>
+                    <td> + {{$withdrawal->amount / 25.23}}</td>
+                    <td> + {{$withdrawal->amount / 22.23}}</td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>
-                    Date
-                </th>
-                <th>
-                    Transaction type
-                </th>
-                <th>
-                    CZK
-                </th>
-                <th>
-                    EUR
-                </th>
-                <th>
-                    USD
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-
-            {{-- {{Auth::user()->account_values->value}} --}}
-
-            {{-- @foreach ($accountValues->user as $user)
-            {{$user->value}}
-                
-            @endforeach --}}
-            {{-- @foreach ($user->accountValues as $account_value)
-             {{$account_value->value}}
-             @endforeach --}}
-       
-            <tr>
-                {{-- <td>{{$accountvalue->value}}</td>
-                @endforeach --}}
-                {{-- @foreach ($account_values as $accountvalue)       --}}
-        
-                {{-- <td>{{$accountvalue->value}}</td>
-                @endforeach --}}
-                
-                {{-- <td>{{Auth::user('users')->join('account_values', 'users.id', '=', 'account_values.user_id')->select(['users.*', 'account_values.value'])}}</td> --}}
-                <td>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-
-            </tr>
-
-        </tbody>
-    </table>
-    {{-- @if($user->date_approved == null)
-        uzitele musi povolit admin
-    @else
-        {{dd($user)}}
-    @endif --}}
-  
 @endsection
