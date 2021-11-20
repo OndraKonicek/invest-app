@@ -31,6 +31,8 @@
                 <div class="navigation">  
                     @if (Auth::user()->hasRole('admin'))
                         <a href="/admin">Users</a>
+                        <a href="/admin/transactions">Transactions</a>
+
                         
                 
                     @elseif (Auth::user()->hasRole('investor'))

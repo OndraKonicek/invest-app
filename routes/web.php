@@ -29,14 +29,35 @@ Route::get('/deposits', 'DepositsController@deposits')
     ->middleware('auth')
     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
 
+Route::post('/deposits', 'DepositsController@store')
+    ->middleware('auth')
+    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+
+Route::get('/deposits', 'DepositsController@index')
+    ->middleware('auth')
+    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+
 Route::get('/withdrawals', 'WithdrawalsController@withdrawals')
     ->middleware('auth')
     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+
+Route::post('/withdrawals', 'WithdrawalsController@store')
+    ->middleware('auth')
+    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+
+Route::get('/withdrawals', 'WithdrawalsController@index')
+    ->middleware('auth')
+    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+
+Route::get('/data', 'ChartDataController@data');
 
 Route::middleware(['can:admin'])->group(function () {
 
     Route::get('/admin', 'AdminController@index');
     Route::post('/admin/user/approve/{user_id}', 'Admin\UserController@approve');
     Route::post('/admin/user/deny/{user_id}', 'Admin\UserController@deny');
+    Route::get('/admin/transactions', 'AdminController@transaction');
+    Route::post('/admin/transactions/complete/{id}', 'Admin\PendingTransactionController@complete');
+    Route::post('/admin/transactions/deny/{id}', 'Admin\PendingTransactionController@deny');
 
 });
