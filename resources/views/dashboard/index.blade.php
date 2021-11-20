@@ -5,7 +5,12 @@
 
 @can('investor')
 
-    <h1>Dashboard</h1>
+ 
+<div class="wrapper_dashboard">
+
+    <section class="dashboard_section">
+
+        <h1>Dashboard</h1>
     
     
             <h3>Name: {{Auth::user()->first_name}} {{Auth::user()->last_name}}</h3>
@@ -14,16 +19,22 @@
         
         
             <a href="/deposits"> 
-                <button>Invest now</button>
+                <button class="invest-btn">Invest now</button>
             </a>
 
             <a href="/withdrawals"> 
                 <button>Withdrawals</button>
             </a>
 
+            
     <div id="root"></div>
 
     <script src="/js/chart.js"></script>
+            
+
+    </section>
+
+</div>
     
     {{-- {{dd($user)}} --}}
 

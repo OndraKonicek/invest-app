@@ -2,10 +2,14 @@
 
 @section('content')
 
-    <h1>Deposits</h1>
-    <br>
+    <div class="wrapper_deposits">
 
-    <h3>Balanced portfolio</h3>
+        <section class="deposits_section">
+
+            <h1>Deposits</h1>
+
+            <h3>Balanced portfolio</h3>    
+
  
    
     <form action="/deposits" method="post">
@@ -18,6 +22,10 @@
     
         <input type="submit" value="Send">
     </form>
+
+    </section>
+
+    </div>
 
     <br>
     
@@ -36,4 +44,5 @@
         {{dd($user)}}
     @endif --}}
 
+        
 @endsection

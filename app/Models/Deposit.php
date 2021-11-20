@@ -15,6 +15,8 @@ class Deposit extends Model
         'user_id', 'portfolio_id', 'amount', 'status', 'time',
     ];
 
+    protected $dates = ['time'];
+
     public function user()
     {
         return $this->belongsTo(User::class);

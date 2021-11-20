@@ -2,8 +2,16 @@
 
 @section('content')
 
-<h1>Withdrawals</h1>
-  <br>
+<div class="wrapper-withdrawals">
+
+        <section class="withdrawals_section">
+
+            <h1>Withdrawals</h1>
+
+        </section>
+
+    </div>
+
 
     <h3>Balanced portfolio</h3>
  
@@ -35,5 +43,6 @@
     @else
         {{dd($user)}}
     @endif --}}
+    
 
 @endsection
