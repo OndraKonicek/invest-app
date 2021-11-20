@@ -17,9 +17,9 @@
             <br>
         
         
-            <a href="/deposits"> 
-                <button>Invest now!</button>
-            </a>
+            
+                <button class="invest-btn">Invest now</button>
+            
 
     </section>
 

@@ -34,11 +34,29 @@
                         
                 
                     @elseif (Auth::user()->hasRole('investor'))
-                
-                        <a href="/dashboard">Dashboard</a>
-                        <a href="/history">History</a>
+                    
+                        @if( Request::path() == 'dashboard' ) 
+                            <a href="/dashboard" style="background-color: snow; color: #00a7e1">Dashboard</a>
+
+                            @else <a href="/dashboard">Dashboard</a>
+
+                        @endif
+
+                        @if( Request::path() == 'history' ) 
+                            <a href="/history" style="background-color: snow; color: #00a7e1">History</a>
+                    
+                            @else <a href="/history">History</a>
                     
                     @endif
+
+                    @endif
+
+
+                    {{-- @if (<a href="/dashboard">Dashboard</a> === true) {
+                        return <a href="/dashboard" style="background-color: snow; color: blue">Dashboard</a>
+                    } else <a href="/dashboard">Dashboard</a>; --}}
+
+                    
 
                     
 

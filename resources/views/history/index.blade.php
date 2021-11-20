@@ -468,11 +468,11 @@
 
                     @foreach (Auth::user()->withdrawals as $withdrawal)
                         <tr>
-                            <td>{{$deposit->time->format('d.m.Y')}}</td>
+                            <td>{{$withdrawal->time->format('d.m.Y')}}</td>
                             <td>Withdrawal</td>
                             <td> - {{$withdrawal->amount}}</td>
-                            <td> - {{ CZKtoEUR($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
-                            <td> - {{ CZKtoUSD($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
+                            <td> - {{ CZKtoEUR($withdrawal->amount, $withdrawal->time->format('d.m.Y'))}}</td>
+                            <td> - {{ CZKtoUSD($withdrawal->amount, $withdrawal->time->format('d.m.Y'))}}</td>
                         </tr>
                     @endforeach
 

@@ -9,3 +9,17 @@
     width: 69%;
     margin-top: 3rem;
 }
+
+.invest-btn {
+    border: 1px solid #00a7e1;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: snow;
+    color: #00a7e1;
+    font-size: 24px;
+}
+
+.invest-btn:hover {
+    background-color: #00a7e1;
+    color: snow;
+}
