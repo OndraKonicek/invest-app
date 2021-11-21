@@ -30,12 +30,12 @@
                     <td>
                         <div class="action">
                             @if ($deposit->status == 'Pending')
-                        <form action="{{action('Admin\PendingTransactionController@complete', $deposit->id)}}"  method="post">
+                        <form action="{{action('Admin\PendingTransactionController@deposits', $deposit->id)}}"  method="post">
                             @csrf
                             <button>Complete</button> 
                         </form>
                         
-                        <form action="{{ action('Admin\PendingTransactionController@deny', $deposit->id) }}" method="post">
+                        <form action="{{ action('Admin\PendingTransactionController@denydeposits', $deposit->id) }}" method="post">
                             @csrf
                             <button>Denied</button> 
                         </form>
@@ -80,12 +80,12 @@
                     <td>
                         <div class="action">
                             @if ($withdrawal->status == 'Pending')
-                        <form action="{{action('Admin\PendingTransactionController@complete', $withdrawal->id)}}"  method="post">
+                        <form action="{{action('Admin\PendingTransactionController@withdrawals', $withdrawal->id)}}"  method="post">
                             @csrf
                             <button>Complete</button> 
                         </form>
                         
-                        <form action="{{ action('Admin\PendingTransactionController@deny', $withdrawal->id) }}" method="post">
+                        <form action="{{ action('Admin\PendingTransactionController@denywithdrawals', $withdrawal->id) }}" method="post">
                             @csrf
                             <button>Denied</button> 
                         </form>
