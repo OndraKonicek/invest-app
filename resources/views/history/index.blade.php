@@ -415,6 +415,9 @@
                         <th>
                             USD
                         </th>
+                          <th>
+                            Status
+                        </th>
                     </tr>
 
                 </thead>
@@ -430,6 +433,7 @@
                             <td> + {{ CZKtoEUR($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
 
                             <td> + {{ CZKtoUSD($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
+                            <td>{{$deposit->status}}</td>
                         </tr>
                     @endforeach
 
@@ -460,6 +464,9 @@
                         <th>
                             USD
                         </th>
+                        <th>
+                            Status
+                        </th>
                     </tr>
 
                 </thead>
@@ -473,6 +480,7 @@
                             <td> - {{$withdrawal->amount}}</td>
                             <td> - {{ CZKtoEUR($withdrawal->amount, $withdrawal->time->format('d.m.Y'))}}</td>
                             <td> - {{ CZKtoUSD($withdrawal->amount, $withdrawal->time->format('d.m.Y'))}}</td>
+                            <td>{{$withdrawal->status}}</td>
                         </tr>
                     @endforeach
 

@@ -8,23 +8,41 @@
 
             <h1>Deposit Now</h1>
 
-            <h3>Balanced portfolio</h3>
+            <h3>Balanced portfolio</h3>    
 
-            <form action="" method="post">
-                    @csrf
-                <label for="deposit">Amount:</label>
-                <input type="text" id="deposit">
-            
-                <input type="submit">
-            </form>
+ 
+   
+    <form action="/deposits" method="post">
+            @csrf
 
-            {{-- @if($user->date_approved == null)
-                uzitele musi povolit admin
-            @else
-                {{dd($user)}}
-            @endif --}}
+        <label for="deposit">Value:</label>
+        <br>
+        <input type="text" id="deposit" name="amount" required>
+        <br>
+    
+        <input type="submit" value="Send">
+    </form>
 
-        </section>
+    </section>
 
     </div>
+
+    <br>
+    
+    @if (Session::has('success_message'))
+
+        <div class="alert alert-success">
+            {{ Session::get('success_message') }}
+        </div>
+
+    @endif
+
+
+    {{-- @if($user->date_approved == null)
+        uzitele musi povolit admin
+    @else
+        {{dd($user)}}
+    @endif --}}
+
+        
 @endsection

@@ -11,6 +11,10 @@ class Withdrawal extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'user_id', 'portfolio_id', 'amount', 'status', 'time',
+    ];
+
     protected $dates = ['time'];
 
     public function user()
