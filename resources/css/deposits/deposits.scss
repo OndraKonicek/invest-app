@@ -1,11 +1,31 @@
 .wrapper_deposits {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
+    min-height: 100vh;
 }
 
 .deposits_section {
     width: 69%;
     margin-top: 3rem;
+}
+
+.deposit-input {
+    border: 1px solid #00a7e1;
+    border-radius: 5px;
+    padding: 0.7%;
+}
+
+.deposit-button {
+    color: #00a7e1;
+    background-color: snow;
+    padding: 0.7%;
+    border-radius: 5px;
+    border: 1px solid #00a7e1;
+    cursor: pointer;
+}
+
+.deposit-button:hover {
+    color: snow;
+    background-color: #00a7e1;
 }

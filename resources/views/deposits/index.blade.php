@@ -15,12 +15,12 @@
     <form action="/deposits" method="post">
             @csrf
 
-        <label for="deposit">Value:</label>
+        <label for="deposit">Amount:</label>
         <br>
         <input type="text" id="deposit" name="amount" required>
         <br>
     
-        <input type="submit" value="Send">
+        <input type="submit" value="Confirm Deposit">
     </form>
 
     </section>
