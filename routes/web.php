@@ -28,7 +28,7 @@ Route::get('/history', 'HistoryController@index')
 Route::get('/about', 'AboutController@index')
     ->middleware('auth')
     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
-    
+
 Route::get('/cryptoDerivatives', 'CryptoDerivativesController@index')
     ->middleware('auth')
     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
@@ -65,7 +65,9 @@ Route::middleware(['can:admin'])->group(function () {
     Route::post('/admin/user/approve/{user_id}', 'Admin\UserController@approve');
     Route::post('/admin/user/deny/{user_id}', 'Admin\UserController@deny');
     Route::get('/admin/transactions', 'AdminController@transaction');
-    Route::post('/admin/transactions/complete/{id}', 'Admin\PendingTransactionController@complete');
-    Route::post('/admin/transactions/deny/{id}', 'Admin\PendingTransactionController@deny');
+    Route::post('/admin/transactions/deposits/{deposit_id}', 'Admin\PendingTransactionController@deposits');
+    Route::post('/admin/transactions/withdrawals/{withdrawal_id}', 'Admin\PendingTransactionController@withdrawals');
+    Route::post('/admin/transactions/denydeposits/{deposit_id}', 'Admin\PendingTransactionController@denydeposits');
+    Route::post('/admin/transactions/denywithdrawals/{withdrawal_id}', 'Admin\PendingTransactionController@denywithdrawals');
 
 });

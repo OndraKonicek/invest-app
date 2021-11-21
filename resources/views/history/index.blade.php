@@ -211,7 +211,7 @@
 
                     $kurz = $kurzyEuro[$datum];
 
-                    return $koruny / $kurz;
+                    return round($koruny / $kurz, 2);
                 }
 
 
@@ -415,7 +415,7 @@
 
                     $kurz = $kurzyUsd[$datum];
 
-                    return $koruny / $kurz;
+                    return round($koruny / $kurz, 2);
                 }
 
             @endphp

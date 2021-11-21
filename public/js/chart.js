@@ -76,7 +76,7 @@ var App = /*#__PURE__*/function (_Component) {
         for (var i = 0; i < data.length; i++) {
           dps.push({
             x: new Date(data[i].date),
-            y: Number(data[i].close)
+            y: Number(data[i].amount)
           });
         }
 
@@ -107,21 +107,21 @@ var App = /*#__PURE__*/function (_Component) {
           },
           axisY: {
             title: "",
-            prefix: "$",
+            prefix: "CZK",
             crosshair: {
               enabled: true,
               snapToDataPoint: true,
-              valueFormatString: "$#,###.##"
+              valueFormatString: "#,###.##"
             }
           },
           toolTip: {
             shared: true
           },
           data: [{
-            name: "Price (in USD)",
+            name: "Amount (in CZK)",
             type: "splineArea",
             color: "#3576a8",
-            yValueFormatString: "$#,###.##",
+            yValueFormatString: "#,###.##",
             xValueFormatString: "MMM DD YYYY",
             dataPoints: this.state.dataPoints
           }]
@@ -129,7 +129,7 @@ var App = /*#__PURE__*/function (_Component) {
         navigator: {
           slider: {
             minimum: new Date("2019-05-01"),
-            maximum: new Date("2020-05-01")
+            maximum: new Date()
           }
         }
       };
