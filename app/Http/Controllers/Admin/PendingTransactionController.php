@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Deposit;
+use App\Models\Withdrawal;
 use Illuminate\Http\Request;
 
 class PendingTransactionController extends Controller
@@ -73,7 +74,7 @@ class PendingTransactionController extends Controller
     {
         // get the user object from the users table using the $user_id variable
 
-        $withdrawal = Deposit::findOrFail($withdrawal_id);
+        $withdrawal = Withdrawal::findOrFail($withdrawal_id);
 
         $withdrawal->status = 'Denied';
 
