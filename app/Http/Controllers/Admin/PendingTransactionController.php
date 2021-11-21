@@ -40,15 +40,18 @@ class PendingTransactionController extends Controller
         $deposit = Deposit::findOrFail($id);
         $withdrawal = Deposit::findOrFail($id);
 
+        $deposit->status = 'Denied';
+        $withdrawal->status = 'Denied';
+
         // set the property date_approved to current date
         // $user->date_approved = null;
 
         // save the updated user
-        $deposit->delete();
-        $withdrawal->delete();
+        $deposit->save();
+        $withdrawal->save();
 
         // flash a success message
-        session()->flash('User has been denied');
+        session()->flash('Transaction has been denied');
 
         // redirect somewhere
         return redirect()->action('AdminController@transaction');
