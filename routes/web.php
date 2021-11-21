@@ -25,6 +25,14 @@ Route::get('/history', 'HistoryController@index')
     ->middleware('auth')
     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
 
+Route::get('/about', 'AboutController@index')
+    ->middleware('auth')
+    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+    
+Route::get('/cryptoDerivatives', 'CryptoDerivativesController@index')
+    ->middleware('auth')
+    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+
 Route::get('/deposits', 'DepositsController@deposits')
     ->middleware('auth')
     ->middleware(\App\Http\Middleware\CheckUserApproved::class);

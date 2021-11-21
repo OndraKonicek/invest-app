@@ -1,0 +1,43 @@
+.wrapper-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about_section {
+    width: 69%;
+    margin-top: 3rem;
+}
+
+.about-our-team {
+    width: 69%;
+}
+
+.about-our-team-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 69%;
+    height: fit-content;
+}
+
+.about-our-team {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.about-our-team img {
+    border-radius: 50%;
+    width: 15rem;
+    height: auto;
+}
+
+.team-member-info {
+    width: 25%;
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
+}

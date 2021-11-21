@@ -4,14 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
+class CryptoDerivativesController extends Controller
 {
     public function index()
     {
         $user = auth()->user();
 
         return (
-            view('dashboard.index', compact('user'))
+            view('cryptoDerivatives.index', compact('user'))
         );
     }
 }
+
+

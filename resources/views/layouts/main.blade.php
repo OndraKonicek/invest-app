@@ -49,10 +49,23 @@
                     
                             @else <a href="/history">History</a>
                     
-                    @endif
+                        @endif
+
+                        @if( Request::path() == 'cryptoDerivatives' ) 
+                            <a href="/cryptoDerivatives" style="background-color: snow; color: #00a7e1">Investment Types</a>
+                    
+                            @else <a href="/cryptoDerivatives">Investment Types</a>
+                    
+                        @endif
+
+                        @if( Request::path() == 'about' ) 
+                            <a href="/about" style="background-color: snow; color: #00a7e1">About Us</a>
+                    
+                            @else <a href="/about">About Us</a>
+                    
+                        @endif
 
                     @endif
-
 
                     {{-- @if (<a href="/dashboard">Dashboard</a> === true) {
                         return <a href="/dashboard" style="background-color: snow; color: blue">Dashboard</a>
@@ -70,7 +83,7 @@
                     <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                    <a href="/deposits">Deposits</a>
+                    <a href="/deposits">Deposit Now</a>
                     <a href="/withdrawals">Withdrawals</a>
 
                     <form action="{{ route('logout') }}" method="post">
@@ -91,11 +104,16 @@
     </div>
 
     
-
-
-    
-    
     @yield('content')
+
+
+    <footer class="footer">
+        <small> Siance &copy; </small> &nbsp; <small id="year"></small>   
+    </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 
 </body>
 </html>

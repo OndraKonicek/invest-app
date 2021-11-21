@@ -1,0 +1,69 @@
+.wrapper-cryptoDerivatives {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cryptoDerivatives_section {
+    display: flex;
+    width: 69%;
+    margin-top: 3rem;
+}
+
+.crypto-derivatives-types {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 69%;
+    height: 70%;
+}
+
+.crypto-futures {
+    width: 25%;
+    height: 70%;
+    border: 3px solid #00a7e1;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.crypto-futures h3 {
+    padding: 1%;
+    color: #000;
+}
+
+.crypto-futures p {
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
+}
+
+.crypto-futures-btn {
+    width: 100%;
+    padding: 3%;
+    font-size: 16px;
+    background-color: snow;
+    color: #00a7e1;
+    border-radius: 20px;
+    border: 3px solid #00a7e1;
+    cursor: pointer;
+}
+
+.crypto-futures-btn:hover {
+    background-color: #00a7e1;
+    color: snow;
+}
+
+.crypto-futures-btn a {
+    color: #00a7e1;
+    text-decoration: none;
+}
+
+.crypto-futures-btn:hover a {
+    color: snow;
+}
+
+.crypto-futures img {
+    width: 100%;
+    border-radius: 20px;
+}
