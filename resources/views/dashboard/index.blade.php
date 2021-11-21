@@ -17,12 +17,8 @@
     
             <br>
 
-            <a href="/deposits"> 
+            <a href="/cryptoDerivatives"> 
                 <button class="invest-btn">Invest now</button>
-            </a>
-
-            <a href="/withdrawals"> 
-                <button>Withdrawals</button>
             </a>
 
             

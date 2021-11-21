@@ -79,7 +79,7 @@
 
                     <div class="dropdown-content">
                         @if (Auth::user()->hasRole('investor'))
-                            <a href="/deposits">Deposit Now</a>
+                            <a href="/cryptoDerivatives">Deposit Now</a>
                             <a href="/withdrawals">Withdrawals</a>
 
                             <form action="{{ route('logout') }}" method="post">
