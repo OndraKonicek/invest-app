@@ -6,7 +6,7 @@
 
         <section class="deposits_section">
 
-            <h1>Deposits</h1>
+            <h1>Deposit Now</h1>
 
             <h3>Balanced portfolio</h3>
 

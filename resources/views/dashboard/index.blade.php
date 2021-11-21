@@ -18,7 +18,7 @@
         
         
             
-                <button class="invest-btn">Invest now</button>
+                <button class="invest-btn">Invest now +</button>
             
 
     </section>

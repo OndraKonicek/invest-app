@@ -301,6 +301,133 @@
   margin-top: 3rem;
 }
 
+.wrapper-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about_section {
+  width: 69%;
+  margin-top: 3rem;
+}
+
+.about-our-team {
+  width: 69%;
+}
+
+.about-our-team-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 69%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.about-our-team {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+}
+
+.about-our-team img {
+  border-radius: 50%;
+  width: 15rem;
+  height: auto;
+}
+
+.team-member-info {
+  width: 25%;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+}
+
+.wrapper-cryptoDerivatives {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cryptoDerivatives_section {
+  display: flex;
+  width: 69%;
+  margin-top: 3rem;
+}
+
+.crypto-derivatives-types {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 69%;
+  height: 70%;
+}
+
+.crypto-futures {
+  width: 25%;
+  height: 70%;
+  border: 3px solid #00a7e1;
+  border-radius: 20px;
+  padding: 3%;
+}
+
+.crypto-futures h3 {
+  padding: 1%;
+  color: #000;
+}
+
+.crypto-futures p {
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+}
+
+.crypto-futures-btn {
+  width: 100%;
+  padding: 3%;
+  font-size: 16px;
+  background-color: snow;
+  color: #00a7e1;
+  border-radius: 20px;
+  border: 3px solid #00a7e1;
+  cursor: pointer;
+}
+
+.crypto-futures-btn:hover {
+  background-color: #00a7e1;
+  color: snow;
+}
+
+.crypto-futures-btn a {
+  color: #00a7e1;
+  text-decoration: none;
+}
+
+.crypto-futures-btn:hover a {
+  color: snow;
+}
+
+.crypto-futures img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  padding: 2% 0;
+  width: 100%;
+  color: snow;
+  background-color: black;
+  margin-top: 5rem;
+}
+
 table {
   width: 50%;
   margin: auto;
