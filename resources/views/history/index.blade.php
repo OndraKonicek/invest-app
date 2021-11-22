@@ -207,6 +207,11 @@
                     '24.05.2021' => 25.401,
                     '23.05.2021' => 25.459,
                     '22.05.2021' => 25.451,
+                    '16.04.2021' => 25.451,
+                    '03.11.2021' => 25.451,
+                    '25.07.2020' => 25.451,
+                    '05.03.2020' => 25.451,
+                    '01.02.2020' => 25.451,
                     ];
 
                     $kurz = $kurzyEuro[$datum];
@@ -411,6 +416,12 @@
                     '24.05.2021' => 20.792,
                     '23.05.2021' => 20.904,
                     '22.05.2021' => 20.897,
+                    '16.04.2021' => 20.897,
+                    '03.11.2021' => 20.897,
+                    '25.07.2020' => 20.897,
+                    '05.03.2020' => 20.897,
+                    '01.02.2020' => 20.897,
+                
                     ];
 
                     $kurz = $kurzyUsd[$datum];
@@ -454,11 +465,11 @@
                         <tr>
                             <td>{{$deposit->time->format('d.m.Y')}}</td>
                             <td>Deposit</td>
-                            <td> + {{$deposit->amount}}</td>
+                            <td> {{$deposit->amount}}</td>
 
-                            <td> + {{ CZKtoEUR($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
+                            <td> {{ CZKtoEUR($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
 
-                            <td> + {{ CZKtoUSD($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
+                            <td> {{ CZKtoUSD($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
                             <td>{{$deposit->status}}</td>
                         </tr>
                     @endforeach

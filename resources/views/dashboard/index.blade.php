@@ -22,12 +22,12 @@
             </a>
 
             
-            <div id="root"></div>
-
-            <script src="/js/chart.js"></script>
-
+                <div id="root"></div>
+    
+                <script src="/js/chart.js"></script>
+          
     </section>
-
+    
 </div>
     
     {{-- {{dd($user)}} --}}
