@@ -15,49 +15,33 @@ use Illuminate\Support\Facades\Route;
 
 // all users
 Route::get('/', 'HomepageController@index');
+Route::get('/notapproved', 'HomepageController@notapproved');
 
 // register users
-Route::get('/dashboard', 'DashboardController@index')
-    ->middleware('auth')
-    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
 
-Route::get('/history', 'HistoryController@index')
-    ->middleware('auth')
-    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+// Route::get('/dashboard', 'DashboardController@index')
+//     ->middleware('auth')
+//     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
 
-Route::get('/about', 'AboutController@index')
-    ->middleware('auth')
-    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
 
-Route::get('/cryptoDerivatives', 'CryptoDerivativesController@index')
-    ->middleware('auth')
-    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+Route::middleware(['can:investor'])->group(function () {
 
-Route::get('/deposits', 'DepositsController@deposits')
-    ->middleware('auth')
-    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+    Route::get('/dashboard', 'DashboardController@index');
+    Route::get('/history', 'HistoryController@index');
+    Route::get('/about', 'AboutController@index');
+    Route::get('/cryptoDerivatives', 'CryptoDerivativesController@index');
+    Route::get('/deposits', 'DepositsController@deposits');
+    Route::post('/deposits', 'DepositsController@store');
+    Route::get('/deposits', 'DepositsController@index');
+    Route::get('/withdrawals', 'WithdrawalsController@withdrawals');
+    Route::post('/withdrawals', 'WithdrawalsController@store');
+    Route::get('/withdrawals', 'WithdrawalsController@index');
+    Route::get('/data', 'ChartDataController@data');
 
-Route::post('/deposits', 'DepositsController@store')
-    ->middleware('auth')
-    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+});
 
-Route::get('/deposits', 'DepositsController@index')
-    ->middleware('auth')
-    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
 
-Route::get('/withdrawals', 'WithdrawalsController@withdrawals')
-    ->middleware('auth')
-    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
 
-Route::post('/withdrawals', 'WithdrawalsController@store')
-    ->middleware('auth')
-    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
-
-Route::get('/withdrawals', 'WithdrawalsController@index')
-    ->middleware('auth')
-    ->middleware(\App\Http\Middleware\CheckUserApproved::class);
-
-Route::get('/data', 'ChartDataController@data');
 
 Route::middleware(['can:admin'])->group(function () {
 

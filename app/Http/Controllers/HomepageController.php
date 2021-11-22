@@ -8,4 +8,10 @@ class HomepageController extends Controller
     {
         return view('homepage');
     }
+
+    public function notapproved()
+    {
+        return view('notapproved');
+    }
+
 }

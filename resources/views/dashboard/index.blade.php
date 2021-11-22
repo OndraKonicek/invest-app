@@ -3,7 +3,7 @@
 @section('content')
 
 
-@can('investor')
+
 
  
 <div class="wrapper_dashboard">
@@ -32,7 +32,6 @@
     
     {{-- {{dd($user)}} --}}
 
-@endcan
     
 @endsection
 

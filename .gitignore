@@ -5,6 +5,7 @@
 /public/js/**/*.map
 /public/mix-manifest.json 
 /public/mix.js.map
+/public/js
 /storage/*.key
 /vendor
 .env
@@ -17,3 +18,5 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+# public/css/app.css
+# public/js/chart.js
