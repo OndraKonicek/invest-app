@@ -1,17 +1,17 @@
 .login-body {
+    background-color: snow;
     display: flex;
     height: 97vh;
     justify-content: center;
     align-items: center;
     font-family: "Rubik", sans-serif;
-    color: #00a7e1;
 }
 
 .login-form {
     background-color: #00a7e1;
     padding: 5% 20%;
     color: snow;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .email-label {
@@ -25,7 +25,7 @@
 .login-button {
     width: 172px;
     border: 1px solid snow;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 2% 20%;
     background-color: #00a7e1;
     color: snow;
@@ -46,14 +46,14 @@
 
 .email-input {
     border: 1px solid snow;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 2%;
     margin-top: 5px;
 }
 
 .password-input {
     border: 1px solid snow;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 2%;
     margin-top: 5px;
 }

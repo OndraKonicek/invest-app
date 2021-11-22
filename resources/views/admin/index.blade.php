@@ -2,10 +2,9 @@
 
 @section('content')
 
-    <div class="admin-dashboard">
-        <h1>Admin Dashboard</h1>
-    </div>
-
+<div class="admin-dashboard">
+    <h1>Users</h1>
+</div>
     <div class="admin-list">
         User's List - Users waiting for an approval.
     </div>
