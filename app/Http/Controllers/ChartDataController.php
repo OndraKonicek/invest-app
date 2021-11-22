@@ -26,27 +26,6 @@ class ChartDataController extends Controller
     //     ];
     // }
 
-    // public function data()
-    // {
-
-    //     // $data =
-
-    //     return [
-    //         [
-    //             "date" => 1483323470778,
-    //             "amount" => 997.39,
-    //         ],
-    //         [
-    //             "date" => 1483409870778,
-    //             "amount" => 1019.2,
-    //         ],
-    //         [
-    //             "date" => 1483496270778,
-    //             "amount" => 1037.5,
-    //         ],
-    //     ];
-    // }
-
     public function data()
     {
         return

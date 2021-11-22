@@ -16,9 +16,6 @@
 <body class="body">
 
 
-
-
-
     <div class="login-register">
         <div class="navigation-wrapper">
         {{-- pokud je uzivatel null zobrazi se login/register jinak se zobrazi logout --}}
@@ -70,31 +67,38 @@
                     {{-- @if (<a href="/dashboard">Dashboard</a> === true) {
                         return <a href="/dashboard" style="background-color: snow; color: blue">Dashboard</a>
                     } else <a href="/dashboard">Dashboard</a>; --}}
-
-                    
-
-                    
+            
 
                 </div>
                 
                 
                 <div class="dropdown">
                     <button class="dropbtn">{{Auth::user()->first_name}} {{Auth::user()->last_name}} 
-                    <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-caret-down"></i>
                     </button>
-                    <div class="dropdown-content">
-                    <a href="/deposits">Deposit Now</a>
-                    <a href="/withdrawals">Withdrawals</a>
 
-                    <form action="{{ route('logout') }}" method="post">
-                    @csrf
-                    <button class="logout-button">Logout</button>
-                    </form>
+                    <div class="dropdown-content">
+                        @if (Auth::user()->hasRole('investor'))
+                            <a href="/cryptoDerivatives">Deposit Now</a>
+                            <a href="/withdrawals">Withdrawals</a>
+
+                            <form action="{{ route('logout') }}" method="post">
+                                @csrf
+
+                                <button class="logout-button">Logout</button>
+                            </form>
+
+                        @else 
+                            <form action="{{ route('logout') }}" method="post">
+                                @csrf
+                                
+                                <button class="logout-button">Logout</button>
+                            </form>
+                        @endif
 
                     </div>
                 </div> 
                 
-
             @endif
 
         </div>

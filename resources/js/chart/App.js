@@ -35,7 +35,7 @@ class App extends Component {
   render() {
     const options = {
       title:{
-        text:"React StockChart with Spline Area Chart"
+        text:"React"
       },
       theme: "light2",
       subtitles: [{
