@@ -7,7 +7,8 @@
     </div>
 
     <div class="admin-list">
-        User's List - Users waiting for an approval.
+        List of users
+        {{-- User's List - Users waiting for an approval. --}}
     </div>
     <br>
 
