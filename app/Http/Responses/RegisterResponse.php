@@ -8,6 +8,6 @@ class RegisterResponse implements ContractsRegisterResponse
 {
     public function toResponse($request)
     {
-        return redirect()->to('/dashboard');
+        return redirect()->to('/notapproved');
     }
 }

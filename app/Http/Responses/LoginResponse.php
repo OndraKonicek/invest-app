@@ -12,6 +12,14 @@ class LoginResponse implements ContractsLoginResponse
         if (auth()->user()->can('admin')) {
             return redirect()->intended('/admin');
         }
-        return redirect()->to('/dashboard');
+        elseif (auth()->user()->can('investor')) {
+            return redirect()->intended('/dashboard');
+        } 
+        elseif (auth()->user()->date_approved == null)  { 
+            return redirect()->intended('/notapproved');
+        } 
+        else
+
+        return redirect()->to('/');
     }
 }
