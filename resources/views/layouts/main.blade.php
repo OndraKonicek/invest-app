@@ -30,8 +30,31 @@
             @else
                 <div class="navigation">  
                     @if (Auth::user()->hasRole('admin'))
-                        <a href="/admin">Users</a>
-                        <a href="/admin/transactions">Transactions</a>
+                        {{-- <a href="/admin">Users</a> --}}
+                    
+                    @if( Request::path() == 'admin' ) 
+                        <a href="/admin" style="background-color: snow; color: #00a7e1">Users</a>
+
+                        @else <a href="/dashboard">Users</a>
+
+            @endif
+
+                    {{-- <a href="/admin/transactions">Transactions</a> --}}
+
+                    @if( Request::path() == 'admin/transactions' ) 
+                        <a href="/admin/transactions" style="background-color: snow; color: #00a7e1">Transactions</a>
+
+                        @else <a href="/admin/transactions">Transactions</a>
+
+                    @endif
+
+
+                    
+                        
+                        
+
+
+                    
 
                         
                 
@@ -79,17 +102,20 @@
                 
                 
                 <div class="dropdown">
-                    <button class="dropbtn">{{Auth::user()->first_name}} {{Auth::user()->last_name}} 
-                    <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                    <a href="/deposits">Deposit Now</a>
-                    <a href="/withdrawals">Withdrawals</a>
 
-                    <form action="{{ route('logout') }}" method="post">
-                    @csrf
-                    <button class="logout-button">Logout</button>
-                    </form>
+                    <button class="dropbtn">{{Auth::user()->first_name}} {{Auth::user()->last_name}} 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+
+                    <div class="dropdown-content">
+
+                        <a href="/deposits">Deposit Now</a>
+                        <a href="/withdrawals">Withdrawals</a>
+
+                        <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button class="logout-button">Logout</button>
+                        </form>
 
                     </div>
                 </div> 

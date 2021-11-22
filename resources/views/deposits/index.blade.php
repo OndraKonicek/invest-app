@@ -12,37 +12,38 @@
 
  
    
-    <form action="/deposits" method="post">
-            @csrf
+            <form action="/deposits" method="post">
+                    @csrf
 
-        <label for="deposit">Amount:</label>
-        <br>
-        <input type="text" id="deposit" name="amount" required>
-        <br>
-    
-        <input type="submit" value="Confirm Deposit">
-    </form>
+                <label for="deposit">Amount:</label>
+                <br>
+                <input type="text" id="deposit" name="amount" required>
+                <br>
+            
+                <input type="submit" value="Confirm Deposit">
+            </form>
 
-    </section>
+
+            
+
+            <br>
+            
+            @if (Session::has('success_message'))
+
+                <div class="alert alert-success">
+                    {{ Session::get('success_message') }}
+                </div>
+
+            @endif
+
+
+            {{-- @if($user->date_approved == null)
+                uzitele musi povolit admin
+            @else
+                {{dd($user)}}
+            @endif --}}
+        </section>
 
     </div>
 
-    <br>
-    
-    @if (Session::has('success_message'))
-
-        <div class="alert alert-success">
-            {{ Session::get('success_message') }}
-        </div>
-
-    @endif
-
-
-    {{-- @if($user->date_approved == null)
-        uzitele musi povolit admin
-    @else
-        {{dd($user)}}
-    @endif --}}
-
-        
 @endsection

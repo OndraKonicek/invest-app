@@ -36,19 +36,19 @@
 }
 
 .login-body {
+  background-color: snow;
   display: flex;
   height: 97vh;
   justify-content: center;
   align-items: center;
   font-family: "Rubik", sans-serif;
-  color: #00a7e1;
 }
 
 .login-form {
   background-color: #00a7e1;
   padding: 5% 20%;
   color: snow;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .email-label {
@@ -62,7 +62,7 @@
 .login-button {
   width: 172px;
   border: 1px solid snow;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2% 20%;
   background-color: #00a7e1;
   color: snow;
@@ -83,25 +83,54 @@
 
 .email-input {
   border: 1px solid snow;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2%;
   margin-top: 5px;
 }
 
 .password-input {
   border: 1px solid snow;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2%;
   margin-top: 5px;
 }
 
-.registration-form {
-  display: flex;
-  justify-content: center;
+.regitration-body {
   align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: orange;
+  background-color: snow;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  height: 97vh;
+  justify-content: center;
+}
+
+.registration-form {
+  background-color: #00a7e1;
+  padding: 5% 20%;
+  color: snow;
+  border-radius: 5px;
+}
+
+.register-input {
+  border: 1px solid #00a7e1;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.register-button {
+  width: 172px;
+  border: 1px solid snow;
+  border-radius: 5px;
+  padding: 2% 20%;
+  background-color: #00a7e1;
+  color: snow;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.register-button:hover {
+  background-color: snow;
+  color: #00a7e1;
 }
 
 .body {
@@ -281,12 +310,13 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .deposits_section {
   width: 69%;
   margin-top: 3rem;
+  background-color: orangered;
 }
 
 .deposit-input {

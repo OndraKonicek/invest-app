@@ -1,8 +1,46 @@
-.registration-form {
-    display: flex;
-    justify-content: center;
+.regitration-body {
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: orange;
+    background-color: snow;
+    display: flex;
+    font-family: "Rubik", sans-serif;
+    height: 97vh;
+    justify-content: center;
 }
+
+.registration-form {
+    background-color: #00a7e1;
+    padding: 5% 20%;
+    color: snow;
+    border-radius: 5px;
+}
+
+.register-input {
+    border: 1px solid #00a7e1;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.register-button {
+    width: 172px;
+    border: 1px solid snow;
+    border-radius: 5px;
+    padding: 2% 20%;
+    background-color: #00a7e1;
+    color: snow;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.register-button:hover {
+    background-color: snow;
+    color: #00a7e1;
+}
+
+// .registration-form {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: orange;
+// }
