@@ -17,21 +17,17 @@
     
             <br>
 
-            <a href="/deposits"> 
+            <a href="/cryptoDerivatives"> 
                 <button class="invest-btn">Invest now</button>
             </a>
 
-            <a href="/withdrawals"> 
-                <button>Withdrawals</button>
-            </a>
-
             
-            <div id="root"></div>
-
-            <script src="/js/chart.js"></script>
-
+                <div id="root"></div>
+    
+                <script src="/js/chart.js"></script>
+          
     </section>
-
+    
 </div>
     
     {{-- {{dd($user)}} --}}

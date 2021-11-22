@@ -91,7 +91,7 @@ var App = /*#__PURE__*/function (_Component) {
     value: function render() {
       var options = {
         title: {
-          text: "React StockChart with Spline Area Chart"
+          text: "React"
         },
         theme: "light2",
         subtitles: [{

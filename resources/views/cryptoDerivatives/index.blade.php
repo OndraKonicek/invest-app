@@ -18,7 +18,9 @@
                 <p>
                     Crypto futures are Derivative Products. Such products are a form of contract. In essence, futures form a commitment between two parties to either buy..
                 </p>
-                <button class="crypto-futures-btn"><a href="">Invest</a></button>
+                <a href="/deposits">
+                    <button class="crypto-futures-btn">Invest</button>
+                </a>
                 {{-- <input class="crypto-futures-btn" type="button" value="Invest"> --}}
             </div>
 
