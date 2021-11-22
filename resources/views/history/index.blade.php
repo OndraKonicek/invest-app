@@ -7,11 +7,7 @@
         <section class="history_section">
 
             <h1>Transaction History</h1>
-
-            <h3>Deposits</h3>
-
             @php
-
                 function CZKtoEUR($koruny, $datum) {
                     $kurzyEuro = [
                     '30.11.2021' => 25.218,
@@ -215,11 +211,8 @@
                     ];
 
                     $kurz = $kurzyEuro[$datum];
-
                     return round($koruny / $kurz, 2);
                 }
-
-
 
                 function CZKtoUSD($koruny, $datum) {
                     $kurzyUsd = [
@@ -421,21 +414,16 @@
                     '25.07.2020' => 20.897,
                     '05.03.2020' => 20.897,
                     '01.02.2020' => 20.897,
-                
                     ];
 
                     $kurz = $kurzyUsd[$datum];
-
                     return round($koruny / $kurz, 2);
                 }
-
             @endphp
 
-
+            <h3>Deposits</h3>
             <table class="deposits-table">
-
                 <thead>
-
                     <tr>
                         <th>
                             Date + Time
@@ -456,35 +444,24 @@
                             Status
                         </th>
                     </tr>
-
                 </thead>
-
                 <tbody>
-
                     @foreach (Auth::user()->deposits as $deposit)
                         <tr>
                             <td>{{$deposit->time->format('d.m.Y')}}</td>
                             <td>Deposit</td>
                             <td> {{$deposit->amount}}</td>
-
                             <td> {{ CZKtoEUR($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
-
                             <td> {{ CZKtoUSD($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
                             <td>{{$deposit->status}}</td>
                         </tr>
                     @endforeach
-
                 </tbody>
-
             </table>
 
-        
             <h3>Withdrawals</h3>
-
             <table class="withdrawals-table">
-
                 <thead>
-
                     <tr>
                         <th>
                             Date + Time
@@ -505,11 +482,8 @@
                             Status
                         </th>
                     </tr>
-
                 </thead>
-
                 <tbody>
-
                     @foreach (Auth::user()->withdrawals as $withdrawal)
                         <tr>
                             <td>{{$withdrawal->time->format('d.m.Y')}}</td>
@@ -520,13 +494,8 @@
                             <td>{{$withdrawal->status}}</td>
                         </tr>
                     @endforeach
-
                 </tbody>
-
             </table>
-
         </section>
-
     </div>
-
 @endsection

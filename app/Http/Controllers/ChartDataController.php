@@ -4,28 +4,6 @@ namespace App\Http\Controllers;
 
 class ChartDataController extends Controller
 {
-    // public function datajson()
-    // {
-
-    //     // $data =
-
-    //     return [
-    //         [
-    //             "datetime" => 1483228800000,
-    //             "amount" => 997.39,
-    //         ],
-    //         [
-    //             "datetime" => 1483315200000,
-    //             "amount" => 1019.2,
-
-    //         ],
-    //         [
-    //             "datetime" => \Carbon\Carbon::createFromFormat('Y/m/d', '2021/11/18')->timestamp * 1000,
-    //             "amount" => 1037.5,
-    //         ],
-    //     ];
-    // }
-
     public function data()
     {
         return

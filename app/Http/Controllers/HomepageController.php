@@ -11,7 +11,7 @@ class HomepageController extends Controller
 
     public function notapproved()
     {
-        return view('notapproved');
+        return view('notapproved.notapproved');
     }
 
 }

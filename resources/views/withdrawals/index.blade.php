@@ -12,9 +12,7 @@
 
         <section class="withdrawals_content">
 
-        
             <h3>Balanced portfolio</h3>
-        
         
             <form action="/withdrawals" method="post">
                 @csrf
@@ -43,8 +41,7 @@
                 <br>
                 <input class="deposit-input" type="text" id="CVC" name="CVC" required placeholder="- - -">
                 <br> <br>
-            
-            
+
                 <input class="deposit-button" type="submit" value="Confirm Withdrawal">
             </form>
 
@@ -60,12 +57,6 @@
 
         </section>
 
-
-        {{-- @if($user->date_approved == null)
-            uzitele musi povolit admin
-        @else
-            {{dd($user)}}
-        @endif --}}
     </div> 
 
 @endsection

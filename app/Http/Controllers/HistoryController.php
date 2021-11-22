@@ -9,7 +9,6 @@ class HistoryController extends Controller
 {
     public function index()
     {
-
         $deposits = Deposit::all();
         $withdrawals = Withdrawal::all();
 
