@@ -16,54 +16,70 @@
 
     <div class="login-register">
         <div class="navigation-wrapper">
-        {{-- pokud je uzivatel null zobrazi se login/register jinak se zobrazi logout --}}
-            @if(Auth :: user () == null)
-                <div class="login-register-btn">
-                    <a class="login__btn" href="/login">Login</a>
-                    <a class="register__btn" href="/register">Register</a>
-                </div>
-            @else
-                <div class="navigation">  
+            {{-- pokud je uzivatel null zobrazi se login/register jinak se zobrazi logout --}}
+                @if(Auth :: user () == null)
+                    <div class="login-register-btn">
+                        <a class="login__btn" href="/login">Login</a>
+                        <a class="register__btn" href="/register">Register</a>
+                    </div>
+                @else
+                    <div class="navigation">  
 
-                    @if (Auth::user()->hasRole('admin'))
-                        <a href="/admin">Users</a>
-                        <a href="/admin/transactions">Transactions</a>
-                    @elseif (Auth::user()->hasRole('investor'))
+                        @if (Auth::user()->hasRole('admin'))
+                            {{-- <a href="/admin">Users</a> --}}
+                        
+                        @if( Request::path() == 'admin' ) 
+                            <a href="/admin" style="background-color: snow; color: #00a7e1">Users</a>
+
+                        @else <a href="/dashboard">Users</a>
+
+                        @endif
+
+                        {{-- <a href="/admin/transactions">Transactions</a> --}}
+
+                        @if( Request::path() == 'admin/transactions' ) 
+                            <a href="/admin/transactions" style="background-color: snow; color: #00a7e1">Transactions</a>
+
+                            @else <a href="/admin/transactions">Transactions</a>
+
+                        @endif
+
+                @elseif (Auth::user()->hasRole('investor'))
+                        
+                        @if( Request::path() == 'dashboard' ) 
+                            <a href="/dashboard" style="background-color: snow; color: #00a7e1">Portfolio</a>
+                            @else <a href="/dashboard">Portfolio</a>
+
+                        @endif
+
+                        @if( Request::path() == 'history' ) 
+                            <a href="/history" style="background-color: snow; color: #00a7e1">History</a>
                     
-                    @if( Request::path() == 'dashboard' ) 
-                        <a href="/dashboard" style="background-color: snow; color: #00a7e1">Portfolio</a>
-                        @else <a href="/dashboard">Portfolio</a>
+                            @else <a href="/history">History</a>
+                    
+                        @endif
 
-                    @endif
+                        @if( Request::path() == 'cryptoDerivatives' ) 
+                            <a href="/cryptoDerivatives" style="background-color: snow; color: #00a7e1">Investment Types</a>
+                    
+                            @else <a href="/cryptoDerivatives">Investment Types</a>
+                    
+                        @endif
 
-                    @if( Request::path() == 'history' ) 
-                        <a href="/history" style="background-color: snow; color: #00a7e1">History</a>
-                
-                        @else <a href="/history">History</a>
-                
-                    @endif
+                        @if( Request::path() == 'about' ) 
+                            <a href="/about" style="background-color: snow; color: #00a7e1">About Us</a>
+                    
+                            @else <a href="/about">About Us</a>
+                    
+                        @endif
 
-                    @if( Request::path() == 'cryptoDerivatives' ) 
-                        <a href="/cryptoDerivatives" style="background-color: snow; color: #00a7e1">Investment Types</a>
-                
-                        @else <a href="/cryptoDerivatives">Investment Types</a>
-                
-                    @endif
+                        @endif
 
-                    @if( Request::path() == 'about' ) 
-                        <a href="/about" style="background-color: snow; color: #00a7e1">About Us</a>
+                        {{-- @if (<a href="/dashboard">Dashboard</a> === true) {
+                            return <a href="/dashboard" style="background-color: snow; color: blue">Dashboard</a>
+                        } else <a href="/dashboard">Dashboard</a>; --}}
                 
-                        @else <a href="/about">About Us</a>
-                
-                    @endif
-
-                    @endif
-
-                    {{-- @if (<a href="/dashboard">Dashboard</a> === true) {
-                        return <a href="/dashboard" style="background-color: snow; color: blue">Dashboard</a>
-                    } else <a href="/dashboard">Dashboard</a>; --}}
-            
-                </div>
+                    </div>
                 
                 <div class="dropdown">
 

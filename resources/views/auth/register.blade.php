@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
     <title>Registration</title>
 </head>
-<body>
+
+<body class="regitration-body">
 
     @foreach ($errors->all() as $error)
         <div class="error">{{ $error }}</div>
     @endforeach
  
     <div class="registration-form">
+
         <form action="{{ route('register') }}" method="post">
             @csrf
             First Name<br/>
-            <input type="text" name="first_name" value="{{ old('first_name') }}"><br/><br/>
+            <input class="register-input" type="text" name="first_name" value="{{ old('first_name') }}" placeholder="First Name"><br/><br/>
             Last Name<br/>
-            <input type="text" name="last_name" value="{{ old('last_name') }}"><br/><br/>
+            <input class="register-input" type="text" name="last_name" value="{{ old('last_name') }}" placeholder="Last Name"><br/><br/>
             Email<br/>
-            <input type="email" name="email" value="{{ old('email') }}"><br/><br/>
+            <input class="register-input" type="email" name="email" value="{{ old('email') }}" placeholder="Email"><br/><br/>
             Password<br/>
-            <input type="password" name="password" value=""><br/><br/>
+            <input class="register-input" type="password" name="password" value="" placeholder="Password"><br/><br/>
             Confirm Password<br/>
-            <input type="password" name="password_confirmation" value=""><br/><br/>
-            <button>Register</button>
+            <input class="register-input" type="password" name="password_confirmation" value="" placeholder="Confirm Password"><br/><br/>
+        
+            <button class="register-button">Register</button>
+    
         </form>
+
     </div>
 
 </body>
