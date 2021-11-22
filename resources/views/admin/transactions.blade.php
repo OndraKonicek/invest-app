@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="admin-dashboard">
-        <h1>Admin Dashboard</h1>
+        <h1>Transactions</h1>
     </div>
 
     <div class="admin-list">

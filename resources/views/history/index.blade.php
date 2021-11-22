@@ -209,6 +209,7 @@
                     '05.03.2020' => 25.451,
                     '01.02.2020' => 25.451,
                     ];
+                    return 0;
 
                     $kurz = $kurzyEuro[$datum];
                     return round($koruny / $kurz, 2);
@@ -416,6 +417,7 @@
                     '01.02.2020' => 20.897,
                     ];
 
+                    return 0;
                     $kurz = $kurzyUsd[$datum];
                     return round($koruny / $kurz, 2);
                 }
