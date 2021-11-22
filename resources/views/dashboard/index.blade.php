@@ -2,36 +2,25 @@
 
 @section('content')
 
+    <div class="wrapper_dashboard">
 
+        <section class="dashboard_section">
 
-
- 
-<div class="wrapper_dashboard">
-
-    <section class="dashboard_section">
-
-        <h1>Dashboard</h1>
-    
-    
-            <h3>Name: {{Auth::user()->first_name}} {{Auth::user()->last_name}}</h3>
-    
+            <h1>Your Portfolio</h1>
             <br>
-
+            <h3>{$current value}</h3>
+            <br>
             <a href="/cryptoDerivatives"> 
                 <button class="invest-btn">Invest now</button>
             </a>
-
+            <br>
+            <br>
+            <div id="root"></div>
+            <script src="/js/chart.js"></script>
             
-                <div id="root"></div>
-    
-                <script src="/js/chart.js"></script>
-          
-    </section>
-    
-</div>
-    
-    {{-- {{dd($user)}} --}}
-
+        </section>
+        
+    </div>
     
 @endsection
 

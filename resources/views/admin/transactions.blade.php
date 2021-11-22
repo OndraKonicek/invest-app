@@ -41,20 +41,13 @@
                         </form>
                         @endif
                         </div>
-          
-                        {{-- Completed: {{$deposit->date}} --}}
                     </td>
                 </tr>
             @endforeach
         </tbody>
-                     
-
     </table>
-
     <br>
     <br>
-
-
      <div class="admin-list">
         List of pending user's withdrawals requests
     </div>
@@ -90,15 +83,11 @@
                         </form>
                         @endif
                         </div>
-          
-                        {{-- Completed: {{$deposit->date}} --}}
                     </td>
                 </tr>
             @endforeach
         </tbody>
     </table>
-  
-
                  {{-- @if (Session::has('success_message'))
 
         <div class="alert alert-success">

@@ -65,6 +65,5 @@ class FortifyServiceProvider extends ServiceProvider
             \Laravel\Fortify\Contracts\LogoutResponse::class,
             \App\Http\Responses\LogoutResponse::class
         );
-
     }
 }

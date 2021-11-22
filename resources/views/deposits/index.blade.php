@@ -10,20 +10,16 @@
 
             <h3>Balanced portfolio</h3>    
 
- 
-   
-    <form action="/deposits" method="post">
-            @csrf
+            <form action="/deposits" method="post">
+                    @csrf
+                <label for="deposit">Amount:</label>
+                <br>
+                <input type="text" id="deposit" name="amount" required>
+                <br>
+                <input type="submit" value="Confirm Deposit">
+            </form>
 
-        <label for="deposit">Amount:</label>
-        <br>
-        <input type="text" id="deposit" name="amount" required>
-        <br>
-    
-        <input type="submit" value="Confirm Deposit">
-    </form>
-
-    </section>
+        </section>
 
     </div>
 
@@ -37,12 +33,4 @@
 
     @endif
 
-
-    {{-- @if($user->date_approved == null)
-        uzitele musi povolit admin
-    @else
-        {{dd($user)}}
-    @endif --}}
-
-        
 @endsection

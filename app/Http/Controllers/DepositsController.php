@@ -23,15 +23,8 @@ class DepositsController extends Controller
         $data['user_id'] = Auth::user()->id;
         $data['status'] = 'Pending';
         $data['time'] = date('Y-m-d H:i:s');
-        // dd($data);
 
         Deposit::create($data);
-
-        // $deposit = new Deposit();
-        // $deposit->amount = $request->input('deposit');
-        // $deposit->user_id =
-
-        // $deposit->save();
 
         session()->flash('success_message', 'The deposit request was successfully sent!');
 

@@ -18,11 +18,8 @@
          <input class="email-input" type="email" name="email" value="konovina@gmail.com"><br/><br/>
             <label class="password-label">Password</label><br/>
          <input class="password-input" type="password" name="password" value="ondrejondrej"><br/><br/>
-      
          <button class="login-button">Login</button><br />
-
          <a href="/register">Register</a>
-   
       </form>
 
    </div>

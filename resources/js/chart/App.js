@@ -35,7 +35,7 @@ class App extends Component {
   render() {
     const options = {
       title:{
-        text:"React"
+        text:""
       },
       theme: "light2",
       subtitles: [{

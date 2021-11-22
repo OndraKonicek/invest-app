@@ -19,7 +19,6 @@ class CheckUserApproved
         $user = auth()->user();
         if ($user->cannot('investor')) {
             return response()->view('not-approved');
-
         }
         return $next($request);
     }

@@ -17,12 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomepageController@index');
 Route::get('/notapproved', 'HomepageController@notapproved');
 
-// register users
-
 // Route::get('/dashboard', 'DashboardController@index')
 //     ->middleware('auth')
 //     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
-
 
 Route::middleware(['can:investor'])->group(function () {
 
@@ -37,11 +34,7 @@ Route::middleware(['can:investor'])->group(function () {
     Route::post('/withdrawals', 'WithdrawalsController@store');
     Route::get('/withdrawals', 'WithdrawalsController@index');
     Route::get('/data', 'ChartDataController@data');
-
 });
-
-
-
 
 Route::middleware(['can:admin'])->group(function () {
 
@@ -53,5 +46,4 @@ Route::middleware(['can:admin'])->group(function () {
     Route::post('/admin/transactions/withdrawals/{withdrawal_id}', 'Admin\PendingTransactionController@withdrawals');
     Route::post('/admin/transactions/denydeposits/{deposit_id}', 'Admin\PendingTransactionController@denydeposits');
     Route::post('/admin/transactions/denywithdrawals/{withdrawal_id}', 'Admin\PendingTransactionController@denywithdrawals');
-
 });

@@ -91,7 +91,7 @@ var App = /*#__PURE__*/function (_Component) {
     value: function render() {
       var options = {
         title: {
-          text: "React"
+          text: ""
         },
         theme: "light2",
         subtitles: [{
@@ -463,7 +463,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n    margin: auto;\r\n    fon
 
 
 /***/ }),
-s
+
 /***/ "./node_modules/css-loader/dist/runtime/api.js":
 /*!*****************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/api.js ***!
