@@ -33,7 +33,8 @@ Route::middleware(['can:investor'])->group(function () {
     Route::get('/withdrawals', 'WithdrawalsController@withdrawals');
     Route::post('/withdrawals', 'WithdrawalsController@store');
     Route::get('/withdrawals', 'WithdrawalsController@index');
-    Route::get('/data', 'ChartDataController@data');
+    Route::get('/data', 'ChartDataController@accountData');
+    Route::get('/account-data', 'ChartDataController@accountData');
 });
 
 Route::middleware(['can:admin'])->group(function () {

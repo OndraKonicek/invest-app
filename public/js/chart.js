@@ -75,8 +75,8 @@ var App = /*#__PURE__*/function (_Component) {
 
         for (var i = 0; i < data.length; i++) {
           dps.push({
-            x: new Date(data[i].date),
-            y: Number(data[i].amount)
+            x: new Date(data[i].time),
+            y: Number(data[i].value_change)
           });
         }
 
@@ -93,7 +93,7 @@ var App = /*#__PURE__*/function (_Component) {
         title: {
           text: ""
         },
-        theme: "light2",
+        theme: "dark1",
         subtitles: [{
           text: ""
         }],
@@ -128,14 +128,14 @@ var App = /*#__PURE__*/function (_Component) {
         }],
         navigator: {
           slider: {
-            minimum: new Date("2019-05-01"),
+            minimum: new Date(""),
             maximum: new Date()
           }
         }
       };
       var containerProps = {
         width: "100%",
-        height: "450px",
+        height: "500px",
         margin: "auto"
       };
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {

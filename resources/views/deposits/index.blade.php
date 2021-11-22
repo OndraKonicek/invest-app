@@ -18,19 +18,18 @@
                 <br>
                 <input type="submit" value="Confirm Deposit">
             </form>
+            <br>
+
+            @if (Session::has('success_message'))
+
+                <div class="alert alert-success">
+                    {{ Session::get('success_message') }}
+                </div>
+
+            @endif
 
         </section>
 
     </div>
-
-    <br>
     
-    @if (Session::has('success_message'))
-
-        <div class="alert alert-success">
-            {{ Session::get('success_message') }}
-        </div>
-
-    @endif
-
 @endsection

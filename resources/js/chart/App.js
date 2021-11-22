@@ -20,8 +20,8 @@ class App extends Component {
           var dps = [];
           for (var i = 0; i < data.length; i++) {
             dps.push({
-              x: new Date(data[i].date),
-              y: Number(data[i].amount)
+              x: new Date(data[i].time),
+              y: Number(data[i].value_change)
             });
           }
           this.setState({
@@ -37,7 +37,7 @@ class App extends Component {
       title:{
         text:""
       },
-      theme: "light2",
+      theme: "dark1",
       subtitles: [{
         text: ""
       }],
@@ -72,14 +72,14 @@ class App extends Component {
       }],
       navigator: {
         slider: {
-          minimum: new Date("2019-05-01"),
+          minimum: new Date(""),
           maximum: new Date()
         }
       }
     };
     const containerProps = {
       width: "100%",
-      height: "450px",
+      height: "500px",
       margin: "auto"
     };
     return (
