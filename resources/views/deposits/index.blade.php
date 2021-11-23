@@ -22,5 +22,8 @@
             @endif
 
         </section>
+
+        {{-- <script src="{{ mix('js/deposits-popup.js')}}"></script> --}}
+
     </div>
 @endsection

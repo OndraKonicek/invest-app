@@ -22,8 +22,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  width: 99vw;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 77vh;
 }
 
 .body {
@@ -31,8 +32,27 @@
 }
 
 .homepage-header {
-  color: #00a7e1;
+  color: snow;
   font-size: 40px;
+}
+
+.intro-page {
+  overflow: hidden;
+  background-image: url("/img/home-bg.jpg");
+  height: 76.7vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.modal-btn {
+  background-color: red;
+}
+
+#login-modal {
+  background: transparent;
+  border: none;
 }
 
 .login-body {
@@ -131,6 +151,12 @@
 .register-button:hover {
   background-color: snow;
   color: #00a7e1;
+}
+
+.registration-form a {
+  color: snow;
+  text-decoration: none;
+  font-size: 12px;
 }
 
 .body {
@@ -259,6 +285,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: #484848;
 }
 
 .dashboard_section {
@@ -280,16 +307,28 @@
   color: snow;
 }
 
+.chart {
+  background-color: #2a2a2a;
+  padding: 2%;
+  border-radius: 20px;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  margin-bottom: 5rem;
+}
+
 .wrapper-history {
   display: flex;
   justify-content: center;
   width: 100%;
   min-height: 100vh;
+  background-color: #484848;
 }
 
 .history_section {
   width: 69%;
   margin-top: 3rem;
+  color: snow;
 }
 
 .history_section h3 {
@@ -299,11 +338,51 @@
 .deposits-table {
   margin: 0;
   width: 100%;
+  background-color: #5a5a5a;
+  border-collapse: collapse;
+}
+.deposits-table tr:nth-child(even) {
+  background-color: #343434;
 }
 
 .withdrawals-table {
   margin: 0;
   width: 100%;
+  background-color: #5a5a5a;
+  border-collapse: collapse;
+}
+.withdrawals-table tr:nth-child(even) {
+  background-color: #343434;
+}
+
+table {
+  width: 100%;
+  border: none !important;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: none !important;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #00a7e1;
+  color: white;
+}
+
+.deposit-table-section {
+  background-color: #484848;
+  padding: 3%;
+  border-radius: 10px;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
 .wrapper_deposits {
@@ -391,7 +470,6 @@
 }
 
 .about-our-team img {
-  border-radius: 50%;
   width: 15rem;
   height: auto;
 }
@@ -400,6 +478,9 @@
   width: 25%;
   line-height: 1.4;
   letter-spacing: 0.1rem;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
 .wrapper-cryptoDerivatives {
@@ -427,9 +508,12 @@
 .crypto-futures {
   width: 25%;
   height: 70%;
-  border: 3px solid #00a7e1;
-  border-radius: 20px;
+  border: 1px solid #00a7e1;
+  border-radius: 5px;
   padding: 3%;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
 .crypto-futures h3 {
@@ -448,8 +532,8 @@
   font-size: 16px;
   background-color: snow;
   color: #00a7e1;
-  border-radius: 20px;
-  border: 3px solid #00a7e1;
+  border-radius: 5px;
+  border: 1px solid #00a7e1;
   cursor: pointer;
 }
 
@@ -469,7 +553,7 @@
 
 .crypto-futures img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .footer {
@@ -480,7 +564,14 @@
   width: 100%;
   color: snow;
   background-color: black;
-  margin-top: 5rem;
+}
+
+.admin-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #484848;
 }
 
 table {

@@ -20,31 +20,32 @@
                 <th>Actions</th>
             </tr>
         </thead>
-        <tbody>
-            @foreach ($users as $user)
-                <tr>
-                    <td>{{ $user->first_name }} {{ $user->last_name }}</td>  
-                    <td>{{ $user->email }} </td>
-                    <td>
-                        <div class="action">
-                            @if ($user->date_approved == null)
-                                <form action="{{ action('Admin\UserController@approve', $user->id) }}" method="post">
-                                    @csrf
-                                    <button>Accept</button> 
-                                </form>
-                                
-                                <form action="{{ action('Admin\UserController@deny', $user->id) }}" method="post">
-                                    @csrf
-                                    <button>Denied</button> 
-                                </form>
-                            @else
-                                Date approved: {{$user->date_approved}}
-                            @endif
-                        </div>
-                    </td>
-                </tr>
-            @endforeach
-        </tbody>   
-    </table>
-    
+           
+            <tbody>
+                @foreach ($users as $user)
+                    <tr>
+                        <td>{{ $user->first_name }} {{ $user->last_name }}</td>  
+                        <td>{{ $user->email }} </td>
+                        <td>
+                            <div class="action">
+                                @if ($user->date_approved == null)
+                                    <form action="{{ action('Admin\UserController@approve', $user->id) }}" method="post">
+                                        @csrf
+                                        <button>Accept</button> 
+                                    </form>
+                                    
+                                    <form action="{{ action('Admin\UserController@deny', $user->id) }}" method="post">
+                                        @csrf
+                                        <button>Deny</button> 
+                                    </form>
+                                @else
+                                    Date approved: {{$user->date_approved}}
+                                @endif
+                            </div>
+                        </td>
+                    </tr>
+                @endforeach
+            </tbody>   
+        </table>
+    </div>
 @endsection

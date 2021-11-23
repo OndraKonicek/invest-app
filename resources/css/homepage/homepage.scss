@@ -22,8 +22,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    width: 99vw;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 77vh;
 }
 
 .body {
@@ -31,6 +32,25 @@
 }
 
 .homepage-header {
-    color: #00a7e1;
+    color: snow;
     font-size: 40px;
+}
+
+.intro-page {
+    overflow: hidden;
+    background-image: url("/img/home-bg.jpg");
+    height: 76.7vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.modal-btn {
+    background-color: red;
+}
+
+#login-modal {
+    background: transparent;
+    border: none;
 }

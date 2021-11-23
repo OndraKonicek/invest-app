@@ -11,6 +11,7 @@
 <body class="login-body">
 
    <div class="login-form">
+      <h1>Login</h1>
 
       <form action="{{ route('login') }}" method="post">
          @csrf
