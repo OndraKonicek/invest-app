@@ -1,14 +1,6 @@
 @extends('layouts/main')
 
 @section('content')
-    <div clas="admin-wrapper">
-        <div class="admin-dashboard">
-            <h1>Users</h1>
-        </div>
-        <div class="admin-list">
-            User's List - Users waiting for an approval.
-        </div>
-        <br>
 
 <div class="admin-dashboard">
     <h1>Users</h1>
@@ -27,14 +19,7 @@
                 <th>Actions</th>
             </tr>
         </thead>
-        <tbody>
-            @foreach ($users as $user)
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
+           
             <tbody>
                 @foreach ($users as $user)
                     <tr>
