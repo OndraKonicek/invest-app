@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="wrapper_dashboard">
+<div class="wrapper_dashboard">
 
         <section class="dashboard_section">
 
@@ -20,7 +20,7 @@
             
         </section>
         
-    </div>
-    
+</div>
+
 @endsection
 

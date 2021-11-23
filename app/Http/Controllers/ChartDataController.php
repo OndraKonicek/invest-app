@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Carbon\Carbon;
 use App\Models\Deposit;
 use App\Models\Withdrawal;
+use Carbon\Carbon;
 
 class ChartDataController extends Controller
 {
-    public function accountData(){
+    public function accountData()
+    {
+
         $date = Carbon::parse('2020-01-01');
 
         $bitcoin = collect([
@@ -2932,14 +2934,13 @@ class ChartDataController extends Controller
                 "time" => 1640885178000,
                 "value_change" => 3830.3483292,
             ],
-        ])->mapWithKeys(function($price) {
+        ])->mapWithKeys(function ($price) {
             return [(floor($price['time'] / 1000 / 86400) * 86400 - 3600) => $price['value_change']];
         });
 
         $accountBalances = [];
-    
-        
-        while($date <= Carbon::now()->addDay()){
+
+        while ($date <= Carbon::now()->addDay()) {
             $deposits = Deposit::where('time', '<', $date)->where('status', 'Completed')->get()->sum('amount');
             $withdrawals = Withdrawal::where('time', '<', $date)->get()->sum('amount');
 
@@ -2947,18 +2948,15 @@ class ChartDataController extends Controller
 
             $bitcoin_price = $bitcoin[$date->getTimestamp()];
 
-            $accountBalances[] =  [
+            $accountBalances[] = [
                 "time" => $date->getTimestamp() * 1000,
-                "value_change" => $account * ($bitcoin_price / 1000)
+                "value_change" => $account * ($bitcoin_price / 1000),
             ];
-            
+
             $date->addDay();
         }
 
-
-            
-
-        // $accountBalances[0] = 
+        // $accountBalances[0] =
 
         return $accountBalances;
     }

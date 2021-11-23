@@ -30,7 +30,8 @@
             <input class="register-input" type="password" name="password_confirmation" value="" placeholder="Confirm Password"><br/><br/>
         
             <button class="register-button">Register</button>
-    
+            <a href="/login">Login</a>
+
         </form>
 
     </div>
