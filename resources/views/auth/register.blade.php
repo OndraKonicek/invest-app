@@ -15,6 +15,7 @@
     @endforeach
  
     <div class="registration-form">
+        <h1>Register</h1>
 
         <form action="{{ route('register') }}" method="post">
             @csrf
@@ -29,7 +30,8 @@
             Confirm Password<br/>
             <input class="register-input" type="password" name="password_confirmation" value="" placeholder="Confirm Password"><br/><br/>
         
-            <button class="register-button">Register</button>
+            <button class="register-button">Register</button><br />
+            <a href="/login">Login</a>
     
         </form>
 

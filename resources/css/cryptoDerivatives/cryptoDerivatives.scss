@@ -23,9 +23,12 @@
 .crypto-futures {
     width: 25%;
     height: 70%;
-    border: 3px solid #00a7e1;
-    border-radius: 20px;
+    border: 1px solid #00a7e1;
+    border-radius: 5px;
     padding: 3%;
+    box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
 .crypto-futures h3 {
@@ -44,8 +47,8 @@
     font-size: 16px;
     background-color: snow;
     color: #00a7e1;
-    border-radius: 20px;
-    border: 3px solid #00a7e1;
+    border-radius: 5px;
+    border: 1px solid #00a7e1;
     cursor: pointer;
 }
 
@@ -65,5 +68,5 @@
 
 .crypto-futures img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 5px;
 }

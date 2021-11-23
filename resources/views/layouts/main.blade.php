@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
+    <meta name='X-CSRF' content='{{ csrf_token() }}' id='meta-csrf'>
 </head>
 
 <body class="body">
@@ -19,7 +20,10 @@
             {{-- pokud je uzivatel null zobrazi se login/register jinak se zobrazi logout --}}
                 @if(Auth :: user () == null)
                     <div class="login-register-btn">
+                        <div id='login-modal'></div>
+
                         <a class="login__btn" href="/login">Login</a>
+                        
                         <a class="register__btn" href="/register">Register</a>
                     </div>
                 @else
@@ -60,7 +64,7 @@
                         @endif
 
                         @if( Request::path() == 'cryptoDerivatives' ) 
-                            <a href="/cryptoDerivatives" style="background-color: snow; color: #00a7e1">Investment Types</a>
+                            <a href="/cryptoDerivatives" style="background-color: snow; color: #00a7e1">Investment Options</a>
                     
                             @else <a href="/cryptoDerivatives">Investment Types</a>
                     
@@ -112,12 +116,14 @@
     @yield('content')
 
     <footer class="footer">
-        <small> Siance &copy; </small> &nbsp; <small id="year"></small>   
+        <small> Invest App &copy; </small> &nbsp; <small id="year"></small>   
     </footer>
 
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
+
+    <script src='/js/modal.js'></script>
 
 </body>
 </html>

@@ -422,80 +422,84 @@
             @endphp
 
             <h3>Deposits</h3>
-            <table class="deposits-table">
-                <thead>
-                    <tr>
-                        <th>
-                            Date + Time
-                        </th>
-                        <th>
-                            Transaction
-                        </th>
-                        <th>
-                            CZK
-                        </th>
-                        <th>
-                            EUR
-                        </th>
-                        <th>
-                            USD
-                        </th>
-                          <th>
-                            Status
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (Auth::user()->deposits as $deposit)
+            <div class="deposit-table-section">
+                <table class="deposits-table">
+                    <thead>
                         <tr>
-                            <td>{{$deposit->time->format('d.m.Y')}}</td>
-                            <td>Deposit</td>
-                            <td> {{$deposit->amount}}</td>
-                            <td> {{ CZKtoEUR($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
-                            <td> {{ CZKtoUSD($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
-                            <td>{{$deposit->status}}</td>
+                            <th>
+                                Date + Time
+                            </th>
+                            <th>
+                                Transaction
+                            </th>
+                            <th>
+                                CZK
+                            </th>
+                            <th>
+                                EUR
+                            </th>
+                            <th>
+                                USD
+                            </th>
+                            <th>
+                                Status
+                            </th>
                         </tr>
-                    @endforeach
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @foreach (Auth::user()->deposits as $deposit)
+                            <tr>
+                                <td>{{$deposit->time->format('d.m.Y')}}</td>
+                                <td>Deposit</td>
+                                <td> {{$deposit->amount}}</td>
+                                <td> {{ CZKtoEUR($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
+                                <td> {{ CZKtoUSD($deposit->amount, $deposit->time->format('d.m.Y'))}}</td>
+                                <td>{{$deposit->status}}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
 
             <h3>Withdrawals</h3>
-            <table class="withdrawals-table">
-                <thead>
-                    <tr>
-                        <th>
-                            Date + Time
-                        </th>
-                        <th>
-                            Transaction
-                        </th>
-                        <th>
-                            CZK
-                        </th>
-                        <th>
-                            EUR
-                        </th>
-                        <th>
-                            USD
-                        </th>
-                        <th>
-                            Status
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (Auth::user()->withdrawals as $withdrawal)
+            <div class="deposit-table-section">
+                <table class="withdrawals-table">
+                    <thead>
                         <tr>
-                            <td>{{$withdrawal->time->format('d.m.Y')}}</td>
-                            <td>Withdrawal</td>
-                            <td> - {{$withdrawal->amount}}</td>
-                            <td> - {{ CZKtoEUR($withdrawal->amount, $withdrawal->time->format('d.m.Y'))}}</td>
-                            <td> - {{ CZKtoUSD($withdrawal->amount, $withdrawal->time->format('d.m.Y'))}}</td>
-                            <td>{{$withdrawal->status}}</td>
+                            <th>
+                                Date + Time
+                            </th>
+                            <th>
+                                Transaction
+                            </th>
+                            <th>
+                                CZK
+                            </th>
+                            <th>
+                                EUR
+                            </th>
+                            <th>
+                                USD
+                            </th>
+                            <th>
+                                Status
+                            </th>
                         </tr>
-                    @endforeach
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @foreach (Auth::user()->withdrawals as $withdrawal)
+                            <tr>
+                                <td>{{$withdrawal->time->format('d.m.Y')}}</td>
+                                <td>Withdrawal</td>
+                                <td> - {{$withdrawal->amount}}</td>
+                                <td> - {{ CZKtoEUR($withdrawal->amount, $withdrawal->time->format('d.m.Y'))}}</td>
+                                <td> - {{ CZKtoUSD($withdrawal->amount, $withdrawal->time->format('d.m.Y'))}}</td>
+                                <td>{{$withdrawal->status}}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
         </section>
     </div>
 @endsection

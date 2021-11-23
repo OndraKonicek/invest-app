@@ -6,10 +6,13 @@
 @import "dashboard/dashboard.scss";
 @import "history/history.scss";
 @import "deposits/deposits.scss";
+@import "deposits/deposits-popup.scss";
 @import "withdrawals/withdrawals.scss";
 @import "about/about.scss";
 @import "cryptoDerivatives/cryptoDerivatives.scss";
 @import "footer/footer.scss";
+@import "admin/admin-transactions.scss";
+@import "admin/admin-users.scss";
 
 table {
     width: 50%;

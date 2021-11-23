@@ -15,8 +15,10 @@
             </a>
             <br>
             <br>
-            <div id="root"></div>
-            <script src="/js/chart.js"></script>
+            <div class="chart">
+                <div id="root"></div>
+                <script src="/js/chart.js"></script>
+            </div>
             
         </section>
         

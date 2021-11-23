@@ -31,7 +31,6 @@
 }
 
 .about-our-team img {
-    border-radius: 50%;
     width: 15rem;
     height: auto;
 }
@@ -40,4 +39,7 @@
     width: 25%;
     line-height: 1.4;
     letter-spacing: 0.1rem;
+    box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
