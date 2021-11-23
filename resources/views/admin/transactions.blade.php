@@ -14,6 +14,7 @@
     <table>
         <thead>
             <tr>
+                <th>Created at</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Deposit</th>
@@ -24,6 +25,7 @@
         <tbody>
             @foreach ($deposits as $deposit)
                 <tr>
+                    <td>{{ $deposit->time }}</td>
                     <td>{{ $deposit->user->first_name }} {{ $deposit->user->last_name }}</td>  
                     <td>{{ $deposit->user->email }} </td>
                     <td>{{ $deposit->amount }}</td>
@@ -56,6 +58,7 @@
     <table>
         <thead>
             <tr>
+                <th>Created at</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Withdrawal</th>
@@ -66,6 +69,7 @@
         <tbody>
             @foreach ($withdrawals as $withdrawal)
                 <tr>
+                    <td>{{ $withdrawal->time }}</td>
                     <td>{{ $withdrawal->user->first_name }} {{ $withdrawal->user->last_name }}</td>  
                     <td>{{ $withdrawal->user->email }} </td>
                     <td>{{ $withdrawal->amount }}</td>

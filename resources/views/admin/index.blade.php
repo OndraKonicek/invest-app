@@ -10,8 +10,25 @@
         </div>
         <br>
 
-        <table>
-            <thead>
+<div class="admin-dashboard">
+    <h1>Users</h1>
+</div>
+    <div class="admin-list">
+        List of users
+        {{-- User's List - Users waiting for an approval. --}}
+    </div>
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($users as $user)
                 <tr>
                     <th>Name</th>
                     <th>Email</th>

@@ -35,7 +35,7 @@
                         @if( Request::path() == 'admin' ) 
                             <a href="/admin" style="background-color: snow; color: #00a7e1">Users</a>
 
-                        @else <a href="/dashboard">Users</a>
+                        @else <a href="/admin">Users</a>
 
                         @endif
 
