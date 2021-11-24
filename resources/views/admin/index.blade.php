@@ -5,7 +5,6 @@
 
         <div class="admin-user-top-section">
             <h1>Users</h1>
-            <p>List of users</p>
         </div>
         
             
@@ -13,6 +12,7 @@
         
         
         <div class="admin-users-table-wrapper">
+            <h3>List of users</h3>
             <table class="admin-users-table">
                 <thead>
                     <tr>
