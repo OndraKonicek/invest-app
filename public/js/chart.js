@@ -14,7 +14,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _canvasjs_stock_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./canvasjs.stock.react */ "./resources/js/chart/canvasjs.stock.react.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_js_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-js-loader */ "./node_modules/react-js-loader/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38,6 +39,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 /* App.js */
+
 
 
 
@@ -138,14 +140,23 @@ var App = /*#__PURE__*/function (_Component) {
         height: "400px",
         margin: "auto"
       };
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           children: // Reference: https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator
-          this.state.isLoaded && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(CanvasJSStockChart, {
+          this.state.isLoaded ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(CanvasJSStockChart, {
             containerProps: containerProps,
             options: options
             /* onRef = {ref => this.chart = ref} */
 
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+            className: "parent-loader",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_js_loader__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              type: "bubble-top",
+              bgColor: "#FFFFFF",
+              title: "Loading...",
+              color: "#FFFFFF",
+              size: 100
+            })
           })
         })
       });
@@ -398,6 +409,465 @@ react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime
 }), document.getElementById("root")); // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box1/style.css":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box1/style.css ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-box1,\r\n.sl-box1 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box1 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box1 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-box1 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box1 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    perspective: 100px;\r\n}\r\n\r\n.sl-box1 .sl-loader .sl-loader-items .sl-parent-cub {\r\n    width: 100px;\r\n    height: 100px;\r\n    position: relative;\r\n    transform-style: preserve-3d;\r\n    transform-origin: 50% 50% -50px;\r\n}\r\n\r\n.sl-box1 .sl-loader .sl-loader-items .sl-parent-cub .sl-cub {\r\n    width: 50px;\r\n    height: 50px;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n    position: absolute;\r\n    background-color: var(--bg);\r\n    -webkit-animation: sl-box1 500ms ease infinite;\r\n    animation: sl-box1 500ms ease infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-box1 {\r\n    to {\r\n        transform: translate(-50%, -50%) rotateX(0deg);\r\n    }\r\n    from {\r\n        transform: translate(-50%, -50%) rotateX(180deg);\r\n    }\r\n}\r\n\r\n@keyframes sl-box1 {\r\n    to {\r\n        transform: translate(-50%, -50%) rotateX(0deg);\r\n    }\r\n    from {\r\n        transform: translate(-50%, -50%) rotateX(180deg);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Box/Box1/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,WAAW;IACX,aAAa;IAEb,kBAAkB;AACtB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,kBAAkB;IAElB,4BAA4B;IAE5B,+BAA+B;AACnC;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,QAAQ;IACR,SAAS;IAET,gCAAgC;IAChC,kBAAkB;IAClB,2BAA2B;IAC3B,8CAA8C;IAC9C,sCAAsC;AAC1C;;AAEA;IACI;QAEI,8CAA8C;IAClD;IACA;QAEI,gDAAgD;IACpD;AACJ;;AAEA;IACI;QAEI,8CAA8C;IAClD;IACA;QAEI,gDAAgD;IACpD;AACJ","sourcesContent":[".sl-box1,\r\n.sl-box1 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box1 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box1 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-box1 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box1 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    -webkit-perspective: 100px;\r\n    perspective: 100px;\r\n}\r\n\r\n.sl-box1 .sl-loader .sl-loader-items .sl-parent-cub {\r\n    width: 100px;\r\n    height: 100px;\r\n    position: relative;\r\n    -webkit-transform-style: preserve-3d;\r\n    transform-style: preserve-3d;\r\n    -webkit-transform-origin: 50% 50% -50px;\r\n    transform-origin: 50% 50% -50px;\r\n}\r\n\r\n.sl-box1 .sl-loader .sl-loader-items .sl-parent-cub .sl-cub {\r\n    width: 50px;\r\n    height: 50px;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    transform: translate(-50%, -50%);\r\n    position: absolute;\r\n    background-color: var(--bg);\r\n    -webkit-animation: sl-box1 500ms ease infinite;\r\n    animation: sl-box1 500ms ease infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-box1 {\r\n    to {\r\n        -webkit-transform: translate(-50%, -50%) rotateX(0deg);\r\n        transform: translate(-50%, -50%) rotateX(0deg);\r\n    }\r\n    from {\r\n        -webkit-transform: translate(-50%, -50%) rotateX(180deg);\r\n        transform: translate(-50%, -50%) rotateX(180deg);\r\n    }\r\n}\r\n\r\n@keyframes sl-box1 {\r\n    to {\r\n        -webkit-transform: translate(-50%, -50%) rotateX(0deg);\r\n        transform: translate(-50%, -50%) rotateX(0deg);\r\n    }\r\n    from {\r\n        -webkit-transform: translate(-50%, -50%) rotateX(180deg);\r\n        transform: translate(-50%, -50%) rotateX(180deg);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box2/style.css":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box2/style.css ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-box2,\r\n.sl-box2 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box2 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box2 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-box2 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box2 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    perspective: 100px;\r\n}\r\n\r\n.sl-box2 .sl-loader .sl-loader-items .sl-parent-cub {\r\n    width: 100px;\r\n    height: 100px;\r\n    position: relative;\r\n    transform-style: preserve-3d;\r\n    transform-origin: 50% 50% -50px;\r\n}\r\n\r\n.sl-box2 .sl-loader .sl-loader-items .sl-parent-cub .sl-cub {\r\n    width: 50px;\r\n    height: 50px;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n    position: absolute;\r\n    background-color: var(--bg);\r\n    -webkit-animation: sl-box2 500ms ease infinite;\r\n    animation: sl-box2 500ms ease infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-box2 {\r\n    to {\r\n        transform: translate(-50%, -50%) rotateY(0deg);\r\n    }\r\n    from {\r\n        transform: translate(-50%, -50%) rotateY(180deg);\r\n    }\r\n}\r\n\r\n@keyframes sl-box2 {\r\n    to {\r\n        transform: translate(-50%, -50%) rotateY(0deg);\r\n    }\r\n    from {\r\n        transform: translate(-50%, -50%) rotateY(180deg);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Box/Box2/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,WAAW;IACX,aAAa;IAEb,kBAAkB;AACtB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,kBAAkB;IAElB,4BAA4B;IAE5B,+BAA+B;AACnC;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,QAAQ;IACR,SAAS;IAET,gCAAgC;IAChC,kBAAkB;IAClB,2BAA2B;IAC3B,8CAA8C;IAC9C,sCAAsC;AAC1C;;AAEA;IACI;QAEI,8CAA8C;IAClD;IACA;QAEI,gDAAgD;IACpD;AACJ;;AAEA;IACI;QAEI,8CAA8C;IAClD;IACA;QAEI,gDAAgD;IACpD;AACJ","sourcesContent":[".sl-box2,\r\n.sl-box2 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box2 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box2 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-box2 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box2 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    -webkit-perspective: 100px;\r\n    perspective: 100px;\r\n}\r\n\r\n.sl-box2 .sl-loader .sl-loader-items .sl-parent-cub {\r\n    width: 100px;\r\n    height: 100px;\r\n    position: relative;\r\n    -webkit-transform-style: preserve-3d;\r\n    transform-style: preserve-3d;\r\n    -webkit-transform-origin: 50% 50% -50px;\r\n    transform-origin: 50% 50% -50px;\r\n}\r\n\r\n.sl-box2 .sl-loader .sl-loader-items .sl-parent-cub .sl-cub {\r\n    width: 50px;\r\n    height: 50px;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    transform: translate(-50%, -50%);\r\n    position: absolute;\r\n    background-color: var(--bg);\r\n    -webkit-animation: sl-box2 500ms ease infinite;\r\n    animation: sl-box2 500ms ease infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-box2 {\r\n    to {\r\n        -webkit-transform: translate(-50%, -50%) rotateY(0deg);\r\n        transform: translate(-50%, -50%) rotateY(0deg);\r\n    }\r\n    from {\r\n        -webkit-transform: translate(-50%, -50%) rotateY(180deg);\r\n        transform: translate(-50%, -50%) rotateY(180deg);\r\n    }\r\n}\r\n\r\n@keyframes sl-box2 {\r\n    to {\r\n        -webkit-transform: translate(-50%, -50%) rotateY(0deg);\r\n        transform: translate(-50%, -50%) rotateY(0deg);\r\n    }\r\n    from {\r\n        -webkit-transform: translate(-50%, -50%) rotateY(180deg);\r\n        transform: translate(-50%, -50%) rotateY(180deg);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box3/style.css":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box3/style.css ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-box3,\r\n.sl-box3 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box3 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box3 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-box3 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box3 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    perspective: 100px;\r\n}\r\n\r\n.sl-box3 .sl-loader .sl-loader-items .sl-parent-cub {\r\n    width: 100px;\r\n    height: 100px;\r\n    position: relative;\r\n    transform-style: preserve-3d;\r\n    transform-origin: 50% 50% -50px;\r\n}\r\n\r\n.sl-box3 .sl-loader .sl-loader-items .sl-parent-cub .sl-cub {\r\n    width: 50px;\r\n    height: 50px;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n    position: absolute;\r\n    background-color: var(--bg);\r\n    -webkit-animation: sl-box3 500ms ease infinite;\r\n    animation: sl-box3 500ms ease infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-box3 {\r\n    to {\r\n        transform: translate(-50%, -50%) rotateZ(0deg);\r\n    }\r\n    from {\r\n        transform: translate(-50%, -50%) rotateZ(180deg);\r\n    }\r\n}\r\n\r\n@keyframes sl-box3 {\r\n    to {\r\n        transform: translate(-50%, -50%) rotateZ(0deg);\r\n    }\r\n    from {\r\n        transform: translate(-50%, -50%) rotateZ(180deg);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Box/Box3/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,WAAW;IACX,aAAa;IAEb,kBAAkB;AACtB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,kBAAkB;IAElB,4BAA4B;IAE5B,+BAA+B;AACnC;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,QAAQ;IACR,SAAS;IAET,gCAAgC;IAChC,kBAAkB;IAClB,2BAA2B;IAC3B,8CAA8C;IAC9C,sCAAsC;AAC1C;;AAEA;IACI;QAEI,8CAA8C;IAClD;IACA;QAEI,gDAAgD;IACpD;AACJ;;AAEA;IACI;QAEI,8CAA8C;IAClD;IACA;QAEI,gDAAgD;IACpD;AACJ","sourcesContent":[".sl-box3,\r\n.sl-box3 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box3 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box3 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-box3 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box3 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    -webkit-perspective: 100px;\r\n    perspective: 100px;\r\n}\r\n\r\n.sl-box3 .sl-loader .sl-loader-items .sl-parent-cub {\r\n    width: 100px;\r\n    height: 100px;\r\n    position: relative;\r\n    -webkit-transform-style: preserve-3d;\r\n    transform-style: preserve-3d;\r\n    -webkit-transform-origin: 50% 50% -50px;\r\n    transform-origin: 50% 50% -50px;\r\n}\r\n\r\n.sl-box3 .sl-loader .sl-loader-items .sl-parent-cub .sl-cub {\r\n    width: 50px;\r\n    height: 50px;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    transform: translate(-50%, -50%);\r\n    position: absolute;\r\n    background-color: var(--bg);\r\n    -webkit-animation: sl-box3 500ms ease infinite;\r\n    animation: sl-box3 500ms ease infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-box3 {\r\n    to {\r\n        -webkit-transform: translate(-50%, -50%) rotateZ(0deg);\r\n        transform: translate(-50%, -50%) rotateZ(0deg);\r\n    }\r\n    from {\r\n        -webkit-transform: translate(-50%, -50%) rotateZ(180deg);\r\n        transform: translate(-50%, -50%) rotateZ(180deg);\r\n    }\r\n}\r\n\r\n@keyframes sl-box3 {\r\n    to {\r\n        -webkit-transform: translate(-50%, -50%) rotateZ(0deg);\r\n        transform: translate(-50%, -50%) rotateZ(0deg);\r\n    }\r\n    from {\r\n        -webkit-transform: translate(-50%, -50%) rotateZ(180deg);\r\n        transform: translate(-50%, -50%) rotateZ(180deg);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box4/style.css":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box4/style.css ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-box4,\r\n.sl-box4 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box4 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box4 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-box4 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box4 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 70px;\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.sl-box4 .sl-loader .sl-loader-items .sl-rectangular {\r\n    width: 10px;\r\n    height: 25px;\r\n    background-color: var(--bg);\r\n    border-radius: 5px;\r\n    -webkit-animation: sl-box4 600ms ease-in-out infinite;\r\n    animation: sl-box4 600ms ease-in-out infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -650ms);\r\n    animation-delay: calc(var(--i) * -650ms);\r\n}\r\n\r\n@-webkit-keyframes sl-box4 {\r\n    from {\r\n        height: 30px;\r\n    }\r\n    50% {\r\n        height: 60px;\r\n    }\r\n    to {\r\n        height: 30px;\r\n    }\r\n}\r\n\r\n@keyframes sl-box4 {\r\n    from {\r\n        height: 30px;\r\n    }\r\n    50% {\r\n        height: 60px;\r\n    }\r\n    to {\r\n        height: 30px;\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Box/Box4/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,WAAW;IACX,YAAY;IAGZ,aAAa;IAIb,mBAAmB;IAEnB,iBAAiB;IAGjB,8BAA8B;IAG9B,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,2BAA2B;IAC3B,kBAAkB;IAClB,qDAAqD;IACrD,6CAA6C;IAC7C,gDAAgD;IAChD,wCAAwC;AAC5C;;AAEA;IACI;QACI,YAAY;IAChB;IACA;QACI,YAAY;IAChB;IACA;QACI,YAAY;IAChB;AACJ;;AAEA;IACI;QACI,YAAY;IAChB;IACA;QACI,YAAY;IAChB;IACA;QACI,YAAY;IAChB;AACJ","sourcesContent":[".sl-box4,\r\n.sl-box4 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box4 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box4 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-box4 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box4 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 70px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: row;\r\n    flex-direction: row;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-pack: justify;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n}\r\n\r\n.sl-box4 .sl-loader .sl-loader-items .sl-rectangular {\r\n    width: 10px;\r\n    height: 25px;\r\n    background-color: var(--bg);\r\n    border-radius: 5px;\r\n    -webkit-animation: sl-box4 600ms ease-in-out infinite;\r\n    animation: sl-box4 600ms ease-in-out infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -650ms);\r\n    animation-delay: calc(var(--i) * -650ms);\r\n}\r\n\r\n@-webkit-keyframes sl-box4 {\r\n    from {\r\n        height: 30px;\r\n    }\r\n    50% {\r\n        height: 60px;\r\n    }\r\n    to {\r\n        height: 30px;\r\n    }\r\n}\r\n\r\n@keyframes sl-box4 {\r\n    from {\r\n        height: 30px;\r\n    }\r\n    50% {\r\n        height: 60px;\r\n    }\r\n    to {\r\n        height: 30px;\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box5/style.css":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box5/style.css ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-box5,\r\n.sl-box5 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box5 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box5 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-box5 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box5 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.sl-box5 .sl-loader .sl-loader-items .sl-rectangular-ping {\r\n    width: 100%;\r\n    height: 5px;\r\n    position: relative;\r\n    background-color: var(--bg);\r\n    overflow: hidden;\r\n}\r\n\r\n.sl-box5 .sl-loader .sl-loader-items .sl-rectangular-ping::before {\r\n    content: '';\r\n    width: 10px;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    background-color: var(--bgb);\r\n    -webkit-animation: sl-rectangular-ping 800ms ease-in infinite;\r\n    animation: sl-rectangular-ping 800ms ease-in infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-rectangular-ping {\r\n    from {\r\n        left: -10px;\r\n    }\r\n    to {\r\n        left: calc(100% + 10px);\r\n    }\r\n}\r\n\r\n@keyframes sl-rectangular-ping {\r\n    from {\r\n        left: -10px;\r\n    }\r\n    to {\r\n        left: calc(100% + 10px);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Box/Box5/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,WAAW;IACX,aAAa;IAGb,aAAa;IAIb,mBAAmB;IAEnB,iBAAiB;IAGjB,8BAA8B;IAG9B,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,WAAW;IACX,kBAAkB;IAClB,2BAA2B;IAC3B,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,WAAW;IACX,YAAY;IACZ,kBAAkB;IAClB,MAAM;IACN,4BAA4B;IAC5B,6DAA6D;IAC7D,qDAAqD;AACzD;;AAEA;IACI;QACI,WAAW;IACf;IACA;QACI,uBAAuB;IAC3B;AACJ;;AAEA;IACI;QACI,WAAW;IACf;IACA;QACI,uBAAuB;IAC3B;AACJ","sourcesContent":[".sl-box5,\r\n.sl-box5 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box5 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box5 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-box5 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box5 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: row;\r\n    flex-direction: row;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-pack: justify;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n}\r\n\r\n.sl-box5 .sl-loader .sl-loader-items .sl-rectangular-ping {\r\n    width: 100%;\r\n    height: 5px;\r\n    position: relative;\r\n    background-color: var(--bg);\r\n    overflow: hidden;\r\n}\r\n\r\n.sl-box5 .sl-loader .sl-loader-items .sl-rectangular-ping::before {\r\n    content: '';\r\n    width: 10px;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    background-color: var(--bgb);\r\n    -webkit-animation: sl-rectangular-ping 800ms ease-in infinite;\r\n    animation: sl-rectangular-ping 800ms ease-in infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-rectangular-ping {\r\n    from {\r\n        left: -10px;\r\n    }\r\n    to {\r\n        left: calc(100% + 10px);\r\n    }\r\n}\r\n\r\n@keyframes sl-rectangular-ping {\r\n    from {\r\n        left: -10px;\r\n    }\r\n    to {\r\n        left: calc(100% + 10px);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box6/style.css":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box6/style.css ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-box6,\r\n.sl-box6 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box6 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box6 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box6 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n}\r\n\r\n.sl-box6 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n}\r\n\r\n.sl-box6 .sl-loader .sl-loader-items .sl-item {\r\n    width: 10px;\r\n    height: 10px;\r\n    margin-left: 0.25rem;\r\n    margin-right: 0.25rem;\r\n    position: relative;\r\n    box-shadow: 0 0 5px 0 var(--shadow);\r\n    background-color: var(--bga);\r\n    -webkit-animation: sl-box6 2500ms ease-in infinite;\r\n    animation: sl-box6 2500ms ease-in infinite;\r\n    -webkit-animation-delay: calc(var(--i) * 500ms);\r\n    animation-delay: calc(var(--i) * 500ms);\r\n}\r\n\r\n@-webkit-keyframes sl-box6 {\r\n    from {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n    10% {\r\n        top: -10px;\r\n        background-color: var(--bg);\r\n        box-shadow: 0 0 2px var(--shadow);\r\n    }\r\n    12.5% {\r\n        top: -10px;\r\n        background-color: var(--bg);\r\n        box-shadow: 0 0 2px var(--shadow);\r\n    }\r\n    22.5% {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n    to {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n}\r\n\r\n@keyframes sl-box6 {\r\n    from {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n    10% {\r\n        top: -10px;\r\n        background-color: var(--bg);\r\n        box-shadow: 0 0 2px var(--shadow);\r\n    }\r\n    12.5% {\r\n        top: -10px;\r\n        background-color: var(--bg);\r\n        box-shadow: 0 0 2px var(--shadow);\r\n    }\r\n    22.5% {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n    to {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Box/Box6/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,aAAa;IAGb,aAAa;IAGb,uBAAuB;IAGvB,mBAAmB;IAInB,mBAAmB;IAEnB,iBAAiB;AACrB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,oBAAoB;IACpB,qBAAqB;IACrB,kBAAkB;IAElB,mCAAmC;IACnC,4BAA4B;IAC5B,kDAAkD;IAClD,0CAA0C;IAC1C,+CAA+C;IAC/C,uCAAuC;AAC3C;;AAEA;IACI;QACI,MAAM;QACN,4BAA4B;QAE5B,mCAAmC;IACvC;IACA;QACI,UAAU;QACV,2BAA2B;QAE3B,iCAAiC;IACrC;IACA;QACI,UAAU;QACV,2BAA2B;QAE3B,iCAAiC;IACrC;IACA;QACI,MAAM;QACN,4BAA4B;QAE5B,mCAAmC;IACvC;IACA;QACI,MAAM;QACN,4BAA4B;QAE5B,mCAAmC;IACvC;AACJ;;AAEA;IACI;QACI,MAAM;QACN,4BAA4B;QAE5B,mCAAmC;IACvC;IACA;QACI,UAAU;QACV,2BAA2B;QAE3B,iCAAiC;IACrC;IACA;QACI,UAAU;QACV,2BAA2B;QAE3B,iCAAiC;IACrC;IACA;QACI,MAAM;QACN,4BAA4B;QAE5B,mCAAmC;IACvC;IACA;QACI,MAAM;QACN,4BAA4B;QAE5B,mCAAmC;IACvC;AACJ","sourcesContent":[".sl-box6,\r\n.sl-box6 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-box6 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-box6 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-box6 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n}\r\n\r\n.sl-box6 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: row;\r\n    flex-direction: row;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n}\r\n\r\n.sl-box6 .sl-loader .sl-loader-items .sl-item {\r\n    width: 10px;\r\n    height: 10px;\r\n    margin-left: 0.25rem;\r\n    margin-right: 0.25rem;\r\n    position: relative;\r\n    -webkit-box-shadow: 0 0 5px 0 var(--shadow);\r\n    box-shadow: 0 0 5px 0 var(--shadow);\r\n    background-color: var(--bga);\r\n    -webkit-animation: sl-box6 2500ms ease-in infinite;\r\n    animation: sl-box6 2500ms ease-in infinite;\r\n    -webkit-animation-delay: calc(var(--i) * 500ms);\r\n    animation-delay: calc(var(--i) * 500ms);\r\n}\r\n\r\n@-webkit-keyframes sl-box6 {\r\n    from {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        -webkit-box-shadow: 0 0 5px 0 var(--shadow);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n    10% {\r\n        top: -10px;\r\n        background-color: var(--bg);\r\n        -webkit-box-shadow: 0 0 2px var(--shadow);\r\n        box-shadow: 0 0 2px var(--shadow);\r\n    }\r\n    12.5% {\r\n        top: -10px;\r\n        background-color: var(--bg);\r\n        -webkit-box-shadow: 0 0 2px var(--shadow);\r\n        box-shadow: 0 0 2px var(--shadow);\r\n    }\r\n    22.5% {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        -webkit-box-shadow: 0 0 5px 0 var(--shadow);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n    to {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        -webkit-box-shadow: 0 0 5px 0 var(--shadow);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n}\r\n\r\n@keyframes sl-box6 {\r\n    from {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        -webkit-box-shadow: 0 0 5px 0 var(--shadow);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n    10% {\r\n        top: -10px;\r\n        background-color: var(--bg);\r\n        -webkit-box-shadow: 0 0 2px var(--shadow);\r\n        box-shadow: 0 0 2px var(--shadow);\r\n    }\r\n    12.5% {\r\n        top: -10px;\r\n        background-color: var(--bg);\r\n        -webkit-box-shadow: 0 0 2px var(--shadow);\r\n        box-shadow: 0 0 2px var(--shadow);\r\n    }\r\n    22.5% {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        -webkit-box-shadow: 0 0 5px 0 var(--shadow);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n    to {\r\n        top: 0;\r\n        background-color: var(--bga);\r\n        -webkit-box-shadow: 0 0 5px 0 var(--shadow);\r\n        box-shadow: 0 0 5px 0 var(--shadow);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble1/style.css":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble1/style.css ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-bubble1,\r\n.sl-bubble1 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-bubble1 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-bubble1 .sl-loader {\r\n    width: 150px;\r\n    height: 40px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-bubble1 .sl-loader-title {\r\n    padding-top: 10px;\r\n    width: 100%;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    text-align: center;\r\n}\r\n\r\n.sl-bubble1  .sl-loader-items {\r\n    width: 100%;\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.sl-bubble1  .sl-loader-items .sl-bubble {\r\n    width: 30px;\r\n    height: 30px;\r\n    background-color: var(--bg);\r\n    border-radius: 100%;\r\n    -webkit-animation: sl-bubble1 1200ms ease-in-out infinite;\r\n    animation: sl-bubble1 1200ms ease-in-out infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -350ms);\r\n    animation-delay: calc(var(--i) * -350ms);\r\n}\r\n\r\n@-webkit-keyframes sl-bubble1 {\r\n    to {\r\n        transform: scale(1, 1);\r\n    }\r\n    50% {\r\n        transform: scale(0.3, 0.3);\r\n    }\r\n    from {\r\n        transform: scale(1, 1);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble1 {\r\n    to {\r\n        transform: scale(1, 1);\r\n    }\r\n    50% {\r\n        transform: scale(0.3, 0.3);\r\n    }\r\n    from {\r\n        transform: scale(1, 1);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Bubble/Bubble1/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IACZ,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,iBAAiB;IACjB,WAAW;IACX,gBAAgB;IAChB,gBAAgB;IAChB,eAAe;IACf,gBAAgB;IAChB,kBAAkB;AACtB;;AAEA;IACI,WAAW;IAGX,aAAa;IAEb,iBAAiB;IAGjB,8BAA8B;IAG9B,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,2BAA2B;IAC3B,mBAAmB;IACnB,yDAAyD;IACzD,iDAAiD;IACjD,gDAAgD;IAChD,wCAAwC;AAC5C;;AAEA;IACI;QAEI,sBAAsB;IAC1B;IACA;QAEI,0BAA0B;IAC9B;IACA;QAEI,sBAAsB;IAC1B;AACJ;;AAEA;IACI;QAEI,sBAAsB;IAC1B;IACA;QAEI,0BAA0B;IAC9B;IACA;QAEI,sBAAsB;IAC1B;AACJ","sourcesContent":[".sl-bubble1,\r\n.sl-bubble1 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-bubble1 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-bubble1 .sl-loader {\r\n    width: 150px;\r\n    height: 40px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-bubble1 .sl-loader-title {\r\n    padding-top: 10px;\r\n    width: 100%;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    text-align: center;\r\n}\r\n\r\n.sl-bubble1  .sl-loader-items {\r\n    width: 100%;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-pack: justify;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n}\r\n\r\n.sl-bubble1  .sl-loader-items .sl-bubble {\r\n    width: 30px;\r\n    height: 30px;\r\n    background-color: var(--bg);\r\n    border-radius: 100%;\r\n    -webkit-animation: sl-bubble1 1200ms ease-in-out infinite;\r\n    animation: sl-bubble1 1200ms ease-in-out infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -350ms);\r\n    animation-delay: calc(var(--i) * -350ms);\r\n}\r\n\r\n@-webkit-keyframes sl-bubble1 {\r\n    to {\r\n        -webkit-transform: scale(1, 1);\r\n        transform: scale(1, 1);\r\n    }\r\n    50% {\r\n        -webkit-transform: scale(0.3, 0.3);\r\n        transform: scale(0.3, 0.3);\r\n    }\r\n    from {\r\n        -webkit-transform: scale(1, 1);\r\n        transform: scale(1, 1);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble1 {\r\n    to {\r\n        -webkit-transform: scale(1, 1);\r\n        transform: scale(1, 1);\r\n    }\r\n    50% {\r\n        -webkit-transform: scale(0.3, 0.3);\r\n        transform: scale(0.3, 0.3);\r\n    }\r\n    from {\r\n        -webkit-transform: scale(1, 1);\r\n        transform: scale(1, 1);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble2/style.css":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble2/style.css ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-bubble2,\r\n.sl-bubble2 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-bubble2 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-bubble2 .sl-loader {\r\n    width: 150px;\r\n    height: 40px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-bubble2 .sl-loader-title {\r\n    padding-top: 10px;\r\n    width: 100%;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    text-align: center;\r\n}\r\n\r\n.sl-bubble2 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.sl-bubble2 .sl-loader .sl-loader-items .sl-bubble {\r\n    width: 30px;\r\n    height: 30px;\r\n    background-color: var(--bg);\r\n    border-radius: 100%;\r\n    -webkit-animation: sl-bubble2 1200ms ease-in-out infinite;\r\n    animation: sl-bubble2 1200ms ease-in-out infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -350ms);\r\n    animation-delay: calc(var(--i) * -350ms);\r\n}\r\n\r\n@-webkit-keyframes sl-bubble2 {\r\n    to {\r\n        transform: translateY(0);\r\n    }\r\n    50% {\r\n        transform: translateY(-30px);\r\n    }\r\n    from {\r\n        transform: translateY(0);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble2 {\r\n    to {\r\n        transform: translateY(0);\r\n    }\r\n    50% {\r\n        transform: translateY(-30px);\r\n    }\r\n    from {\r\n        transform: translateY(0);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Bubble/Bubble2/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IACZ,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,iBAAiB;IACjB,WAAW;IACX,gBAAgB;IAChB,gBAAgB;IAChB,eAAe;IACf,gBAAgB;IAChB,kBAAkB;AACtB;;AAEA;IACI,WAAW;IAGX,aAAa;IAIb,mBAAmB;IAEnB,iBAAiB;IAGjB,8BAA8B;IAG9B,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,2BAA2B;IAC3B,mBAAmB;IACnB,yDAAyD;IACzD,iDAAiD;IACjD,gDAAgD;IAChD,wCAAwC;AAC5C;;AAEA;IACI;QAEI,wBAAwB;IAC5B;IACA;QAEI,4BAA4B;IAChC;IACA;QAEI,wBAAwB;IAC5B;AACJ;;AAEA;IACI;QAEI,wBAAwB;IAC5B;IACA;QAEI,4BAA4B;IAChC;IACA;QAEI,wBAAwB;IAC5B;AACJ","sourcesContent":[".sl-bubble2,\r\n.sl-bubble2 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-bubble2 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-bubble2 .sl-loader {\r\n    width: 150px;\r\n    height: 40px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-bubble2 .sl-loader-title {\r\n    padding-top: 10px;\r\n    width: 100%;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    text-align: center;\r\n}\r\n\r\n.sl-bubble2 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: row;\r\n    flex-direction: row;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-pack: justify;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n}\r\n\r\n.sl-bubble2 .sl-loader .sl-loader-items .sl-bubble {\r\n    width: 30px;\r\n    height: 30px;\r\n    background-color: var(--bg);\r\n    border-radius: 100%;\r\n    -webkit-animation: sl-bubble2 1200ms ease-in-out infinite;\r\n    animation: sl-bubble2 1200ms ease-in-out infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -350ms);\r\n    animation-delay: calc(var(--i) * -350ms);\r\n}\r\n\r\n@-webkit-keyframes sl-bubble2 {\r\n    to {\r\n        -webkit-transform: translateY(0);\r\n        transform: translateY(0);\r\n    }\r\n    50% {\r\n        -webkit-transform: translateY(-30px);\r\n        transform: translateY(-30px);\r\n    }\r\n    from {\r\n        -webkit-transform: translateY(0);\r\n        transform: translateY(0);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble2 {\r\n    to {\r\n        -webkit-transform: translateY(0);\r\n        transform: translateY(0);\r\n    }\r\n    50% {\r\n        -webkit-transform: translateY(-30px);\r\n        transform: translateY(-30px);\r\n    }\r\n    from {\r\n        -webkit-transform: translateY(0);\r\n        transform: translateY(0);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble3/style.css":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble3/style.css ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-bubble3,\r\n.sl-bubble3 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-bubble3 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-bubble3 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-bubble3 .sl-loader-title {\r\n    padding-top: 10px;\r\n    width: 100%;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    text-align: center;\r\n}\r\n\r\n.sl-bubble3 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n}\r\n\r\n.sl-bubble3 .sl-loader .sl-loader-items .sl-bubble {\r\n    width: 0;\r\n    height: 0;\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    background-color: var(--bg);\r\n    border-radius: 50%;\r\n    transform: translate(-50%, -50%);\r\n    -webkit-animation: sl-bubble3 1200ms linear infinite;\r\n    animation: sl-bubble3 1200ms linear infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -400ms);\r\n    animation-delay: calc(var(--i) * -400ms);\r\n}\r\n\r\n@-webkit-keyframes sl-bubble3 {\r\n    from {\r\n        width: 15px;\r\n        height: 15px;\r\n        opacity: 1;\r\n    }\r\n    to {\r\n        width: 80px;\r\n        height: 80px;\r\n        opacity: 0;\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble3 {\r\n    from {\r\n        width: 15px;\r\n        height: 15px;\r\n        opacity: 1;\r\n    }\r\n    to {\r\n        width: 80px;\r\n        height: 80px;\r\n        opacity: 0;\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Bubble/Bubble3/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,iBAAiB;IACjB,WAAW;IACX,gBAAgB;IAChB,gBAAgB;IAChB,eAAe;IACf,gBAAgB;IAChB,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,aAAa;IACb,kBAAkB;AACtB;;AAEA;IACI,QAAQ;IACR,SAAS;IACT,kBAAkB;IAClB,QAAQ;IACR,SAAS;IACT,2BAA2B;IAC3B,kBAAkB;IAElB,gCAAgC;IAChC,oDAAoD;IACpD,4CAA4C;IAC5C,gDAAgD;IAChD,wCAAwC;AAC5C;;AAEA;IACI;QACI,WAAW;QACX,YAAY;QACZ,UAAU;IACd;IACA;QACI,WAAW;QACX,YAAY;QACZ,UAAU;IACd;AACJ;;AAEA;IACI;QACI,WAAW;QACX,YAAY;QACZ,UAAU;IACd;IACA;QACI,WAAW;QACX,YAAY;QACZ,UAAU;IACd;AACJ","sourcesContent":[".sl-bubble3,\r\n.sl-bubble3 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-bubble3 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-bubble3 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-bubble3 .sl-loader-title {\r\n    padding-top: 10px;\r\n    width: 100%;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    text-align: center;\r\n}\r\n\r\n.sl-bubble3 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n}\r\n\r\n.sl-bubble3 .sl-loader .sl-loader-items .sl-bubble {\r\n    width: 0;\r\n    height: 0;\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    background-color: var(--bg);\r\n    border-radius: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    transform: translate(-50%, -50%);\r\n    -webkit-animation: sl-bubble3 1200ms linear infinite;\r\n    animation: sl-bubble3 1200ms linear infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -400ms);\r\n    animation-delay: calc(var(--i) * -400ms);\r\n}\r\n\r\n@-webkit-keyframes sl-bubble3 {\r\n    from {\r\n        width: 15px;\r\n        height: 15px;\r\n        opacity: 1;\r\n    }\r\n    to {\r\n        width: 80px;\r\n        height: 80px;\r\n        opacity: 0;\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble3 {\r\n    from {\r\n        width: 15px;\r\n        height: 15px;\r\n        opacity: 1;\r\n    }\r\n    to {\r\n        width: 80px;\r\n        height: 80px;\r\n        opacity: 0;\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble4/style.css":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble4/style.css ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-bubble4,\r\n.sl-bubble4 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-bubble4 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-bubble4 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-bubble4 .sl-loader-title {\r\n    padding-top: 10px;\r\n    width: 100%;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    text-align: center;\r\n}\r\n\r\n.sl-bubble4 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n}\r\n\r\n.sl-bubble4 .sl-loader .sl-loader-items .sl-item-content-loader {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n    width: 70px;\r\n    -webkit-animation: sl-bubble4 1.5s ease-in infinite;\r\n    animation: sl-bubble4 1.5s ease-in infinite;\r\n}\r\n\r\n.sl-bubble4 .sl-loader .sl-loader-items .sl-item-content-loader .sl-circle {\r\n    width: 14px;\r\n    height: 14px;\r\n    border-radius: 50%;\r\n    background-color: var(--bg);\r\n}\r\n\r\n@-webkit-keyframes sl-bubble4 {\r\n    from {\r\n        transform: rotate(0);\r\n    }\r\n    45% {\r\n        transform: rotate(400deg);\r\n    }\r\n    50% {\r\n        transform: rotate(360deg);\r\n    }\r\n    95% {\r\n        transform: rotate(-40deg);\r\n    }\r\n    to {\r\n        transform: rotate(0);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble4 {\r\n    from {\r\n        transform: rotate(0);\r\n    }\r\n    45% {\r\n        transform: rotate(400deg);\r\n    }\r\n    50% {\r\n        transform: rotate(360deg);\r\n    }\r\n    95% {\r\n        transform: rotate(-40deg);\r\n    }\r\n    to {\r\n        transform: rotate(0);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Bubble/Bubble4/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,iBAAiB;IACjB,WAAW;IACX,gBAAgB;IAChB,gBAAgB;IAChB,eAAe;IACf,gBAAgB;IAChB,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,aAAa;IACb,kBAAkB;IAGlB,aAAa;IAGb,uBAAuB;IAGvB,mBAAmB;IAInB,mBAAmB;IAEnB,iBAAiB;AACrB;;AAEA;IAGI,aAAa;IAGb,8BAA8B;IAG9B,mBAAmB;IAInB,mBAAmB;IAEnB,iBAAiB;IACjB,WAAW;IACX,mDAAmD;IACnD,2CAA2C;AAC/C;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,kBAAkB;IAClB,2BAA2B;AAC/B;;AAEA;IACI;QAEI,oBAAoB;IACxB;IACA;QAEI,yBAAyB;IAC7B;IACA;QAEI,yBAAyB;IAC7B;IACA;QAEI,yBAAyB;IAC7B;IACA;QAEI,oBAAoB;IACxB;AACJ;;AAEA;IACI;QAEI,oBAAoB;IACxB;IACA;QAEI,yBAAyB;IAC7B;IACA;QAEI,yBAAyB;IAC7B;IACA;QAEI,yBAAyB;IAC7B;IACA;QAEI,oBAAoB;IACxB;AACJ","sourcesContent":[".sl-bubble4,\r\n.sl-bubble4 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-bubble4 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-bubble4 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-bubble4 .sl-loader-title {\r\n    padding-top: 10px;\r\n    width: 100%;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    text-align: center;\r\n}\r\n\r\n.sl-bubble4 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: row;\r\n    flex-direction: row;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n}\r\n\r\n.sl-bubble4 .sl-loader .sl-loader-items .sl-item-content-loader {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: row;\r\n    flex-direction: row;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    width: 70px;\r\n    -webkit-animation: sl-bubble4 1.5s ease-in infinite;\r\n    animation: sl-bubble4 1.5s ease-in infinite;\r\n}\r\n\r\n.sl-bubble4 .sl-loader .sl-loader-items .sl-item-content-loader .sl-circle {\r\n    width: 14px;\r\n    height: 14px;\r\n    border-radius: 50%;\r\n    background-color: var(--bg);\r\n}\r\n\r\n@-webkit-keyframes sl-bubble4 {\r\n    from {\r\n        -webkit-transform: rotate(0);\r\n        transform: rotate(0);\r\n    }\r\n    45% {\r\n        -webkit-transform: rotate(400deg);\r\n        transform: rotate(400deg);\r\n    }\r\n    50% {\r\n        -webkit-transform: rotate(360deg);\r\n        transform: rotate(360deg);\r\n    }\r\n    95% {\r\n        -webkit-transform: rotate(-40deg);\r\n        transform: rotate(-40deg);\r\n    }\r\n    to {\r\n        -webkit-transform: rotate(0);\r\n        transform: rotate(0);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble4 {\r\n    from {\r\n        -webkit-transform: rotate(0);\r\n        transform: rotate(0);\r\n    }\r\n    45% {\r\n        -webkit-transform: rotate(400deg);\r\n        transform: rotate(400deg);\r\n    }\r\n    50% {\r\n        -webkit-transform: rotate(360deg);\r\n        transform: rotate(360deg);\r\n    }\r\n    95% {\r\n        -webkit-transform: rotate(-40deg);\r\n        transform: rotate(-40deg);\r\n    }\r\n    to {\r\n        -webkit-transform: rotate(0);\r\n        transform: rotate(0);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble5/style.css":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble5/style.css ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-bubble5,\r\n.sl-bubble5 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-bubble5 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-bubble5 .sl-loader {\r\n    width: 100px;\r\n    position: relative;\r\n    height: 35px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-bubble5 .sl-loader-title {\r\n    padding-top: 10px;\r\n    width: 100%;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    text-align: center;\r\n}\r\n\r\n.sl-bubble5 .sl-loader .sl-loader-item {\r\n    width: 20px;\r\n    height: 20px;\r\n    background-color: var(--bg);\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 0;\r\n    border-radius: 50%;\r\n}\r\n\r\n.sl-bubble5 .sl-loader .sl-loader-item:nth-child(2) {\r\n    -webkit-animation: sl-bubble5AnimOne 600ms linear infinite;\r\n    animation: sl-bubble5AnimOne 600ms linear infinite;\r\n  }\r\n  \r\n.sl-bubble5 .sl-loader .sl-loader-item:nth-child(3) {\r\n    -webkit-animation: sl-bubble5AnimTwo 600ms linear infinite;\r\n    animation: sl-bubble5AnimTwo 600ms linear infinite;\r\n}\r\n\r\n.sl-bubble5 .sl-loader .sl-loader-item:first-child {\r\n    -webkit-animation: sl-bubble5AnimThere 600ms linear infinite;\r\n    animation: sl-bubble5AnimThere 600ms linear infinite;\r\n}\r\n\r\n.sl-bubble5 .sl-loader .sl-loader-item:last-child {\r\n    -webkit-animation: sl-bubble5AnimFour 600ms linear infinite;\r\n    animation: sl-bubble5AnimFour 600ms linear infinite;\r\n}\r\n  \r\n@-webkit-keyframes sl-bubble5AnimOne {\r\n    0% {\r\n        transform: translate(7px, -50%) scale(1);\r\n    }\r\n    100% {\r\n        transform: translate(41px, -50%) scale(1.5);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble5AnimOne {\r\n    0% {\r\n        transform: translate(7px, -50%) scale(1);\r\n    }\r\n    100% {\r\n        transform: translate(41px, -50%) scale(1.5);\r\n    }\r\n}\r\n\r\n@-webkit-keyframes sl-bubble5AnimTwo {\r\n    0% {\r\n        transform: translate(41px, -50%) scale(1.5);\r\n    }\r\n    100% {\r\n        transform: translate(74px, -50%) scale(1);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble5AnimTwo {\r\n    0% {\r\n        transform: translate(41px, -50%) scale(1.5);\r\n    }\r\n    100% {\r\n        transform: translate(74px, -50%) scale(1);\r\n    }\r\n}\r\n\r\n@-webkit-keyframes sl-bubble5AnimThere {\r\n    0% {\r\n        transform: translate(7px, -50%) scale(0.5);\r\n    }\r\n    100% {\r\n        transform: translate(7px, -50%) scale(1);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble5AnimThere {\r\n    0% {\r\n        transform: translate(7px, -50%) scale(0.5);\r\n    }\r\n    100% {\r\n        transform: translate(7px, -50%) scale(1);\r\n    }\r\n}\r\n\r\n@-webkit-keyframes sl-bubble5AnimFour {\r\n    0% {\r\n        transform: translate(74px, -50%) scale(1);\r\n    }\r\n    100% {\r\n        transform: translate(74px, -50%) scale(0.5);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble5AnimFour {\r\n    0% {\r\n        transform: translate(74px, -50%) scale(1);\r\n    }\r\n    100% {\r\n        transform: translate(74px, -50%) scale(0.5);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Bubble/Bubble5/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IACZ,kBAAkB;IAClB,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,iBAAiB;IACjB,WAAW;IACX,gBAAgB;IAChB,gBAAgB;IAChB,eAAe;IACf,gBAAgB;IAChB,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,2BAA2B;IAC3B,kBAAkB;IAClB,QAAQ;IACR,OAAO;IACP,kBAAkB;AACtB;;AAEA;IACI,0DAA0D;IAC1D,kDAAkD;EACpD;;AAEF;IACI,0DAA0D;IAC1D,kDAAkD;AACtD;;AAEA;IACI,4DAA4D;IAC5D,oDAAoD;AACxD;;AAEA;IACI,2DAA2D;IAC3D,mDAAmD;AACvD;;AAEA;IACI;QAEI,wCAAwC;IAC5C;IACA;QAEI,2CAA2C;IAC/C;AACJ;;AAEA;IACI;QAEI,wCAAwC;IAC5C;IACA;QAEI,2CAA2C;IAC/C;AACJ;;AAEA;IACI;QAEI,2CAA2C;IAC/C;IACA;QAEI,yCAAyC;IAC7C;AACJ;;AAEA;IACI;QAEI,2CAA2C;IAC/C;IACA;QAEI,yCAAyC;IAC7C;AACJ;;AAEA;IACI;QAEI,0CAA0C;IAC9C;IACA;QAEI,wCAAwC;IAC5C;AACJ;;AAEA;IACI;QAEI,0CAA0C;IAC9C;IACA;QAEI,wCAAwC;IAC5C;AACJ;;AAEA;IACI;QAEY,yCAAyC;IACrD;IACA;QAEY,2CAA2C;IACvD;AACJ;;AAEA;IACI;QAEY,yCAAyC;IACrD;IACA;QAEY,2CAA2C;IACvD;AACJ","sourcesContent":[".sl-bubble5,\r\n.sl-bubble5 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-bubble5 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-bubble5 .sl-loader {\r\n    width: 100px;\r\n    position: relative;\r\n    height: 35px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-bubble5 .sl-loader-title {\r\n    padding-top: 10px;\r\n    width: 100%;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    text-align: center;\r\n}\r\n\r\n.sl-bubble5 .sl-loader .sl-loader-item {\r\n    width: 20px;\r\n    height: 20px;\r\n    background-color: var(--bg);\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 0;\r\n    border-radius: 50%;\r\n}\r\n\r\n.sl-bubble5 .sl-loader .sl-loader-item:nth-child(2) {\r\n    -webkit-animation: sl-bubble5AnimOne 600ms linear infinite;\r\n    animation: sl-bubble5AnimOne 600ms linear infinite;\r\n  }\r\n  \r\n.sl-bubble5 .sl-loader .sl-loader-item:nth-child(3) {\r\n    -webkit-animation: sl-bubble5AnimTwo 600ms linear infinite;\r\n    animation: sl-bubble5AnimTwo 600ms linear infinite;\r\n}\r\n\r\n.sl-bubble5 .sl-loader .sl-loader-item:first-child {\r\n    -webkit-animation: sl-bubble5AnimThere 600ms linear infinite;\r\n    animation: sl-bubble5AnimThere 600ms linear infinite;\r\n}\r\n\r\n.sl-bubble5 .sl-loader .sl-loader-item:last-child {\r\n    -webkit-animation: sl-bubble5AnimFour 600ms linear infinite;\r\n    animation: sl-bubble5AnimFour 600ms linear infinite;\r\n}\r\n  \r\n@-webkit-keyframes sl-bubble5AnimOne {\r\n    0% {\r\n        -webkit-transform: translate(7px, -50%) scale(1);\r\n        transform: translate(7px, -50%) scale(1);\r\n    }\r\n    100% {\r\n        -webkit-transform: translate(41px, -50%) scale(1.5);\r\n        transform: translate(41px, -50%) scale(1.5);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble5AnimOne {\r\n    0% {\r\n        -webkit-transform: translate(7px, -50%) scale(1);\r\n        transform: translate(7px, -50%) scale(1);\r\n    }\r\n    100% {\r\n        -webkit-transform: translate(41px, -50%) scale(1.5);\r\n        transform: translate(41px, -50%) scale(1.5);\r\n    }\r\n}\r\n\r\n@-webkit-keyframes sl-bubble5AnimTwo {\r\n    0% {\r\n        -webkit-transform: translate(41px, -50%) scale(1.5);\r\n        transform: translate(41px, -50%) scale(1.5);\r\n    }\r\n    100% {\r\n        -webkit-transform: translate(74px, -50%) scale(1);\r\n        transform: translate(74px, -50%) scale(1);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble5AnimTwo {\r\n    0% {\r\n        -webkit-transform: translate(41px, -50%) scale(1.5);\r\n        transform: translate(41px, -50%) scale(1.5);\r\n    }\r\n    100% {\r\n        -webkit-transform: translate(74px, -50%) scale(1);\r\n        transform: translate(74px, -50%) scale(1);\r\n    }\r\n}\r\n\r\n@-webkit-keyframes sl-bubble5AnimThere {\r\n    0% {\r\n        -webkit-transform: translate(7px, -50%) scale(0.5);\r\n        transform: translate(7px, -50%) scale(0.5);\r\n    }\r\n    100% {\r\n        -webkit-transform: translate(7px, -50%) scale(1);\r\n        transform: translate(7px, -50%) scale(1);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble5AnimThere {\r\n    0% {\r\n        -webkit-transform: translate(7px, -50%) scale(0.5);\r\n        transform: translate(7px, -50%) scale(0.5);\r\n    }\r\n    100% {\r\n        -webkit-transform: translate(7px, -50%) scale(1);\r\n        transform: translate(7px, -50%) scale(1);\r\n    }\r\n}\r\n\r\n@-webkit-keyframes sl-bubble5AnimFour {\r\n    0% {\r\n        -webkit-transform: translate(74px, -50%) scale(1);\r\n                transform: translate(74px, -50%) scale(1);\r\n    }\r\n    100% {\r\n        -webkit-transform: translate(74px, -50%) scale(0.5);\r\n                transform: translate(74px, -50%) scale(0.5);\r\n    }\r\n}\r\n\r\n@keyframes sl-bubble5AnimFour {\r\n    0% {\r\n        -webkit-transform: translate(74px, -50%) scale(1);\r\n                transform: translate(74px, -50%) scale(1);\r\n    }\r\n    100% {\r\n        -webkit-transform: translate(74px, -50%) scale(0.5);\r\n                transform: translate(74px, -50%) scale(0.5);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Ekvalayzer/style.css":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Ekvalayzer/style.css ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-ekvalayzer,\r\n.sl-ekvalayzer * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-ekvalayzer {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-ekvalayzer .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-ekvalayzer .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: flex-end;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-ekvalayzer .sl-loader-items .sl-parent-rectangular {\r\n    padding: 3px;\r\n    width: -webkit-min-content;\r\n    width: -moz-min-content;\r\n    width: min-content;\r\n    height: -webkit-min-content;\r\n    height: -moz-min-content;\r\n    height: min-content;\r\n}\r\n\r\n.sl-ekvalayzer .sl-loader-items .sl-parent-rectangular .sl-rectangular {\r\n    width: 10px;\r\n    background-color: var(--bg);\r\n    box-shadow: 0 0 10px 2px var(--bg);\r\n    -webkit-animation: sl-ekvalayzer1 500ms ease-in-out infinite;\r\n    animation: sl-ekvalayzer1 500ms ease-in-out infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -100ms);\r\n    animation-delay: calc(var(--i) * -100ms);\r\n}\r\n\r\n@-webkit-keyframes sl-ekvalayzer1 {\r\n    from {\r\n        height: calc(var(--w) * 20px);\r\n    }\r\n    50% {\r\n        height: 80px;\r\n    }\r\n    to {\r\n        height: calc(var(--w) * 20px);\r\n    }\r\n}\r\n\r\n@keyframes sl-ekvalayzer1 {\r\n    from {\r\n        height: calc(var(--w) * 20px);\r\n    }\r\n    50% {\r\n        height: 80px;\r\n    }\r\n    to {\r\n        height: calc(var(--w) * 20px);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Ekvalayzer/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,aAAa;IAGb,aAAa;IAGb,uBAAuB;IAGvB,qBAAqB;IAIrB,mBAAmB;IAEnB,iBAAiB;IAEjB,6BAA6B;AACjC;;AAEA;IACI,YAAY;IACZ,0BAA0B;IAC1B,uBAAuB;IACvB,kBAAkB;IAClB,2BAA2B;IAC3B,wBAAwB;IACxB,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,2BAA2B;IAE3B,kCAAkC;IAClC,4DAA4D;IAC5D,oDAAoD;IACpD,gDAAgD;IAChD,wCAAwC;AAC5C;;AAEA;IACI;QACI,6BAA6B;IACjC;IACA;QACI,YAAY;IAChB;IACA;QACI,6BAA6B;IACjC;AACJ;;AAEA;IACI;QACI,6BAA6B;IACjC;IACA;QACI,YAAY;IAChB;IACA;QACI,6BAA6B;IACjC;AACJ","sourcesContent":[".sl-ekvalayzer,\r\n.sl-ekvalayzer * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-ekvalayzer {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-ekvalayzer .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-ekvalayzer .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n    -webkit-box-align: end;\r\n    -ms-flex-align: end;\r\n    align-items: flex-end;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: row;\r\n    flex-direction: row;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-ekvalayzer .sl-loader-items .sl-parent-rectangular {\r\n    padding: 3px;\r\n    width: -webkit-min-content;\r\n    width: -moz-min-content;\r\n    width: min-content;\r\n    height: -webkit-min-content;\r\n    height: -moz-min-content;\r\n    height: min-content;\r\n}\r\n\r\n.sl-ekvalayzer .sl-loader-items .sl-parent-rectangular .sl-rectangular {\r\n    width: 10px;\r\n    background-color: var(--bg);\r\n    -webkit-box-shadow: 0 0 10px 2px var(--bg);\r\n    box-shadow: 0 0 10px 2px var(--bg);\r\n    -webkit-animation: sl-ekvalayzer1 500ms ease-in-out infinite;\r\n    animation: sl-ekvalayzer1 500ms ease-in-out infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -100ms);\r\n    animation-delay: calc(var(--i) * -100ms);\r\n}\r\n\r\n@-webkit-keyframes sl-ekvalayzer1 {\r\n    from {\r\n        height: calc(var(--w) * 20px);\r\n    }\r\n    50% {\r\n        height: 80px;\r\n    }\r\n    to {\r\n        height: calc(var(--w) * 20px);\r\n    }\r\n}\r\n\r\n@keyframes sl-ekvalayzer1 {\r\n    from {\r\n        height: calc(var(--w) * 20px);\r\n    }\r\n    50% {\r\n        height: 80px;\r\n    }\r\n    to {\r\n        height: calc(var(--w) * 20px);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Heart/style.css":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Heart/style.css ***!
+  \****************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-heart1,\r\n.sl-heart1 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-heart1 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-heart1 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-heart1 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    font-size: 20px;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-heart1 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n}\r\n\r\n.sl-heart1 .sl-loader .sl-loader-items .sl-heart {\r\n    width: 40px;\r\n    height: 40px;\r\n    border-radius: 50%;\r\n    position: absolute;\r\n    left: 50%;\r\n    top: 50%;\r\n    transform: translate(-85%, -75%);\r\n    background-color: var(--bg);\r\n    -webkit-animation: sl-heart1 1000ms linear infinite;\r\n    animation: sl-heart1 1000ms linear infinite;\r\n}\r\n\r\n.sl-heart1 .sl-loader .sl-loader-items .sl-heart::after {\r\n    content: \"\";\r\n    width: 100%;\r\n    height: 100%;\r\n    border-radius: 50%;\r\n    position: absolute;\r\n    left: 30px;\r\n    top: 0;\r\n    background-color: var(--bg);\r\n}\r\n\r\n.sl-heart1 .sl-loader .sl-loader-items .sl-heart::before {\r\n    content: \"\";\r\n    width: 100%;\r\n    height: 100%;\r\n    transform: rotate(45deg);\r\n    position: absolute;\r\n    left: 15px;\r\n    top: 15px;\r\n    background-color: var(--bg);\r\n}\r\n\r\n@-webkit-keyframes sl-heart1 {\r\n    to {\r\n        transform: translate(-60%, -60%) scale(0.5);\r\n    }\r\n    30% {\r\n        transform: translate(-80%, -70%) scale(0.8);\r\n    }\r\n    60% {\r\n        transform: translate(-60%, -60%) scale(0.5);\r\n    }\r\n    80% {\r\n        transform: translate(-80%, -70%) scale(0.8);\r\n    }\r\n    from {\r\n        transform: translate(-85%, -75%) scale(1);\r\n    }\r\n}\r\n\r\n@keyframes sl-heart1 {\r\n    to {\r\n        transform: translate(-60%, -60%) scale(0.5);\r\n    }\r\n    30% {\r\n        transform: translate(-80%, -70%) scale(0.8);\r\n    }\r\n    60% {\r\n        transform: translate(-60%, -60%) scale(0.5);\r\n    }\r\n    80% {\r\n        transform: translate(-80%, -70%) scale(0.8);\r\n    }\r\n    from {\r\n        transform: translate(-85%, -75%) scale(1);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Heart/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,gBAAgB;IAChB,gBAAgB;IAChB,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,aAAa;IACb,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,kBAAkB;IAClB,kBAAkB;IAClB,SAAS;IACT,QAAQ;IAER,gCAAgC;IAChC,2BAA2B;IAC3B,mDAAmD;IACnD,2CAA2C;AAC/C;;AAEA;IACI,WAAW;IACX,WAAW;IACX,YAAY;IACZ,kBAAkB;IAClB,kBAAkB;IAClB,UAAU;IACV,MAAM;IACN,2BAA2B;AAC/B;;AAEA;IACI,WAAW;IACX,WAAW;IACX,YAAY;IAEZ,wBAAwB;IACxB,kBAAkB;IAClB,UAAU;IACV,SAAS;IACT,2BAA2B;AAC/B;;AAEA;IACI;QAEI,2CAA2C;IAC/C;IACA;QAEI,2CAA2C;IAC/C;IACA;QAEI,2CAA2C;IAC/C;IACA;QAEI,2CAA2C;IAC/C;IACA;QAEI,yCAAyC;IAC7C;AACJ;;AAEA;IACI;QAEI,2CAA2C;IAC/C;IACA;QAEI,2CAA2C;IAC/C;IACA;QAEI,2CAA2C;IAC/C;IACA;QAEI,2CAA2C;IAC/C;IACA;QAEI,yCAAyC;IAC7C;AACJ","sourcesContent":[".sl-heart1,\r\n.sl-heart1 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-heart1 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-heart1 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-heart1 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    font-size: 20px;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-heart1 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n}\r\n\r\n.sl-heart1 .sl-loader .sl-loader-items .sl-heart {\r\n    width: 40px;\r\n    height: 40px;\r\n    border-radius: 50%;\r\n    position: absolute;\r\n    left: 50%;\r\n    top: 50%;\r\n    -webkit-transform: translate(-85%, -75%);\r\n    transform: translate(-85%, -75%);\r\n    background-color: var(--bg);\r\n    -webkit-animation: sl-heart1 1000ms linear infinite;\r\n    animation: sl-heart1 1000ms linear infinite;\r\n}\r\n\r\n.sl-heart1 .sl-loader .sl-loader-items .sl-heart::after {\r\n    content: \"\";\r\n    width: 100%;\r\n    height: 100%;\r\n    border-radius: 50%;\r\n    position: absolute;\r\n    left: 30px;\r\n    top: 0;\r\n    background-color: var(--bg);\r\n}\r\n\r\n.sl-heart1 .sl-loader .sl-loader-items .sl-heart::before {\r\n    content: \"\";\r\n    width: 100%;\r\n    height: 100%;\r\n    -webkit-transform: rotate(45deg);\r\n    transform: rotate(45deg);\r\n    position: absolute;\r\n    left: 15px;\r\n    top: 15px;\r\n    background-color: var(--bg);\r\n}\r\n\r\n@-webkit-keyframes sl-heart1 {\r\n    to {\r\n        -webkit-transform: translate(-60%, -60%) scale(0.5);\r\n        transform: translate(-60%, -60%) scale(0.5);\r\n    }\r\n    30% {\r\n        -webkit-transform: translate(-80%, -70%) scale(0.8);\r\n        transform: translate(-80%, -70%) scale(0.8);\r\n    }\r\n    60% {\r\n        -webkit-transform: translate(-60%, -60%) scale(0.5);\r\n        transform: translate(-60%, -60%) scale(0.5);\r\n    }\r\n    80% {\r\n        -webkit-transform: translate(-80%, -70%) scale(0.8);\r\n        transform: translate(-80%, -70%) scale(0.8);\r\n    }\r\n    from {\r\n        -webkit-transform: translate(-85%, -75%) scale(1);\r\n        transform: translate(-85%, -75%) scale(1);\r\n    }\r\n}\r\n\r\n@keyframes sl-heart1 {\r\n    to {\r\n        -webkit-transform: translate(-60%, -60%) scale(0.5);\r\n        transform: translate(-60%, -60%) scale(0.5);\r\n    }\r\n    30% {\r\n        -webkit-transform: translate(-80%, -70%) scale(0.8);\r\n        transform: translate(-80%, -70%) scale(0.8);\r\n    }\r\n    60% {\r\n        -webkit-transform: translate(-60%, -60%) scale(0.5);\r\n        transform: translate(-60%, -60%) scale(0.5);\r\n    }\r\n    80% {\r\n        -webkit-transform: translate(-80%, -70%) scale(0.8);\r\n        transform: translate(-80%, -70%) scale(0.8);\r\n    }\r\n    from {\r\n        -webkit-transform: translate(-85%, -75%) scale(1);\r\n        transform: translate(-85%, -75%) scale(1);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Hourglass/style.css":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Hourglass/style.css ***!
+  \********************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-hourglass,\r\n.sl-hourglass * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-hourglass {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-hourglass .sl-hourglass-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n}\r\n\r\n.sl-hourglass .sl-hourglass-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    flex-wrap: nowrap;\r\n    flex-direction: row;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-hourglass .sl-hourglass-loader-items .sl-hourglass-item {\r\n    border: 30px solid transparent;\r\n    border-top-color: var(--bg);\r\n    border-bottom-color: var(--bg);\r\n    border-radius: 50%;\r\n    -webkit-animation: sl-hourglass 1.2s ease-in infinite;\r\n    animation: sl-hourglass 1.2s ease-in infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-hourglass {\r\n    from {\r\n        transform: rotate(0);\r\n    }\r\n    45% {\r\n        transform: rotate(360deg);\r\n    }\r\n    80% {\r\n        transform: rotate(900deg);\r\n    }\r\n    to {\r\n        transform: rotate(1080deg);\r\n    }\r\n}\r\n\r\n@keyframes sl-hourglass {\r\n    from {\r\n        transform: rotate(0);\r\n    }\r\n    45% {\r\n        transform: rotate(360deg);\r\n    }\r\n    80% {\r\n        transform: rotate(900deg);\r\n    }\r\n    to {\r\n        transform: rotate(1080deg);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Hourglass/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,aAAa;IACb,kBAAkB;IAGlB,aAAa;IAGb,uBAAuB;IAGvB,mBAAmB;IAEnB,iBAAiB;IAIjB,mBAAmB;IAEnB,6BAA6B;AACjC;;AAEA;IACI,8BAA8B;IAC9B,2BAA2B;IAC3B,8BAA8B;IAC9B,kBAAkB;IAClB,qDAAqD;IACrD,6CAA6C;AACjD;;AAEA;IACI;QAEI,oBAAoB;IACxB;IACA;QAEI,yBAAyB;IAC7B;IACA;QAEI,yBAAyB;IAC7B;IACA;QAEI,0BAA0B;IAC9B;AACJ;;AAEA;IACI;QAEI,oBAAoB;IACxB;IACA;QAEI,yBAAyB;IAC7B;IACA;QAEI,yBAAyB;IAC7B;IACA;QAEI,0BAA0B;IAC9B;AACJ","sourcesContent":[".sl-hourglass,\r\n.sl-hourglass * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-hourglass {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-hourglass .sl-hourglass-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    color: var(--cl);\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n}\r\n\r\n.sl-hourglass .sl-hourglass-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: row;\r\n    flex-direction: row;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-hourglass .sl-hourglass-loader-items .sl-hourglass-item {\r\n    border: 30px solid transparent;\r\n    border-top-color: var(--bg);\r\n    border-bottom-color: var(--bg);\r\n    border-radius: 50%;\r\n    -webkit-animation: sl-hourglass 1.2s ease-in infinite;\r\n    animation: sl-hourglass 1.2s ease-in infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-hourglass {\r\n    from {\r\n        -webkit-transform: rotate(0);\r\n        transform: rotate(0);\r\n    }\r\n    45% {\r\n        -webkit-transform: rotate(360deg);\r\n        transform: rotate(360deg);\r\n    }\r\n    80% {\r\n        -webkit-transform: rotate(900deg);\r\n        transform: rotate(900deg);\r\n    }\r\n    to {\r\n        -webkit-transform: rotate(1080deg);\r\n        transform: rotate(1080deg);\r\n    }\r\n}\r\n\r\n@keyframes sl-hourglass {\r\n    from {\r\n        -webkit-transform: rotate(0);\r\n        transform: rotate(0);\r\n    }\r\n    45% {\r\n        -webkit-transform: rotate(360deg);\r\n        transform: rotate(360deg);\r\n    }\r\n    80% {\r\n        -webkit-transform: rotate(900deg);\r\n        transform: rotate(900deg);\r\n    }\r\n    to {\r\n        -webkit-transform: rotate(1080deg);\r\n        transform: rotate(1080deg);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Spinner/Spinner1/style.css":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Spinner/Spinner1/style.css ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-spinner1,\r\n.sl-spinner1 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-spinner1 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-spinner1 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-spinner1 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    font-weight: 700;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-spinner1 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n    transform: rotateY(180deg);\r\n}\r\n\r\n.sl-spinner1 .sl-loader .sl-loader-items .sl-item {\r\n    transform: rotate(calc(var(--i) * 30deg));\r\n    -webkit-animation: sl-spinner1 1.2s linear infinite;\r\n    animation: sl-spinner1 1.2s linear infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -100ms);\r\n    animation-delay: calc(var(--i) * -100ms);\r\n    transform-origin: 50px 50px;\r\n}\r\n\r\n.sl-spinner1 .sl-loader .sl-loader-items .sl-item::after {\r\n    content: \"\";\r\n    display: block;\r\n    position: absolute;\r\n    top: 3px;\r\n    left: 47px;\r\n    width: 7px;\r\n    height: 21px;\r\n    background-color: var(--bg);\r\n    border-radius: 20%;\r\n    box-shadow: -1px 1px 2px 1px rgba(0, 0, 0, 0.2);\r\n}\r\n\r\n@-webkit-keyframes sl-spinner1 {\r\n    to {\r\n        opacity: 0;\r\n    }\r\n    from {\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n@keyframes sl-spinner1 {\r\n    to {\r\n        opacity: 0;\r\n    }\r\n    from {\r\n        opacity: 1;\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Spinner/Spinner1/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,aAAa;IACb,kBAAkB;IAElB,0BAA0B;AAC9B;;AAEA;IAEI,yCAAyC;IACzC,mDAAmD;IACnD,2CAA2C;IAC3C,gDAAgD;IAChD,wCAAwC;IAExC,2BAA2B;AAC/B;;AAEA;IACI,WAAW;IACX,cAAc;IACd,kBAAkB;IAClB,QAAQ;IACR,UAAU;IACV,UAAU;IACV,YAAY;IACZ,2BAA2B;IAC3B,kBAAkB;IAElB,+CAA+C;AACnD;;AAEA;IACI;QACI,UAAU;IACd;IACA;QACI,UAAU;IACd;AACJ;;AAEA;IACI;QACI,UAAU;IACd;IACA;QACI,UAAU;IACd;AACJ","sourcesContent":[".sl-spinner1,\r\n.sl-spinner1 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-spinner1 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-spinner1 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-spinner1 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    font-weight: 700;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-spinner1 .sl-loader .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n    -webkit-transform: rotateY(180deg);\r\n    transform: rotateY(180deg);\r\n}\r\n\r\n.sl-spinner1 .sl-loader .sl-loader-items .sl-item {\r\n    -webkit-transform: rotate(calc(var(--i) * 30deg));\r\n    transform: rotate(calc(var(--i) * 30deg));\r\n    -webkit-animation: sl-spinner1 1.2s linear infinite;\r\n    animation: sl-spinner1 1.2s linear infinite;\r\n    -webkit-animation-delay: calc(var(--i) * -100ms);\r\n    animation-delay: calc(var(--i) * -100ms);\r\n    -webkit-transform-origin: 50px 50px;\r\n    transform-origin: 50px 50px;\r\n}\r\n\r\n.sl-spinner1 .sl-loader .sl-loader-items .sl-item::after {\r\n    content: \"\";\r\n    display: block;\r\n    position: absolute;\r\n    top: 3px;\r\n    left: 47px;\r\n    width: 7px;\r\n    height: 21px;\r\n    background-color: var(--bg);\r\n    border-radius: 20%;\r\n    -webkit-box-shadow: -1px 1px 2px 1px rgba(0, 0, 0, 0.2);\r\n    box-shadow: -1px 1px 2px 1px rgba(0, 0, 0, 0.2);\r\n}\r\n\r\n@-webkit-keyframes sl-spinner1 {\r\n    to {\r\n        opacity: 0;\r\n    }\r\n    from {\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n@keyframes sl-spinner1 {\r\n    to {\r\n        opacity: 0;\r\n    }\r\n    from {\r\n        opacity: 1;\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Spinner/Spinner2/style.css":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Spinner/Spinner2/style.css ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-spinner2,\r\n.sl-spinner2 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-spinner2 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-spinner2 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-spinner2 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    font-weight: 700;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-spinner2 .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n}\r\n\r\n.sl-spinner2 .sl-loader .sl-loader-items .sl-item {\r\n    transform: rotate(calc(var(--i) * 45deg));\r\n    transform-origin: 50px 50px;\r\n}\r\n\r\n.sl-spinner2 .sl-loader .sl-loader-items .sl-item::after {\r\n    content: \"\";\r\n    display: block;\r\n    position: absolute;\r\n    top: 25px;\r\n    left: 25px;\r\n    width: 10px;\r\n    height: 10px;\r\n    background-color: var(--bg);\r\n    border-radius: 50%;\r\n    -webkit-animation: sl-spinner2 800ms linear infinite;\r\n    animation: sl-spinner2 800ms linear infinite;\r\n    -webkit-animation-delay: calc(var(--i) * 100ms);\r\n    animation-delay: calc(var(--i) * 100ms);\r\n}\r\n\r\n@-webkit-keyframes sl-spinner2 {\r\n    to {\r\n        transform: scale(1, 1);\r\n    }\r\n    from {\r\n        transform: scale(1.5, 1.5);\r\n    }\r\n}\r\n\r\n@keyframes sl-spinner2 {\r\n    to {\r\n        transform: scale(1, 1);\r\n    }\r\n    from {\r\n        transform: scale(1.5, 1.5);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Spinner/Spinner2/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,aAAa;IACb,kBAAkB;AACtB;;AAEA;IAEI,yCAAyC;IAEzC,2BAA2B;AAC/B;;AAEA;IACI,WAAW;IACX,cAAc;IACd,kBAAkB;IAClB,SAAS;IACT,UAAU;IACV,WAAW;IACX,YAAY;IACZ,2BAA2B;IAC3B,kBAAkB;IAClB,oDAAoD;IACpD,4CAA4C;IAC5C,+CAA+C;IAC/C,uCAAuC;AAC3C;;AAEA;IACI;QAEI,sBAAsB;IAC1B;IACA;QAEI,0BAA0B;IAC9B;AACJ;;AAEA;IACI;QAEI,sBAAsB;IAC1B;IACA;QAEI,0BAA0B;IAC9B;AACJ","sourcesContent":[".sl-spinner2,\r\n.sl-spinner2 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-spinner2 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-spinner2 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-spinner2 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    line-height: 1.7;\r\n    font-weight: 700;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-spinner2 .sl-loader-items {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n}\r\n\r\n.sl-spinner2 .sl-loader .sl-loader-items .sl-item {\r\n    -webkit-transform: rotate(calc(var(--i) * 45deg));\r\n    transform: rotate(calc(var(--i) * 45deg));\r\n    -webkit-transform-origin: 50px 50px;\r\n    transform-origin: 50px 50px;\r\n}\r\n\r\n.sl-spinner2 .sl-loader .sl-loader-items .sl-item::after {\r\n    content: \"\";\r\n    display: block;\r\n    position: absolute;\r\n    top: 25px;\r\n    left: 25px;\r\n    width: 10px;\r\n    height: 10px;\r\n    background-color: var(--bg);\r\n    border-radius: 50%;\r\n    -webkit-animation: sl-spinner2 800ms linear infinite;\r\n    animation: sl-spinner2 800ms linear infinite;\r\n    -webkit-animation-delay: calc(var(--i) * 100ms);\r\n    animation-delay: calc(var(--i) * 100ms);\r\n}\r\n\r\n@-webkit-keyframes sl-spinner2 {\r\n    to {\r\n        -webkit-transform: scale(1, 1);\r\n        transform: scale(1, 1);\r\n    }\r\n    from {\r\n        -webkit-transform: scale(1.5, 1.5);\r\n        transform: scale(1.5, 1.5);\r\n    }\r\n}\r\n\r\n@keyframes sl-spinner2 {\r\n    to {\r\n        -webkit-transform: scale(1, 1);\r\n        transform: scale(1, 1);\r\n    }\r\n    from {\r\n        -webkit-transform: scale(1.5, 1.5);\r\n        transform: scale(1.5, 1.5);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Spinner/Spinner3/style.css":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Spinner/Spinner3/style.css ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".sl-spinner3,\r\n.sl-spinner3 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-spinner3 {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-spinner3 .sl-loader {\r\n    width: 100px;\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-spinner3 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-spinner3 .sl-loader .sl-loader-parent {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n}\r\n\r\n.sl-spinner3 .sl-loader .sl-loader-parent .sl-circle {\r\n    width: 80px;\r\n    height: 80px;\r\n    border-radius: 50%;\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n    border: 10px solid var(--border);\r\n    border-top: 10px solid var(--bg);\r\n    -webkit-animation: sl-spinner3 800ms linear infinite;\r\n    animation: sl-spinner3 800ms linear infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-spinner3 {\r\n    to {\r\n        transform: translate(-50%, -50%) rotate(360deg);\r\n    }\r\n    from {\r\n        transform: translate(-50%, -50%) rotate(0deg);\r\n    }\r\n}\r\n\r\n@keyframes sl-spinner3 {\r\n    to {\r\n        transform: translate(-50%, -50%) rotate(360deg);\r\n    }\r\n    from {\r\n        transform: translate(-50%, -50%) rotate(0deg);\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./node_modules/react-js-loader/Spinner/Spinner3/style.css"],"names":[],"mappings":"AAAA;;IAEI,UAAU;IACV,SAAS;IAET,sBAAsB;AAC1B;;AAEA;IAGI,aAAa;IAIb,sBAAsB;IAEtB,iBAAiB;IAGjB,mBAAmB;IAGnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IAEZ,6BAA6B;AACjC;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,aAAa;IACb,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,kBAAkB;IAClB,kBAAkB;IAClB,QAAQ;IACR,SAAS;IAET,gCAAgC;IAChC,gCAAgC;IAChC,gCAAgC;IAChC,oDAAoD;IACpD,4CAA4C;AAChD;;AAEA;IACI;QAEI,+CAA+C;IACnD;IACA;QAEI,6CAA6C;IACjD;AACJ;;AAEA;IACI;QAEI,+CAA+C;IACnD;IACA;QAEI,6CAA6C;IACjD;AACJ","sourcesContent":[".sl-spinner3,\r\n.sl-spinner3 * {\r\n    padding: 0;\r\n    margin: 0;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.sl-spinner3 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -ms-flex-wrap: nowrap;\r\n    flex-wrap: nowrap;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n}\r\n\r\n.sl-spinner3 .sl-loader {\r\n    width: 100px;\r\n    -webkit-transform: scale(var(--size));\r\n    transform: scale(var(--size));\r\n}\r\n\r\n.sl-spinner3 .sl-loader-title {\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    line-height: 1.7;\r\n    color: var(--cl);\r\n}\r\n\r\n.sl-spinner3 .sl-loader .sl-loader-parent {\r\n    width: 100%;\r\n    height: 100px;\r\n    position: relative;\r\n}\r\n\r\n.sl-spinner3 .sl-loader .sl-loader-parent .sl-circle {\r\n    width: 80px;\r\n    height: 80px;\r\n    border-radius: 50%;\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    transform: translate(-50%, -50%);\r\n    border: 10px solid var(--border);\r\n    border-top: 10px solid var(--bg);\r\n    -webkit-animation: sl-spinner3 800ms linear infinite;\r\n    animation: sl-spinner3 800ms linear infinite;\r\n}\r\n\r\n@-webkit-keyframes sl-spinner3 {\r\n    to {\r\n        -webkit-transform: translate(-50%, -50%) rotate(360deg);\r\n        transform: translate(-50%, -50%) rotate(360deg);\r\n    }\r\n    from {\r\n        -webkit-transform: translate(-50%, -50%) rotate(0deg);\r\n        transform: translate(-50%, -50%) rotate(0deg);\r\n    }\r\n}\r\n\r\n@keyframes sl-spinner3 {\r\n    to {\r\n        -webkit-transform: translate(-50%, -50%) rotate(360deg);\r\n        transform: translate(-50%, -50%) rotate(360deg);\r\n    }\r\n    from {\r\n        -webkit-transform: translate(-50%, -50%) rotate(0deg);\r\n        transform: translate(-50%, -50%) rotate(0deg);\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
 
 /***/ }),
 
@@ -26976,6 +27446,1524 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-js-loader/Box/Box1/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box1/index.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/**
+ * Copyright (c) Amur 2020
+ * 
+ * React-js-loader by Amur
+ * https://github.com/AmurKhoyetsyan/react-js-loader
+ * 
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _index = _interopRequireDefault(__webpack_require__(/*! ../../Services/index */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Box/Box1/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Box1 = function Box1(props) {
+  return _react.default.createElement("div", {
+    className: "sl-box1"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _index.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _react.default.createElement("div", {
+    className: "sl-parent-cub"
+  }, _react.default.createElement("div", {
+    className: "sl-cub",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF"
+    }
+  })))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Box1;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Box/Box2/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box2/index.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Box/Box2/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Box2 = function Box2(props) {
+  return _react.default.createElement("div", {
+    className: "sl-box2"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _react.default.createElement("div", {
+    className: "sl-parent-cub"
+  }, _react.default.createElement("div", {
+    className: "sl-cub",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF"
+    }
+  })))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Box2;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Box/Box3/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box3/index.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Box/Box3/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Box3 = function Box3(props) {
+  return _react.default.createElement("div", {
+    className: "sl-box3"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _react.default.createElement("div", {
+    className: "sl-parent-cub"
+  }, _react.default.createElement("div", {
+    className: "sl-cub",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF"
+    }
+  })))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Box3;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Box/Box4/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box4/index.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Box/Box4/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+var Box4 = function Box4(props) {
+  return _react.default.createElement("div", {
+    className: "sl-box4"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _toConsumableArray(Array(5)).map(function (item, index) {
+    return _react.default.createElement("div", {
+      key: index,
+      className: "sl-rectangular",
+      style: {
+        "--i": ++index,
+        "--bg": props.bgColor || "#FFFFFF"
+      }
+    });
+  }))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Box4;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Box/Box5/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box5/index.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Box/Box5/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Box5 = function Box5(props) {
+  return _react.default.createElement("div", {
+    className: "sl-box5"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _react.default.createElement("div", {
+    className: "sl-rectangular-ping",
+    style: {
+      "--bgb": props.bgColor || "#FFFFFF",
+      "--bg": _Services.default.rgbToPart(props.bgColor, "50") || "#FFFFFF50"
+    }
+  }))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Box5;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Box/Box6/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box6/index.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Box/Box6/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+var Box6 = function Box6(props) {
+    return _react.default.createElement("div", {
+        className: "sl-box6"
+    }, _react.default.createElement("div", {
+        className: "sl-loader",
+        style: {
+            "--size": _Services.default.getZoom(props.size || 100)
+        }
+    }, _react.default.createElement("div", {
+        className: "sl-loader-items"
+    }, _toConsumableArray(Array(5).keys()).map(function (item) {
+        return _react.default.createElement("div", {
+            key: item,
+            className: "sl-item",
+            style: {
+                "--i": item,
+                "--shadow": props.bgColor || "#FFFFFF",
+                "--bga": _Services.default.rgbToPart(props.bgColor, "80") || "#FFFFFF80",
+                "--bg": props.bgColor || "#FFFFFF"
+            }
+        });
+    }))), props.title !== undefined ? _react.default.createElement("div", {
+        className: "sl-loader-title",
+        style: {
+            "--cl": props.color || "#FFFFFF"
+        }
+    }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Box6;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Bubble/Bubble1/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-js-loader/Bubble/Bubble1/index.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Bubble/Bubble1/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+var Bubble1 = function Bubble1(props) {
+  return _react.default.createElement("div", {
+    className: "sl-bubble1"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _toConsumableArray(Array(3).keys()).map(function (item, index) {
+    return _react.default.createElement("div", {
+      className: "sl-bubble",
+      key: index,
+      style: {
+        "--i": ++index,
+        "--bg": props.bgColor || "#FFFFFF"
+      }
+    });
+  }))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Bubble1;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Bubble/Bubble2/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-js-loader/Bubble/Bubble2/index.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Bubble/Bubble2/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+var Bubble2 = function Bubble2(props) {
+  return _react.default.createElement("div", {
+    className: "sl-bubble2"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _toConsumableArray(Array(3).keys()).map(function (item, index) {
+    return _react.default.createElement("div", {
+      className: "sl-bubble",
+      key: index,
+      style: {
+        "--i": ++index,
+        "--bg": props.bgColor || "#FFFFFF"
+      }
+    });
+  }))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Bubble2;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Bubble/Bubble3/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-js-loader/Bubble/Bubble3/index.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Bubble/Bubble3/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+var Bubble3 = function Bubble3(props) {
+  return _react.default.createElement("div", {
+    className: "sl-bubble3"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _toConsumableArray(Array(3).keys()).map(function (item) {
+    return _react.default.createElement("div", {
+      className: "sl-bubble",
+      key: item,
+      style: {
+        "--i": item,
+        "--bg": props.bgColor || "#FFFFFF"
+      }
+    });
+  }))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Bubble3;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Bubble/Bubble4/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-js-loader/Bubble/Bubble4/index.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Bubble/Bubble4/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+var Bubble4 = function Bubble4(props) {
+  return _react.default.createElement("div", {
+    className: "sl-bubble4"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _react.default.createElement("div", {
+    className: "sl-item-content-loader"
+  }, _toConsumableArray(Array(3).keys()).map(function (item) {
+    return _react.default.createElement("div", {
+      className: "sl-circle",
+      key: item,
+      style: {
+        "--bg": props.bgColor || "#FFFFFF"
+      }
+    });
+  })))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Bubble4;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Bubble/Bubble5/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-js-loader/Bubble/Bubble5/index.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Bubble/Bubble5/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const Bubble5 = props => /*#__PURE__*/_react.default.createElement("div", {
+  className: "sl-bubble5"
+}, /*#__PURE__*/_react.default.createElement("div", {
+  className: "sl-loader",
+  style: {
+    "--size": _Services.default.getZoom(props.size || 100)
+  }
+}, [...Array(4).keys()].map(item => /*#__PURE__*/_react.default.createElement("div", {
+  className: "sl-loader-item",
+  key: item,
+  style: {
+    "--bg": props.bgColor || "#FFFFFF"
+  }
+}))), props.title !== undefined ? /*#__PURE__*/_react.default.createElement("div", {
+  className: "sl-loader-title",
+  style: {
+    "--cl": props.color || "#FFFFFF"
+  }
+}, /*#__PURE__*/_react.default.createElement("span", null, props.title)) : null);
+
+var _default = Bubble5;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Ekvalayzer/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-js-loader/Ekvalayzer/index.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Ekvalayzer/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Ekvalayzer1 = function Ekvalayzer1(props) {
+  return _react.default.createElement("div", {
+    className: "sl-ekvalayzer"
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-parent-rectangular"
+  }, _react.default.createElement("div", {
+    className: "sl-rectangular",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF",
+      "--w": 2,
+      "--i": 1
+    }
+  })), _react.default.createElement("div", {
+    className: "sl-parent-rectangular"
+  }, _react.default.createElement("div", {
+    className: "sl-rectangular",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF",
+      "--w": 1,
+      "--i": 0
+    }
+  })), _react.default.createElement("div", {
+    className: "sl-parent-rectangular"
+  }, _react.default.createElement("div", {
+    className: "sl-rectangular",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF",
+      "--w": 2,
+      "--i": 1
+    }
+  })), _react.default.createElement("div", {
+    className: "sl-parent-rectangular"
+  }, _react.default.createElement("div", {
+    className: "sl-rectangular",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF",
+      "--w": 1,
+      "--i": 2
+    }
+  })), _react.default.createElement("div", {
+    className: "sl-parent-rectangular"
+  }, _react.default.createElement("div", {
+    className: "sl-rectangular",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF",
+      "--w": 2,
+      "--i": 1
+    }
+  })), _react.default.createElement("div", {
+    className: "sl-parent-rectangular"
+  }, _react.default.createElement("div", {
+    className: "sl-rectangular",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF",
+      "--w": 1,
+      "--i": 0
+    }
+  })), _react.default.createElement("div", {
+    className: "sl-parent-rectangular"
+  }, _react.default.createElement("div", {
+    className: "sl-rectangular",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF",
+      "--w": 2,
+      "--i": 2
+    }
+  }))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Ekvalayzer1;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Heart/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/react-js-loader/Heart/index.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Heart/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Heart1 = function Heart1(props) {
+  return _react.default.createElement("div", {
+    className: "sl-heart1"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _react.default.createElement("div", {
+    className: "sl-heart",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF"
+    }
+  }))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Heart1;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Hourglass/index.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-js-loader/Hourglass/index.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Hourglass/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Hourglass = function Hourglass(props) {
+  return _react.default.createElement("div", {
+    className: "sl-hourglass"
+  }, _react.default.createElement("div", {
+    className: "sl-hourglass-loader-items",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-hourglass-item",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF"
+    }
+  })), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-hourglass-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Hourglass;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Services/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-js-loader/Services/index.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var colorTypes = {
+  aliceblue: "#F0F8FF",
+  antiquewhite: "#FAEBD7",
+  aqua: "#00FFFF",
+  aquamarine: "#7FFFD4",
+  azure: "#F0FFFF",
+  beige: "#F5F5DC",
+  bisque: "#FFE4C4",
+  black: "#000000",
+  blanchedalmond: "#FFEBCD",
+  blue: "#0000FF",
+  blueviolet: "#8A2BE2",
+  brown: "#A52A2A",
+  burlywood: "#DEB887",
+  cadetblue: "#5F9EA0",
+  chartreuse: "#7FFF00",
+  chocolate: "#D2691E",
+  coral: "#FF7F50",
+  cornflowerblue: "#6495ED",
+  cornsilk: "#FFF8DC",
+  crimson: "#DC143C",
+  cyan: "#00FFFF",
+  darkblue: "#00008B",
+  darkcyan: "#008B8B",
+  darkgoldenrod: "#B8860B",
+  darkgray: "#A9A9A9",
+  darkgrey: "#A9A9A9",
+  darkgreen: "#006400",
+  darkkhaki: "#BDB76B",
+  darkmagenta: "#8B008B",
+  darkolivegreen: "#556B2F",
+  darkorange: "#FF8C00",
+  darkorchid: "#9932CC",
+  darkred: "#8B0000",
+  darksalmon: "#E9967A",
+  darkseagreen: "#8FBC8F",
+  darkslateblue: "#483D8B",
+  darkslategray: "#2F4F4F",
+  darkslategrey: "#2F4F4F",
+  darkturquoise: "#00CED1",
+  darkviolet: "#9400D3",
+  deeppink: "#FF1493",
+  deepskyblue: "#00BFFF",
+  dimgray: "#696969",
+  dimgrey: "#696969",
+  dodgerblue: "#1E90FF",
+  firebrick: "#B22222",
+  floralwhite: "#FFFAF0",
+  forestgreen: "#228B22",
+  fuchsia: "#FF00FF",
+  gainsboro: "#DCDCDC",
+  ghostwhite: "#F8F8FF",
+  gold: "#FFD700",
+  goldenrod: "#DAA520",
+  gray: "#808080",
+  grey: "#808080",
+  green: "#008000",
+  greenyellow: "#ADFF2F",
+  honeydew: "#F0FFF0",
+  hotpink: "#FF69B4",
+  indianred: "#CD5C5C",
+  indigo: "#4B0082",
+  ivory: "#FFFFF0",
+  khaki: "#F0E68C",
+  lavender: "#E6E6FA",
+  lavenderblush: "#FFF0F5",
+  lawngreen: "#7CFC00",
+  lemonchiffon: "#FFFACD",
+  lightblue: "#ADD8E6",
+  lightcoral: "#F08080",
+  lightcyan: "#E0FFFF",
+  lightgoldenrodyellow: "#FAFAD2",
+  lightgray: "#D3D3D3",
+  lightgrey: "#D3D3D3",
+  lightgreen: "#90EE90",
+  lightpink: "#FFB6C1",
+  lightsalmon: "#FFA07A",
+  lightseagreen: "#20B2AA",
+  lightskyblue: "#87CEFA",
+  lightslategray: "#778899",
+  lightslategrey: "#778899",
+  lightsteelblue: "#B0C4DE",
+  lightyellow: "#FFFFE0",
+  lime: "#00FF00",
+  limegreen: "#32CD32",
+  linen: "#FAF0E6",
+  magenta: "#FF00FF",
+  maroon: "#800000",
+  mediumaquamarine: "#66CDAA",
+  mediumblue: "#0000CD",
+  mediumorchid: "#BA55D3",
+  mediumpurple: "#9370D8",
+  mediumseagreen: "#3CB371",
+  mediumslateblue: "#7B68EE",
+  mediumspringgreen: "#00FA9A",
+  mediumturquoise: "#48D1CC",
+  mediumvioletred: "#C71585",
+  midnightblue: "#191970",
+  mintcream: "#F5FFFA",
+  mistyrose: "#FFE4E1",
+  moccasin: "#FFE4B5",
+  navajowhite: "#FFDEAD",
+  navy: "#000080",
+  oldlace: "#FDF5E6",
+  olive: "#808000",
+  olivedrab: "#6B8E23",
+  orange: "#FFA500",
+  orangered: "#FF4500",
+  orchid: "#DA70D6",
+  palegoldenrod: "#EEE8AA",
+  palegreen: "#98FB98",
+  paleturquoise: "#AFEEEE",
+  palevioletred: "#D87093",
+  papayawhip: "#FFEFD5",
+  peachpuff: "#FFDAB9",
+  peru: "#CD853F",
+  pink: "#FFC0CB",
+  plum: "#DDA0DD",
+  powderblue: "#B0E0E6",
+  purple: "#800080",
+  red: "#FF0000",
+  rosybrown: "#BC8F8F",
+  royalblue: "#4169E1",
+  saddlebrown: "#8B4513",
+  salmon: "#FA8072",
+  sandybrown: "#F4A460",
+  seagreen: "#2E8B57",
+  seashell: "#FFF5EE",
+  sienna: "#A0522D",
+  silver: "#C0C0C0",
+  skyblue: "#87CEEB",
+  slateblue: "#6A5ACD",
+  slategray: "#708090",
+  slategrey: "#708090",
+  snow: "#FFFAFA",
+  springgreen: "#00FF7F",
+  steelblue: "#4682B4",
+  tan: "#D2B48C",
+  teal: "#008080",
+  thistle: "#D8BFD8",
+  tomato: "#FF6347",
+  turquoise: "#40E0D0",
+  violet: "#EE82EE",
+  wheat: "#F5DEB3",
+  white: "#FFFFFF",
+  whitesmoke: "#F5F5F5",
+  yellow: "#FFFF00",
+  yellowgreen: "#9ACD32"
+};
+
+var getColorByName = function getColorByName(name) {
+  var key = name.toLowerCase();
+
+  if (colorTypes.hasOwnProperty(key)) {
+    return colorTypes[key];
+  }
+
+  return name;
+};
+
+var rgbToHex = function rgbToHex(rgb) {
+  var hex = Number(parseInt(rgb)).toString(16);
+
+  if (hex.length < 2) {
+    hex = "0" + hex;
+  }
+
+  return hex;
+};
+
+var percentToCountForRGB = function percentToCountForRGB(p) {
+  var per = parseInt(p);
+
+  if (isNaN(per) || per === 0) {
+    return rgbToHex(0);
+  }
+
+  var count = Math.round(255 / 100 * per);
+  return rgbToHex(count);
+};
+
+var fullColorHex = function fullColorHex(r, g, b) {
+  var red = r.indexOf('%') === -1 ? rgbToHex(r) : percentToCountForRGB(r);
+  var green = g.indexOf('%') === -1 ? rgbToHex(g) : percentToCountForRGB(g);
+  var blue = b.indexOf('%') === -1 ? rgbToHex(b) : percentToCountForRGB(b);
+  return red + green + blue;
+};
+
+var hslToHex = function hslToHex(h, sat, light) {
+  var s = parseInt(sat);
+  var l = parseInt(light);
+
+  if (isNaN(s) || isNaN(l)) {
+    return '#000000';
+  }
+
+  if (h < 0 || sat < 0 || sat > 100 || light < 0 || light > 100) {
+    return '#000000';
+  }
+
+  if (h.indexOf("deg") > -1) {
+    h = h.substr(0, h.length - 3);
+  }
+
+  if (h.indexOf("rad") > -1) {
+    h = Math.round(h.substr(0, h.length - 3) * (180 / Math.PI));
+  }
+
+  if (h.indexOf("turn") > -1) {
+    h = Math.round(h.substr(0, h.length - 4) * 360);
+  }
+
+  if (h >= 360) {
+    h %= 360;
+  }
+
+  s /= 100;
+  l /= 100;
+  var c = (1 - Math.abs(2 * l - 1)) * s;
+  var x = c * (1 - Math.abs(h / 60 % 2 - 1));
+  var m = l - c / 2;
+  var r = 0;
+  var g = 0;
+  var b = 0;
+
+  if (0 <= h && h < 60) {
+    r = c;
+    g = x;
+    b = 0;
+  } else if (60 <= h && h < 120) {
+    r = x;
+    g = c;
+    b = 0;
+  } else if (120 <= h && h < 180) {
+    r = 0;
+    g = c;
+    b = x;
+  } else if (180 <= h && h < 240) {
+    r = 0;
+    g = x;
+    b = c;
+  } else if (240 <= h && h < 300) {
+    r = x;
+    g = 0;
+    b = c;
+  } else if (300 <= h && h < 360) {
+    r = c;
+    g = 0;
+    b = x;
+  } // Having obtained RGB, convert channels to hex
+
+
+  r = Math.round((r + m) * 255).toString(16);
+  g = Math.round((g + m) * 255).toString(16);
+  b = Math.round((b + m) * 255).toString(16);
+
+  if (r.length === 1) {
+    r = "0" + r;
+  }
+
+  if (g.length === 1) {
+    g = "0" + g;
+  }
+
+  if (b.length === 1) {
+    b = "0" + b;
+  }
+
+  return "#".concat(r).concat(g).concat(b);
+};
+
+var hexColorThreeDigitToSixDigit = function hexColorThreeDigitToSixDigit(color, alpha) {
+  if (color.length === 4) {
+    var thereHex = color.substring(1, color.length);
+    var thereArray = thereHex.split('');
+    var sixHex = thereArray.reduce(function (total, item) {
+      return total += item + item;
+    }, '');
+    return "#".concat(sixHex).concat(alpha);
+  }
+
+  return "".concat(color).concat(alpha);
+};
+
+var trim = function trim(str) {
+  str = str.split(' ').join('');
+
+  if (str.indexOf(' ') !== -1) {
+    return trim(str);
+  }
+
+  return str;
+};
+
+var rgbToPart = function rgbToPart(color, alpha) {
+  if (color.indexOf("rgb") !== -1) {
+    var arrBefore = color.substring(4, color.length - 1);
+    var arr = arrBefore.split(",");
+    return "#" + fullColorHex(trim(arr[0]), trim(arr[1]), trim(arr[2])) + alpha;
+  }
+
+  if (color.indexOf("#") !== -1) {
+    return hexColorThreeDigitToSixDigit(color, alpha);
+  }
+
+  if (color.indexOf("hsl") !== -1) {
+    var _arrBefore = color.substring(4, color.length - 1);
+
+    var _arr = _arrBefore.split(",").join('').split(' ');
+
+    return hslToHex(trim(_arr[0]), trim(_arr[1]), trim(_arr[2])) + alpha;
+  }
+
+  return getColorByName(color) + alpha;
+};
+
+var getZoom = function getZoom(count) {
+  var size = parseFloat(count);
+
+  if (size === 0) {
+    return 0;
+  }
+
+  var zoom = size / 100;
+  return zoom.toFixed(2);
+};
+
+var _default = {
+  rgbToPart: rgbToPart,
+  getZoom: getZoom
+};
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Spinner/Spinner1/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-js-loader/Spinner/Spinner1/index.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Spinner/Spinner1/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+var Spinner1 = function Spinner1(props) {
+  return _react.default.createElement("div", {
+    className: "sl-spinner1"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _toConsumableArray(Array(12)).map(function (item, index) {
+    return _react.default.createElement("div", {
+      className: "sl-item",
+      key: index,
+      style: {
+        "--i": ++index,
+        "--bg": props.bgColor || "#FFFFFF"
+      }
+    });
+  }))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Spinner1;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Spinner/Spinner2/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-js-loader/Spinner/Spinner2/index.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Spinner/Spinner2/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+var Spinner2 = function Spinner2(props) {
+  return _react.default.createElement("div", {
+    className: "sl-spinner2"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-items"
+  }, _toConsumableArray(Array(8)).map(function (item, index) {
+    return _react.default.createElement("div", {
+      className: "sl-item",
+      key: index,
+      style: {
+        "--i": index,
+        "--bg": props.bgColor || "#FFFFFF"
+      }
+    });
+  }))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Spinner2;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Spinner/Spinner3/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-js-loader/Spinner/Spinner3/index.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Services = _interopRequireDefault(__webpack_require__(/*! ../../Services */ "./node_modules/react-js-loader/Services/index.js"));
+
+__webpack_require__(/*! ./style.css */ "./node_modules/react-js-loader/Spinner/Spinner3/style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Spinner3 = function Spinner3(props) {
+  return _react.default.createElement("div", {
+    className: "sl-spinner3"
+  }, _react.default.createElement("div", {
+    className: "sl-loader",
+    style: {
+      "--size": _Services.default.getZoom(props.size || 100)
+    }
+  }, _react.default.createElement("div", {
+    className: "sl-loader-parent"
+  }, _react.default.createElement("div", {
+    className: "sl-circle",
+    style: {
+      "--bg": props.bgColor || "#FFFFFF",
+      "--border": _Services.default.rgbToPart(props.bgColor, "50") || "#FFFFFF50"
+    }
+  }))), props.title !== undefined ? _react.default.createElement("div", {
+    className: "sl-loader-title",
+    style: {
+      "--cl": props.color || "#FFFFFF"
+    }
+  }, _react.default.createElement("span", null, props.title)) : null);
+};
+
+var _default = Spinner3;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/react-js-loader/index.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/**
+ * Copyright (c) Amur 2020
+ *
+ * React-js-loader by Amur
+ * https://github.com/AmurKhoyetsyan/react-js-loader
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Heart = _interopRequireDefault(__webpack_require__(/*! ./Heart */ "./node_modules/react-js-loader/Heart/index.js"));
+
+var _Box = _interopRequireDefault(__webpack_require__(/*! ./Box/Box1 */ "./node_modules/react-js-loader/Box/Box1/index.js"));
+
+var _Box2 = _interopRequireDefault(__webpack_require__(/*! ./Box/Box2 */ "./node_modules/react-js-loader/Box/Box2/index.js"));
+
+var _Box3 = _interopRequireDefault(__webpack_require__(/*! ./Box/Box3 */ "./node_modules/react-js-loader/Box/Box3/index.js"));
+
+var _Box4 = _interopRequireDefault(__webpack_require__(/*! ./Box/Box4 */ "./node_modules/react-js-loader/Box/Box4/index.js"));
+
+var _Box5 = _interopRequireDefault(__webpack_require__(/*! ./Box/Box5 */ "./node_modules/react-js-loader/Box/Box5/index.js"));
+
+var _Box6 = _interopRequireDefault(__webpack_require__(/*! ./Box/Box6 */ "./node_modules/react-js-loader/Box/Box6/index.js"));
+
+var _Bubble = _interopRequireDefault(__webpack_require__(/*! ./Bubble/Bubble1 */ "./node_modules/react-js-loader/Bubble/Bubble1/index.js"));
+
+var _Bubble2 = _interopRequireDefault(__webpack_require__(/*! ./Bubble/Bubble2 */ "./node_modules/react-js-loader/Bubble/Bubble2/index.js"));
+
+var _Bubble3 = _interopRequireDefault(__webpack_require__(/*! ./Bubble/Bubble3 */ "./node_modules/react-js-loader/Bubble/Bubble3/index.js"));
+
+var _Bubble4 = _interopRequireDefault(__webpack_require__(/*! ./Bubble/Bubble4 */ "./node_modules/react-js-loader/Bubble/Bubble4/index.js"));
+
+var _Bubble5 = _interopRequireDefault(__webpack_require__(/*! ./Bubble/Bubble5 */ "./node_modules/react-js-loader/Bubble/Bubble5/index.js"));
+
+var _Spinner = _interopRequireDefault(__webpack_require__(/*! ./Spinner/Spinner1 */ "./node_modules/react-js-loader/Spinner/Spinner1/index.js"));
+
+var _Spinner2 = _interopRequireDefault(__webpack_require__(/*! ./Spinner/Spinner2 */ "./node_modules/react-js-loader/Spinner/Spinner2/index.js"));
+
+var _Spinner3 = _interopRequireDefault(__webpack_require__(/*! ./Spinner/Spinner3 */ "./node_modules/react-js-loader/Spinner/Spinner3/index.js"));
+
+var _Ekvalayzer = _interopRequireDefault(__webpack_require__(/*! ./Ekvalayzer */ "./node_modules/react-js-loader/Ekvalayzer/index.js"));
+
+var _Hourglass = _interopRequireDefault(__webpack_require__(/*! ./Hourglass */ "./node_modules/react-js-loader/Hourglass/index.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+const Loader = props => {
+  const [defaultProps, setProps] = (0, _react.useState)({
+    type: "spinner-default",
+    bgColor: "#FFFFFF"
+  });
+  (0, _react.useEffect)(() => {
+    if (Object.keys(props).length === 0) {
+      props = defaultProps;
+    }
+
+    let newProps = { ...props
+    };
+
+    if (!newProps.hasOwnProperty("type")) {
+      newProps.type = defaultProps.type;
+    }
+
+    if (!newProps.hasOwnProperty("bgColor")) {
+      newProps.bgColor = defaultProps.bgColor;
+    }
+
+    setProps(newProps);
+  }, [props]);
+
+  switch (defaultProps.type) {
+    case "box-rotate-x":
+      return _react.default.createElement(_Box.default, defaultProps);
+
+    case "box-rotate-y":
+      return _react.default.createElement(_Box2.default, defaultProps);
+
+    case "box-rotate-z":
+      return _react.default.createElement(_Box3.default, defaultProps);
+
+    case "box-rectangular":
+      return _react.default.createElement(_Box4.default, defaultProps);
+
+    case "rectangular-ping":
+      return _react.default.createElement(_Box5.default, defaultProps);
+
+    case "box-up":
+      return _react.default.createElement(_Box6.default, defaultProps);
+
+    case "heart":
+      return _react.default.createElement(_Heart.default, defaultProps);
+
+    case "bubble-scale":
+      return _react.default.createElement(_Bubble.default, defaultProps);
+
+    case "bubble-top":
+      return _react.default.createElement(_Bubble2.default, defaultProps);
+
+    case "bubble-ping":
+      return _react.default.createElement(_Bubble3.default, defaultProps);
+
+    case "bubble-spin":
+      return _react.default.createElement(_Bubble4.default, defaultProps);
+
+    case "bubble-loop":
+      return _react.default.createElement(_Bubble5.default, defaultProps);
+
+    case "spinner-cub":
+      return _react.default.createElement(_Spinner.default, defaultProps);
+
+    case "spinner-circle":
+      return _react.default.createElement(_Spinner2.default, defaultProps);
+
+    case "spinner-default":
+      return _react.default.createElement(_Spinner3.default, defaultProps);
+
+    case "ekvalayzer":
+      return _react.default.createElement(_Ekvalayzer.default, defaultProps);
+
+    case "hourglass":
+      return _react.default.createElement(_Hourglass.default, defaultProps);
+
+    default:
+      return _react.default.createElement(_Spinner3.default, defaultProps);
+  }
+};
+
+var _default = Loader;
+exports["default"] = _default;
+
+/***/ }),
+
 /***/ "./node_modules/react/cjs/react-jsx-runtime.development.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/react/cjs/react-jsx-runtime.development.js ***!
@@ -31628,6 +33616,516 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "./node_modules/scheduler/cjs/scheduler-tracing.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Box/Box1/style.css":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box1/style.css ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box1/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Box/Box2/style.css":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box2/style.css ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box2/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Box/Box3/style.css":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box3/style.css ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box3/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Box/Box4/style.css":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box4/style.css ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box4/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Box/Box5/style.css":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box5/style.css ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box5/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Box/Box6/style.css":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-js-loader/Box/Box6/style.css ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Box/Box6/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Bubble/Bubble1/style.css":
+/*!***************************************************************!*\
+  !*** ./node_modules/react-js-loader/Bubble/Bubble1/style.css ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble1/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Bubble/Bubble2/style.css":
+/*!***************************************************************!*\
+  !*** ./node_modules/react-js-loader/Bubble/Bubble2/style.css ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble2/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Bubble/Bubble3/style.css":
+/*!***************************************************************!*\
+  !*** ./node_modules/react-js-loader/Bubble/Bubble3/style.css ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble3/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Bubble/Bubble4/style.css":
+/*!***************************************************************!*\
+  !*** ./node_modules/react-js-loader/Bubble/Bubble4/style.css ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble4/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Bubble/Bubble5/style.css":
+/*!***************************************************************!*\
+  !*** ./node_modules/react-js-loader/Bubble/Bubble5/style.css ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Bubble/Bubble5/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Ekvalayzer/style.css":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-js-loader/Ekvalayzer/style.css ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Ekvalayzer/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Heart/style.css":
+/*!******************************************************!*\
+  !*** ./node_modules/react-js-loader/Heart/style.css ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Heart/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Hourglass/style.css":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-js-loader/Hourglass/style.css ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Hourglass/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Spinner/Spinner1/style.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-js-loader/Spinner/Spinner1/style.css ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Spinner/Spinner1/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Spinner/Spinner2/style.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-js-loader/Spinner/Spinner2/style.css ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Spinner/Spinner2/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/react-js-loader/Spinner/Spinner3/style.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-js-loader/Spinner/Spinner3/style.css ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-js-loader/Spinner/Spinner3/style.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 

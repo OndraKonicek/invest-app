@@ -91,23 +91,24 @@ class App extends Component {
                 <div>
                     {
                         // Reference: https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator
-                        this.state.isLoaded && (
+                        this.state.isLoaded ? (
                             <CanvasJSStockChart
                                 containerProps={containerProps}
                                 options={options}
                                 /* onRef = {ref => this.chart = ref} */
                             />
+                        ) : (
+                            <div className={"parent-loader"}>
+                                <Loader
+                                    type="bubble-top"
+                                    bgColor={"#FFFFFF"}
+                                    title={"Loading..."}
+                                    color={"#FFFFFF"}
+                                    size={100}
+                                />
+                            </div>
                         )
                     }
-                </div>
-                <div className={"parent-loader"}>
-                    <Loader
-                        type="bubble-top"
-                        bgColor={"#FFFFFF"}
-                        title={"Loading..."}
-                        color={"#FFFFFF"}
-                        size={100}
-                    />
                 </div>
             </div>
         );
