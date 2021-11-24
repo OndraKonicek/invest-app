@@ -20,9 +20,16 @@ Route::get('/notapproved', 'HomepageController@notapproved');
 // Route::get('/dashboard', 'DashboardController@index')
 //     ->middleware('auth')
 //     ->middleware(\App\Http\Middleware\CheckUserApproved::class);
+// Route::view('/profile/edit', 'profile.edit');
 
 Route::middleware(['can:investor'])->group(function () {
 
+    // Route::get('/profile/edit', 'DashboardController@edit');
+
+    // Route::view('/my-account', 'profile.edit');
+    // Route::view('/profile/password', 'profile.password');
+    Route::get('/my-account', 'MyAccountController@password');
+    Route::get('/my-account', 'MyAccountController@edit');
     Route::get('/dashboard', 'DashboardController@index');
     Route::get('/history', 'HistoryController@index');
     Route::get('/about', 'AboutController@index');

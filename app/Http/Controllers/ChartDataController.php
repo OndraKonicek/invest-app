@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Carbon\Carbon;
 use App\Models\Deposit;
 use App\Models\Withdrawal;
 use Illuminate\Support\Facades\Auth;
 use App\BtcRate;
+use Carbon\Carbon;
 
 class ChartDataController extends Controller
 {
@@ -102,7 +102,7 @@ class ChartDataController extends Controller
                 $datePortfolioValue -= $datewithdrawalValue;
             }
             
-
+        // $accountBalances[0] =
 
             $accountBalances[] = [
                 "time" =>  $date->format("Y-m-d"),
@@ -112,11 +112,6 @@ class ChartDataController extends Controller
             //posunu se na dalsi den do dalsi iterace
             $date->addDay()->startOfDay();
         }
-        
-        
-        
-        
-        
 
         return $accountBalances;
     }

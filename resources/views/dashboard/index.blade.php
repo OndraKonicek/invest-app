@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="wrapper_dashboard">
+<div class="wrapper_dashboard">
 
         <section class="dashboard_section">
 
@@ -19,12 +19,14 @@
             </a>
             <br>
             <br>
-            <div id="root"></div>
-            <script src="/js/chart.js"></script>
+            <div class="chart">
+                <div id="root"></div>
+                <script src="/js/chart.js"></script>
+            </div>
             
         </section>
         
-    </div>
-    
+</div>
+
 @endsection
 

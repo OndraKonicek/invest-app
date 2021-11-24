@@ -1,0 +1,93 @@
+.admin-users-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(72, 72, 72);
+    color: snow;
+}
+
+.admin-users-wrapper h1 {
+    margin: 0;
+    padding: 3rem 0 2rem 0;
+}
+
+.admin-user-top-section {
+    width: 69%;
+}
+
+.admin-users-table-wrapper {
+    margin: 0;
+    padding: 3%;
+    width: 63.2%;
+    background-color: rgb(72, 72, 72);
+    border-collapse: collapse;
+    border-radius: 10px;
+    tr:nth-child(even) {
+        background-color: rgb(52, 52, 52);
+    }
+    box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+}
+
+table {
+    width: 100%;
+    border: none !important;
+}
+
+.admin-users-table {
+    margin: 0;
+    border: none !important;
+    width: 100%;
+    background-color: rgb(90, 90, 90);
+    border-collapse: collapse;
+    tr:nth-child(even) {
+        background-color: rgb(52, 52, 52);
+    }
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: none !important;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #00a7e1;
+    color: white;
+}
+
+.accept-btn {
+    background-color: rgb(10, 117, 0);
+    color: snow;
+    border-radius: 10px;
+    border: none;
+    padding: 12% 20%;
+    margin: 0 30px 0 20px;
+    cursor: pointer;
+}
+
+.accept-btn:hover {
+    background-color: rgb(8, 91, 0);
+}
+
+.deny-btn {
+    background-color: rgb(177, 0, 0);
+    color: snow;
+    border-radius: 10px;
+    border: none;
+    padding: 13% 20%;
+    margin: 0 30px 0 20px;
+    cursor: pointer;
+}
+
+.deny-btn:hover {
+    background-color: rgb(118, 0, 0);
+}

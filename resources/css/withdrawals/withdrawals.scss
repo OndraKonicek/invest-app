@@ -1,16 +1,69 @@
+// .wrapper-withdrawals {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 100%;
+//     min-height: 100vh;
+// }
+
 .wrapper-withdrawals {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 78.8vh;
+    background-color: rgb(72, 72, 72);
+    color: snow;
 }
 
 .withdrawals_section {
     width: 69%;
     margin-top: 3rem;
+    background-color: darkkhaki;
 }
 
 .withdrawals_content {
-    width: 69%;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    background-color: rgb(90, 90, 90);
+    border-radius: 10px;
+    padding: 1% 4%;
+    box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+}
+
+.withdrawal-amount-input {
+    border: none;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.withdrawal-btn {
+    color: snow;
+    background-color: #00a7e1;
+    padding: 4% 17%;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.withdrawal-btn:hover {
+    color: snow;
+    background-color: #007ca5;
+}
+
+.withdrawal-image {
+    background-image: url("/img/withdrawal-form.jpg");
+    height: 55vh;
+    width: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 5% 0 5% 5%;
+    border-radius: 10px;
 }

@@ -10,8 +10,8 @@
             <form action="/deposits" method="post">
                 @csrf
                 <label for="deposit">Amount:</label><br>
-                <input type="text" id="deposit" name="amount" required><br>
-                <input type="submit" value="Confirm Deposit"><br>
+                <input class=deposit-amount-input type="text" id="deposit" name="amount" placeholder="Your Deposit" required><br>
+                <input class="deposit-btn" type="submit" value="Confirm Deposit"><br>
             </form>
             <br>
     
@@ -22,5 +22,8 @@
             @endif
 
         </section>
+
+        {{-- <script src="{{ mix('js/deposits-popup.js')}}"></script> --}}
+
     </div>
 @endsection

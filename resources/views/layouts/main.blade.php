@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
+    <meta name='X-CSRF' content='{{ csrf_token() }}' id='meta-csrf'>
 </head>
 
 <body class="body">
@@ -19,7 +20,10 @@
             {{-- pokud je uzivatel null zobrazi se login/register jinak se zobrazi logout --}}
             @if(Auth :: user () == null)
                     <div class="login-register-btn">
+                        <div id='login-modal'></div>
+
                         <a class="login__btn" href="/login">Login</a>
+                        
                         <a class="register__btn" href="/register">Register</a>
                     </div>
             @else
@@ -27,51 +31,65 @@
 
                         @if (Auth::user()->hasRole('admin'))
                             {{-- <a href="/admin">Users</a> --}}
+                        
+                            @if( Request::path() == 'admin' ) 
+                                <a href="/admin" style="background-color: snow; color: #00a7e1">Users</a>
 
-                        @if( Request::path() == 'admin' ) 
-                            <a href="/admin" style="background-color: snow; color: #00a7e1">Users</a>
+                            @else <a href="/admin">Users</a>
 
-                        @else <a href="/admin">Users</a>
+                            @endif
 
-                        @endif
+                            {{-- <a href="/admin/transactions">Transactions</a> --}}
 
-                        {{-- <a href="/admin/transactions">Transactions</a> --}}
-
-                        @if( Request::path() == 'admin/transactions' ) 
-                            <a href="/admin/transactions" style="background-color: snow; color: #00a7e1">Transactions</a>
+                            @if( Request::path() == 'admin/transactions' ) 
+                                <a href="/admin/transactions" style="background-color: snow; color: #00a7e1">Transactions</a>
 
                             @else <a href="/admin/transactions">Transactions</a>
 
-                        @endif
+                            @endif
+
+                            {{-- @if( Request::path() == 'cryptoDerivatives' ) 
+                                <a href="/cryptoDerivatives" style="background-color: snow; color: #00a7e1">Crypto Derivatives</a>
+                        
+                            @else <a href="/cryptoDerivatives">Crypto Derivatives</a>
+                        
+                            @endif --}}
+
+                            @if( Request::path() == 'about' ) 
+                                <a href="/about" style="background-color: snow; color: #00a7e1">About Us</a>
+                        
+                            @else <a href="/about">About Us</a>
+                        
+                            @endif
 
                         @elseif (Auth::user()->hasRole('investor'))
                         
-                        @if( Request::path() == 'dashboard' ) 
-                            <a href="/dashboard" style="background-color: snow; color: #00a7e1">Portfolio</a>
+                            @if( Request::path() == 'dashboard' ) 
+                                <a href="/dashboard" style="background-color: snow; color: #00a7e1">Portfolio</a>
                             @else <a href="/dashboard">Portfolio</a>
 
-                        @endif
+                            @endif
 
-                        @if( Request::path() == 'history' ) 
-                            <a href="/history" style="background-color: snow; color: #00a7e1">History</a>
-                    
+                            @if( Request::path() == 'history' ) 
+                                <a href="/history" style="background-color: snow; color: #00a7e1">History</a>
+                        
                             @else <a href="/history">History</a>
-                    
-                        @endif
+                        
+                            @endif
 
-                        @if( Request::path() == 'cryptoDerivatives' ) 
-                            <a href="/cryptoDerivatives" style="background-color: snow; color: #00a7e1">Investment Types</a>
-                    
-                            @else <a href="/cryptoDerivatives">Investment Types</a>
-                    
-                        @endif
+                            {{-- @if( Request::path() == 'cryptoDerivatives' ) 
+                                <a href="/cryptoDerivatives" style="background-color: snow; color: #00a7e1">Crypto Derivatives</a>
+                        
+                            @else <a href="/cryptoDerivatives">Crypto Derivatives</a>
+                        
+                            @endif --}}
 
-                        @if( Request::path() == 'about' ) 
-                            <a href="/about" style="background-color: snow; color: #00a7e1">About Us</a>
-                    
+                            @if( Request::path() == 'about' ) 
+                                <a href="/about" style="background-color: snow; color: #00a7e1">About Us</a>
+                        
                             @else <a href="/about">About Us</a>
-                    
-                        @endif
+                        
+                            @endif
 
                         @endif
 
@@ -81,43 +99,46 @@
                 
                     </div>
                 
-                <div class="dropdown">
+                    <div class="dropdown">
 
-                    <button class="dropbtn">{{Auth::user()->first_name}} {{Auth::user()->last_name}} 
-                        <i class="fa fa-caret-down"></i>
-                    </button>
+                        <button class="dropbtn">{{Auth::user()->first_name}} {{Auth::user()->last_name}}
+                            <i class="fa fa-caret-down"></i>
+                        </button>
 
-                    <div class="dropdown-content">
-                        
-                        @if (Auth::user()->hasRole('investor'))
-                            <a href="/cryptoDerivatives">Deposit Now</a>
-                            <a href="/withdrawals">Withdrawals</a>
-                            <form action="{{ route('logout') }}" method="post">
-                                @csrf
-                                <button class="logout-button">Logout</button>
-                            </form>
-                        @else 
-                            <form action="{{ route('logout') }}" method="post">
-                                @csrf
-                                <button class="logout-button">Logout</button>
-                            </form>
-                        @endif
+                        <div class="dropdown-content">
+                            
+                            @if (Auth::user()->hasRole('investor'))
+                                {{-- <a href="/cryptoDerivatives">Deposit Now</a>
+                                <a href="/withdrawals">Withdrawals</a> --}}
+                                <a href="/my-account">My account</a>
+                                <form action="{{ route('logout') }}" method="post">
+                                    @csrf
+                                    <button class="logout-button">Logout</button>
+                                </form>
+                            @else 
+                                <form action="{{ route('logout') }}" method="post">
+                                    @csrf
+                                    <button class="logout-button">Logout</button>
+                                </form>
+                            @endif
 
-                    </div>
-                </div> 
-            @endif
+                        </div>
+                    </div> 
+                @endif
         </div>
     </div>
 
     @yield('content')
 
     <footer class="footer">
-        <small> Siance &copy; </small> &nbsp; <small id="year"></small>   
+        <small> Invest App &copy; </small> &nbsp; <small id="year"></small>   
     </footer>
 
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
+
+    <script src='/js/modal.js'></script>
 
 </body>
 </html>

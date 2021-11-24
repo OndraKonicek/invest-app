@@ -22,8 +22,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  width: 99vw;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 77vh;
 }
 
 .body {
@@ -31,8 +32,27 @@
 }
 
 .homepage-header {
-  color: #00a7e1;
+  color: snow;
   font-size: 40px;
+}
+
+.intro-page {
+  overflow: hidden;
+  background-image: url("/img/home-bg.jpg");
+  height: 76.7vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.modal-btn {
+  background-color: red;
+}
+
+#login-modal {
+  background: transparent;
+  border: none;
 }
 
 .login-body {
@@ -131,6 +151,12 @@
 .register-button:hover {
   background-color: snow;
   color: #00a7e1;
+}
+
+.registration-form a {
+  color: snow;
+  text-decoration: none;
+  font-size: 12px;
 }
 
 .body {
@@ -259,6 +285,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: #484848;
 }
 
 .dashboard_section {
@@ -280,16 +307,28 @@
   color: snow;
 }
 
+.chart {
+  background-color: #2a2a2a;
+  padding: 2%;
+  border-radius: 20px;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  margin-bottom: 5rem;
+}
+
 .wrapper-history {
   display: flex;
   justify-content: center;
   width: 100%;
   min-height: 100vh;
+  background-color: #484848;
 }
 
 .history_section {
   width: 69%;
   margin-top: 3rem;
+  color: snow;
 }
 
 .history_section h3 {
@@ -299,61 +338,158 @@
 .deposits-table {
   margin: 0;
   width: 100%;
+  background-color: #5a5a5a;
+  border-collapse: collapse;
+}
+.deposits-table tr:nth-child(even) {
+  background-color: #343434;
 }
 
 .withdrawals-table {
   margin: 0;
   width: 100%;
+  background-color: #5a5a5a;
+  border-collapse: collapse;
+}
+.withdrawals-table tr:nth-child(even) {
+  background-color: #343434;
+}
+
+table {
+  width: 100%;
+  border: none !important;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: none !important;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #00a7e1;
+  color: white;
+}
+
+.deposit-table-section {
+  background-color: #484848;
+  padding: 3%;
+  border-radius: 10px;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
 .wrapper_deposits {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  min-height: 70vh;
+  min-height: 78.8vh;
+  background-color: #484848;
+  color: snow;
 }
 
 .deposits_section {
-  width: 69%;
+  display: flex;
+  flex-direction: column;
+  padding: 1% 4%;
+  width: 12%;
   margin-top: 3rem;
-  background-color: orangered;
+  background-color: #5a5a5a;
+  border-radius: 10px;
+  height: 40vh;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
-.deposit-input {
-  border: 1px solid #00a7e1;
-  border-radius: 5px;
-  padding: 0.7%;
+.deposit-amount-input {
+  border: none;
+  border-radius: 10px;
+  padding: 3%;
 }
 
-.deposit-button {
-  color: #00a7e1;
-  background-color: snow;
-  padding: 0.7%;
-  border-radius: 5px;
-  border: 1px solid #00a7e1;
+.deposit-btn {
+  color: snow;
+  background-color: #00a7e1;
+  padding: 3% 21%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 6%;
   cursor: pointer;
 }
 
-.deposit-button:hover {
+.deposit-btn:hover {
   color: snow;
-  background-color: #00a7e1;
+  background-color: #007ca5;
 }
 
 .wrapper-withdrawals {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 78.8vh;
+  background-color: #484848;
+  color: snow;
 }
 
 .withdrawals_section {
   width: 69%;
   margin-top: 3rem;
+  background-color: darkkhaki;
 }
 
 .withdrawals_content {
-  width: 69%;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  background-color: #5a5a5a;
+  border-radius: 10px;
+  padding: 1% 4%;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+}
+
+.withdrawal-amount-input {
+  border: none;
+  border-radius: 10px;
+  padding: 3%;
+}
+
+.withdrawal-btn {
+  color: snow;
+  background-color: #00a7e1;
+  padding: 4% 17%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.withdrawal-btn:hover {
+  color: snow;
+  background-color: #007ca5;
+}
+
+.withdrawal-image {
+  background-image: url("/img/withdrawal-form.jpg");
+  height: 55vh;
+  width: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 5% 0 5% 5%;
+  border-radius: 10px;
 }
 
 .wrapper-about {
@@ -391,7 +527,6 @@
 }
 
 .about-our-team img {
-  border-radius: 50%;
   width: 15rem;
   height: auto;
 }
@@ -400,6 +535,9 @@
   width: 25%;
   line-height: 1.4;
   letter-spacing: 0.1rem;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
 .wrapper-cryptoDerivatives {
@@ -427,9 +565,12 @@
 .crypto-futures {
   width: 25%;
   height: 70%;
-  border: 3px solid #00a7e1;
-  border-radius: 20px;
+  border: 1px solid #00a7e1;
+  border-radius: 5px;
   padding: 3%;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
 .crypto-futures h3 {
@@ -448,8 +589,8 @@
   font-size: 16px;
   background-color: snow;
   color: #00a7e1;
-  border-radius: 20px;
-  border: 3px solid #00a7e1;
+  border-radius: 5px;
+  border: 1px solid #00a7e1;
   cursor: pointer;
 }
 
@@ -469,7 +610,7 @@
 
 .crypto-futures img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .footer {
@@ -480,7 +621,183 @@
   width: 100%;
   color: snow;
   background-color: black;
-  margin-top: 5rem;
+}
+
+.admin-transactions-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #484848;
+  color: snow;
+}
+
+.admin-transactions-wrapper h1 {
+  margin: 0;
+  padding: 3rem 0 2rem 0;
+}
+
+.admin-transactions-top-section {
+  width: 69%;
+}
+
+.admin-transactions-table-wrapper {
+  margin: 0;
+  padding: 3%;
+  margin: 0.5rem 0 2rem 0;
+  width: 63.2%;
+  background-color: #484848;
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+}
+.admin-transactions-table-wrapper tr:nth-child(even) {
+  background-color: #343434;
+}
+
+table {
+  width: 100%;
+  border: none !important;
+}
+
+.admin-transactions-table {
+  margin: 0;
+  border: none !important;
+  width: 100%;
+  background-color: #5a5a5a;
+  border-collapse: collapse;
+}
+.admin-transactions-table tr:nth-child(even) {
+  background-color: #343434;
+}
+
+.admin-transactions-middle-section {
+  width: 69%;
+}
+
+.complete-btn {
+  background-color: #0a7500;
+  color: snow;
+  border-radius: 10px;
+  border: none;
+  padding: 10% 20%;
+  margin: 0 30px 0 20px;
+  cursor: pointer;
+}
+
+.complete-btn:hover {
+  background-color: #085b00;
+}
+
+.deny-btn {
+  background-color: #b10000;
+  color: snow;
+  border-radius: 10px;
+  border: none;
+  padding: 13% 20%;
+  margin: 0 30px 0 20px;
+  cursor: pointer;
+}
+
+.deny-btn:hover {
+  background-color: #760000;
+}
+
+.admin-users-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #484848;
+  color: snow;
+}
+
+.admin-users-wrapper h1 {
+  margin: 0;
+  padding: 3rem 0 2rem 0;
+}
+
+.admin-user-top-section {
+  width: 69%;
+}
+
+.admin-users-table-wrapper {
+  margin: 0;
+  padding: 3%;
+  width: 63.2%;
+  background-color: #484848;
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+}
+.admin-users-table-wrapper tr:nth-child(even) {
+  background-color: #343434;
+}
+
+table {
+  width: 100%;
+  border: none !important;
+}
+
+.admin-users-table {
+  margin: 0;
+  border: none !important;
+  width: 100%;
+  background-color: #5a5a5a;
+  border-collapse: collapse;
+}
+.admin-users-table tr:nth-child(even) {
+  background-color: #343434;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: none !important;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #00a7e1;
+  color: white;
+}
+
+.accept-btn {
+  background-color: #0a7500;
+  color: snow;
+  border-radius: 10px;
+  border: none;
+  padding: 12% 20%;
+  margin: 0 30px 0 20px;
+  cursor: pointer;
+}
+
+.accept-btn:hover {
+  background-color: #085b00;
+}
+
+.deny-btn {
+  background-color: #b10000;
+  color: snow;
+  border-radius: 10px;
+  border: none;
+  padding: 13% 20%;
+  margin: 0 30px 0 20px;
+  cursor: pointer;
+}
+
+.deny-btn:hover {
+  background-color: #760000;
 }
 
 table {

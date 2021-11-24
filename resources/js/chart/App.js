@@ -1,10 +1,9 @@
 /* App.js */
 import React, { Component } from "react";
-import CanvasJSReact from './canvasjs.stock.react';
+import CanvasJSReact from "./canvasjs.stock.react";
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSStockChart = CanvasJSReact.CanvasJSStockChart;
- 
- 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -98,5 +97,5 @@ class App extends Component {
     );
   }
 }
- 
-export default App; 
+
+export default App;
