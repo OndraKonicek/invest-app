@@ -71,7 +71,7 @@
 
                                 <div class="mb-0 form-group row">
                                     <div class="col-md-8 offset-md-4">
-                                        <button type="submit" class="btn btn-primary">
+                                        <button type="submit" class="btn update-btn">
                                             {{ __('Update Profile') }}
                                         </button>
                                     </div>
@@ -142,7 +142,7 @@
 
                                 <div class="mb-0 form-group row">
                                     <div class="col-md-6 offset-md-4">
-                                        <button type="submit" class="btn btn-primary">
+                                        <button type="submit" class="btn save-btn">
                                             {{ __('Save') }}
                                         </button>
                                     </div>
