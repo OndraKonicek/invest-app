@@ -95,7 +95,7 @@ var App = /*#__PURE__*/function (_Component) {
         title: {
           text: ""
         },
-        theme: "light2",
+        theme: "dark1",
         subtitles: [{
           text: ""
         }],
@@ -122,7 +122,7 @@ var App = /*#__PURE__*/function (_Component) {
           data: [{
             name: "Amount (in CZK)",
             type: "splineArea",
-            color: "#3576a8",
+            color: "#00a7e1",
             yValueFormatString: "#,###.##",
             xValueFormatString: "MMM DD YYYY",
             dataPoints: this.state.dataPoints

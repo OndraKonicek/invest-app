@@ -17,6 +17,12 @@
     margin-right: 2rem;
 }
 
+.history-deposits-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .deposits-table {
     margin-top: 1rem;
     width: 100%;
@@ -71,7 +77,7 @@ th {
 .history-deposit-btn {
     background-color: #00a7e1;
     color: snow;
-    padding: 0.5% 4%;
+    padding: 7px 25px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -80,7 +86,7 @@ th {
 .history-withdrawal-btn {
     background-color: #00a7e1;
     color: snow;
-    padding: 0.5% 4%;
+    padding: 7px 25px;
     border: none;
     border-radius: 10px;
     cursor: pointer;

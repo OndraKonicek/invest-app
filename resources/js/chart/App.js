@@ -35,7 +35,7 @@ class App extends Component {
             title: {
                 text: "",
             },
-            theme: "light2",
+            theme: "dark1",
             subtitles: [
                 {
                     text: "",
@@ -66,7 +66,7 @@ class App extends Component {
                         {
                             name: "Amount (in CZK)",
                             type: "splineArea",
-                            color: "#3576a8",
+                            color: "#00a7e1",
                             yValueFormatString: "#,###.##",
                             xValueFormatString: "MMM DD YYYY",
                             dataPoints: this.state.dataPoints,

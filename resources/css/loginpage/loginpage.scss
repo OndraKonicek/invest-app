@@ -1,15 +1,19 @@
 .login-body {
-    background-color: snow;
+    background-image: url("/img/home-bg.jpg");
     display: flex;
     height: 97vh;
     justify-content: center;
     align-items: center;
     font-family: "Rubik", sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .login-form {
-    background-color: #00a7e1;
-    padding: 5% 20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5% 8%;
     color: snow;
     border-radius: 5px;
 }
@@ -34,8 +38,7 @@
 }
 
 .login-button:hover {
-    background-color: snow;
-    color: #00a7e1;
+    background-color: #007ca5;
 }
 
 .login-form a {
@@ -49,6 +52,7 @@
     border-radius: 5px;
     padding: 2%;
     margin-top: 5px;
+    outline: none;
 }
 
 .password-input {

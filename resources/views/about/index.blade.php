@@ -16,31 +16,40 @@
 
                 <div class="team-member-info">
 
-                    <img src="img/filip.jpg" alt="Filip Trbusek">
+                    <img src="img/filip2.jpg" alt="Filip">
 
                     <h4>Product Manager</h4>
                     <p>Filip Trbušek</p>
-                    <p>Filip is product manager whocurrently has 5 years of experience as a Product Manager. </p>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique velit in magna finibus faucibus.
+
+ </p>
+                    </div>
 
                 </div>
 
                 <div class="team-member-info">
-
-                    <img src="img/filip.jpg" alt="Filip Trbusek">
+                    
+                    <img src="img/julka.jpg" alt="Julka">
 
                     <h4>Chart Specialist</h4>
                     <p>Julie Kunčarová</p>
-                    <p>Filip is product manager whocurrently has 5 years of experience as a Product Manager. </p>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique velit in magna finibus faucibus.
 
+ </p>
+                    </div>
                 </div>
 
                 <div class="team-member-info">
 
-                    <img src="img/filip.jpg" alt="Filip Trbusek">
+                    <img src="img/ondra.jpg" alt="Ondra">
 
                     <h4>Full Stack Developer</h4>
                     <p>Ondřej Koníček</p>
-                    <p>Filip is product manager whocurrently has 5 years of experience as a Product Manager. </p>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique velit in magna finibus faucibus.</p>
+                    </div>
 
                 </div>
 

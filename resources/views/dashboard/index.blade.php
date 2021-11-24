@@ -5,18 +5,19 @@
 <div class="wrapper_dashboard">
 
         <section class="dashboard_section">
-
             <h1>Your Portfolio</h1>
-            <br>
-            <div>
-                <h3>{{$portfolioValue}}</h3>
-                <h3>{{$totalDeposit}}</h3>
-                <h3>{{$totalWithdraw}}</h3>
+            <div class="dashboard-overview-section">
+                <div class="investor-values">
+                    <h3>Current value: <br><br>{{round($portfolioValue)}} CZK</h3>
+                    <h3>Deposited: <br><br> {{$totalDeposit}} CZK</h3>
+                    <h3>Withdrawed: <br><br> {{$totalWithdraw}} CZK</h3>
+                </div>
+                <div class="investor-btn">
+                    <a href="/deposits"><button class="invest-btn">Invest Now</button></a>
+                </div>
             </div>
-            <br>
-            <a href="/deposits"> 
-                <button class="invest-btn">Invest now</button>
-            </a>
+            
+            
             <br>
             <br>
             <div class="chart">

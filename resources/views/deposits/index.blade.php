@@ -2,23 +2,44 @@
 
 @section('content')
     <div class="wrapper_deposits">
-        <section class="deposits_section">
-
+        <section class="deposits_content">
+            <div class="form-section">
             <h1>Deposit Now</h1>
 
             <form action="/deposits" method="post">
                 @csrf
                 <label for="deposit">Amount:</label><br>
-                <input class=deposit-amount-input type="text" id="deposit" name="amount" placeholder="Your Deposit" required><br>
-                <input class="deposit-btn" type="submit" value="Confirm Deposit"><br>
-            </form>
-            <br>
-    
-            @if (Session::has('success_message'))
+                <input class=deposit-amount-input type="text" id="deposit" name="amount" placeholder="Your Deposit" required>
+                <br>
+                <br>
+                  <label for="full_name">Full Name:</label>
+                <br>
+                <input class="withdrawal-amount-input" class="deposit-input" type="text" id="full_name" name="full_name" required placeholder="Full Name">
+                <br><br>
+                <label for="card_number">Card Number:</label>
+                <br>
+                <input class="withdrawal-amount-input" class="deposit-input" type="text" id="card_number" name="card_number" required placeholder="- - - -   - - - -   - - - -   - - - -">
+                <br><br>
+                <label for="expiry_date">Expiry Date:</label>
+                <br>
+                <input class="withdrawal-amount-input" class="deposit-input" type="date" id="expiry_date" name="expiry_date" required placeholder="DD/MM/YYYY">
+                <br><br>
+                <label for="expiry_date">CVC:</label>
+                <br>
+                <input class="withdrawal-amount-input" class="deposit-input" type="text" id="CVC" name="CVC" required placeholder="- - -">
+                
+                <input class="deposit-btn" type="submit" value="Confirm Deposit"><br /><br />
+
+                @if (Session::has('success_message'))
                 <div class="alert alert-success">
                     {{ Session::get('success_message') }}
                 </div>
             @endif
+            </form>
+            </div>
+            <br>
+    
+            
 
         </section>
 

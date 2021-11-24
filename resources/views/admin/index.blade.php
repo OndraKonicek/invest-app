@@ -18,8 +18,8 @@
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Actions</th>
                         <th>Date approved</th>
+                        <th></th>
 
                     </tr>
                 </thead>
@@ -29,6 +29,7 @@
                         <tr>
                             <td>{{ $user->first_name }} {{ $user->last_name }}</td>  
                             <td>{{ $user->email }} </td>
+                            <td>{{$user->date_approved}}</td>
                             <td>
                                 <div class="action">
                                     @if ($user->date_approved == null)
@@ -46,7 +47,7 @@
                                     @endif
                                 </div>
                             </td>
-                            <td>{{$user->date_approved}}</td>
+                            
                         </tr>
                     @endforeach
                 </tbody>   

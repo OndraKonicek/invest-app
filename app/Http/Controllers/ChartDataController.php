@@ -46,9 +46,9 @@ class ChartDataController extends Controller
         $dateToday = Carbon::now()->startOfDay();
 
         //vytahnu si vsechny vklady - jeste pred cyklem (v cyklu se meni jen kurz)
-        $deposits = Deposit::where('user_id', Auth::user()->id)->get();
+        $deposits = Deposit::where('user_id', Auth::user()->id)->where('status', 'Completed')->get();
         //vytahnu si vsechny vybery - jeste pred cyklem (v cyklu se meni jen kurz)
-        $withdrawals = Withdrawal::where('user_id', Auth::user()->id)->get();
+        $withdrawals = Withdrawal::where('user_id', Auth::user()->id)->where('status', 'Completed')->get();
 
         //pripravim si vysledne pole pro vykresleni do grafu
         $accountBalances =  [];

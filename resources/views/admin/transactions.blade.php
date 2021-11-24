@@ -8,7 +8,7 @@
     </div>
 
     <div class="admin-transactions-table-wrapper">
-        <h3>List of pending user's deposits requests</h3>
+        <h3>Pending deposits </h3>
         
         <table class="admin-transactions-table">
             <thead>
@@ -17,7 +17,7 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Deposit</th>
-                    <th>Actions</th>
+                    <th></th>
                 </tr>
             </thead>
 
@@ -33,7 +33,7 @@
                                 @if ($deposit->status == 'Pending')
                             <form action="{{action('Admin\PendingTransactionController@deposits', $deposit->id)}}"  method="post">
                                 @csrf
-                                <button class="complete-btn">Complete</button>
+                                <button class="complete-btn">Accept</button>
                             </form>
                             
                             <form action="{{ action('Admin\PendingTransactionController@denydeposits', $deposit->id) }}" method="post">
@@ -53,7 +53,7 @@
     </div>
 
     <div class="admin-transactions-table-wrapper">
-        <h3>List of pending user's withdrawals requests</h3>
+        <h3>Pending withdrawals</h3>
         <table class="admin-transactions-table">
             <thead>
                 <tr>
@@ -61,7 +61,7 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Withdrawal</th>
-                    <th>Actions</th>
+                    <th></th>
                 </tr>
             </thead>
 
@@ -77,7 +77,7 @@
                                 @if ($withdrawal->status == 'Pending')
                             <form action="{{action('Admin\PendingTransactionController@withdrawals', $withdrawal->id)}}"  method="post">
                                 @csrf
-                                <button class="complete-btn">Complete</button> 
+                                <button class="complete-btn">Accept</button> 
                             </form>
                             
                             <form action="{{ action('Admin\PendingTransactionController@denywithdrawals', $withdrawal->id) }}" method="post">

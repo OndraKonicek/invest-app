@@ -1,15 +1,19 @@
 .regitration-body {
     align-items: center;
-    background-color: snow;
+    background-image: url("/img/home-bg.jpg");
     display: flex;
     font-family: "Rubik", sans-serif;
     height: 97vh;
     justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .registration-form {
-    background-color: #00a7e1;
-    padding: 5% 20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5% 8%;
     color: snow;
     border-radius: 5px;
 }
@@ -18,6 +22,7 @@
     border: 1px solid #00a7e1;
     border-radius: 5px;
     padding: 2%;
+    outline: none;
 }
 
 .register-button {
@@ -32,8 +37,7 @@
 }
 
 .register-button:hover {
-    background-color: snow;
-    color: #00a7e1;
+    background-color: #007ca5;
 }
 
 .registration-form a {
@@ -41,12 +45,3 @@
     text-decoration: none;
     font-size: 12px;
 }
-
-// .registration-form {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 100vw;
-//     height: 100vh;
-//     background-color: orange;
-// }

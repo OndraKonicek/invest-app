@@ -4,11 +4,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-color: rgb(72, 72, 72);
 }
 
 .about_section {
     width: 69%;
     margin-top: 3rem;
+    color: snow;
 }
 
 .about-our-team {
@@ -36,10 +38,25 @@
 }
 
 .team-member-info {
+    background-color: rgb(90, 90, 90);
     width: 25%;
     line-height: 1.4;
+    border-radius: 10px;
+    margin-bottom: 5rem;
     letter-spacing: 0.1rem;
     box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
     -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
     -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.65);
+}
+
+.team-member-info h4 {
+    background-color: snow;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.card-text {
+    padding: 10px;
+    margin-top: 0;
 }

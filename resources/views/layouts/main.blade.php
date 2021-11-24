@@ -55,12 +55,6 @@
                         
                             @endif --}}
 
-                            @if( Request::path() == 'about' ) 
-                                <a href="/about" style="background-color: snow; color: #00a7e1">About Us</a>
-                        
-                            @else <a href="/about">About Us</a>
-                        
-                            @endif
 
                         @elseif (Auth::user()->hasRole('investor'))
                         

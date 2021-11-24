@@ -434,8 +434,10 @@
 
             
             <div class="deposit-table-section">
-                <h3>Deposits</h3>
-                <a href="/deposits"><button class="history-deposit-btn">Deposit</button></a>
+                <div class="history-deposits-header">
+                    <h3>Deposits</h3>
+                    <a href="/deposits"><button class="history-deposit-btn">Deposit</button></a>
+                </div>
                 <table class="deposits-table">
                     <thead>
                         <tr>
@@ -476,8 +478,13 @@
 
             
             <div class="deposit-table-section">
-                <h3>Withdrawals</h3>
-                <a href="/withdrawals"><button class="history-withdrawal-btn">Withdrawal</button></a>
+                
+
+                <div class="history-deposits-header">
+                    <h3>Withdrawals</h3>
+                    <a href="/withdrawals"><button class="history-withdrawal-btn">Withdraw</button></a>
+                </div>
+
                 <table class="withdrawals-table">
                     <thead>
                         <tr>
