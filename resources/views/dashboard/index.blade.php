@@ -8,7 +8,11 @@
 
             <h1>Your Portfolio</h1>
             <br>
-            <h3>{$current value}</h3>
+            <div>
+                <h3>{{$portfolioValue}}</h3>
+                <h3>{{$totalDeposit}}</h3>
+                <h3>{{$totalWithdraw}}</h3>
+            </div>
             <br>
             <a href="/cryptoDerivatives"> 
                 <button class="invest-btn">Invest now</button>

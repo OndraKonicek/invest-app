@@ -41,6 +41,7 @@ Route::middleware(['can:investor'])->group(function () {
     Route::post('/withdrawals', 'WithdrawalsController@store');
     Route::get('/withdrawals', 'WithdrawalsController@index');
     Route::get('/data', 'ChartDataController@accountData');
+    
     Route::get('/account-data', 'ChartDataController@accountData');
 });
 

@@ -18,7 +18,7 @@
     <div class="login-register">
         <div class="navigation-wrapper">
             {{-- pokud je uzivatel null zobrazi se login/register jinak se zobrazi logout --}}
-                @if(Auth :: user () == null)
+            @if(Auth :: user () == null)
                     <div class="login-register-btn">
                         <div id='login-modal'></div>
 
@@ -26,7 +26,7 @@
                         
                         <a class="register__btn" href="/register">Register</a>
                     </div>
-                @else
+            @else
                     <div class="navigation">  
 
                         @if (Auth::user()->hasRole('admin'))
