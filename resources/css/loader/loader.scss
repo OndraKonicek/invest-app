@@ -1,0 +1,23 @@
+.parent-switch .toggle-parent .toggle-input:checked ~ .type.pm {
+    color: #ffffff;
+}
+
+.matrix-canvas-1 {
+    width: 550px;
+    height: 300px;
+}
+
+.parent-loader {
+    background-color: #1f1f1f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
