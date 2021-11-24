@@ -17,21 +17,21 @@
     <div class="login-register">
         <div class="navigation-wrapper">
             {{-- pokud je uzivatel null zobrazi se login/register jinak se zobrazi logout --}}
-                @if(Auth :: user () == null)
+            @if(Auth :: user () == null)
                     <div class="login-register-btn">
                         <a class="login__btn" href="/login">Login</a>
                         <a class="register__btn" href="/register">Register</a>
                     </div>
-                @else
+            @else
                     <div class="navigation">  
 
                         @if (Auth::user()->hasRole('admin'))
                             {{-- <a href="/admin">Users</a> --}}
-                        
+
                         @if( Request::path() == 'admin' ) 
                             <a href="/admin" style="background-color: snow; color: #00a7e1">Users</a>
 
-                        @else <a href="/dashboard">Users</a>
+                        @else <a href="/admin">Users</a>
 
                         @endif
 
@@ -44,7 +44,7 @@
 
                         @endif
 
-                @elseif (Auth::user()->hasRole('investor'))
+                        @elseif (Auth::user()->hasRole('investor'))
                         
                         @if( Request::path() == 'dashboard' ) 
                             <a href="/dashboard" style="background-color: snow; color: #00a7e1">Portfolio</a>

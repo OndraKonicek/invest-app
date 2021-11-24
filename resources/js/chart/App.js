@@ -19,6 +19,7 @@ class App extends Component {
         (data) => {
           var dps = [];
           for (var i = 0; i < data.length; i++) {
+
             dps.push({
               x: new Date(data[i].time),
               y: Number(data[i].value_change)
@@ -37,7 +38,7 @@ class App extends Component {
       title:{
         text:""
       },
-      theme: "dark1",
+      theme: "light2",
       subtitles: [{
         text: ""
       }],
@@ -72,14 +73,14 @@ class App extends Component {
       }],
       navigator: {
         slider: {
-          minimum: new Date(""),
-          maximum: new Date()
+          minimum: new Date("2020-01-01"),
+          maximum: new Date("2021-12-30")
         }
       }
     };
     const containerProps = {
       width: "100%",
-      height: "500px",
+      height: "400px",
       margin: "auto"
     };
     return (
