@@ -14,7 +14,7 @@
                 <h3>{{$totalWithdraw}}</h3>
             </div>
             <br>
-            <a href="/cryptoDerivatives"> 
+            <a href="/deposits"> 
                 <button class="invest-btn">Invest now</button>
             </a>
             <br>

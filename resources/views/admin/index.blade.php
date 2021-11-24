@@ -19,6 +19,8 @@
                         <th>Name</th>
                         <th>Email</th>
                         <th>Actions</th>
+                        <th>Date approved</th>
+
                     </tr>
                 </thead>
             
@@ -40,10 +42,11 @@
                                             <button class="deny-btn">Deny</button> 
                                         </form>
                                     @else
-                                        Date approved: {{$user->date_approved}}
+                                        <div></div>
                                     @endif
                                 </div>
                             </td>
+                            <td>{{$user->date_approved}}</td>
                         </tr>
                     @endforeach
                 </tbody>   

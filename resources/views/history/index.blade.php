@@ -435,12 +435,12 @@
             
             <div class="deposit-table-section">
                 <h3>Deposits</h3>
-                <button class="history-deposit-btn">Deposit</button>
+                <a href="/deposits"><button class="history-deposit-btn">Deposit</button></a>
                 <table class="deposits-table">
                     <thead>
                         <tr>
                             <th>
-                                Date + Time
+                                Date
                             </th>
                             <th>
                                 Transaction
@@ -477,12 +477,12 @@
             
             <div class="deposit-table-section">
                 <h3>Withdrawals</h3>
-                <button class="history-withdrawal-btn">Withdraw</button>
+                <a href="/withdrawals"><button class="history-withdrawal-btn">Withdrawal</button></a>
                 <table class="withdrawals-table">
                     <thead>
                         <tr>
                             <th>
-                                Date + Time
+                                Date
                             </th>
                             <th>
                                 Transaction

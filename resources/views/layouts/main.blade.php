@@ -108,9 +108,9 @@
                         <div class="dropdown-content">
                             
                             @if (Auth::user()->hasRole('investor'))
-                                {{-- <a href="/cryptoDerivatives">Deposit Now</a>
-                                <a href="/withdrawals">Withdrawals</a> --}}
                                 <a href="/my-account">My account</a>
+                                <a href="/deposits">Deposit</a>
+                                <a href="/withdrawals">Withdrawal</a>
                                 <form action="{{ route('logout') }}" method="post">
                                     @csrf
                                     <button class="logout-button">Logout</button>
