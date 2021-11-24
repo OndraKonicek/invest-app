@@ -424,8 +424,10 @@
                 }
             @endphp
 
-            <h3>Deposits</h3>
+            
             <div class="deposit-table-section">
+                <h3>Deposits</h3>
+                <button class="history-deposit-btn">Deposit</button>
                 <table class="deposits-table">
                     <thead>
                         <tr>
@@ -464,8 +466,10 @@
                 </table>
             </div>
 
-            <h3>Withdrawals</h3>
+            
             <div class="deposit-table-section">
+                <h3>Withdrawals</h3>
+                <button class="history-withdrawal-btn">Withdraw</button>
                 <table class="withdrawals-table">
                     <thead>
                         <tr>
