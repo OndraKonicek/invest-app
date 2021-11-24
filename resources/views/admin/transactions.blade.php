@@ -5,10 +5,11 @@
 
     <div class="admin-transactions-top-section">
         <h1>Transactions</h1>
-        <p>List of pending user's deposits requests</p>
     </div>
 
     <div class="admin-transactions-table-wrapper">
+        <h3>List of pending user's deposits requests</h3>
+        
         <table class="admin-transactions-table">
             <thead>
                 <tr>
@@ -49,10 +50,10 @@
     </div>
 
     <div class="admin-transactions-middle-section">
-        <p>List of pending user's withdrawals requests</p>
     </div>
 
     <div class="admin-transactions-table-wrapper">
+        <h3>List of pending user's withdrawals requests</h3>
         <table class="admin-transactions-table">
             <thead>
                 <tr>
