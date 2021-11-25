@@ -18,5 +18,6 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+phploy.ini
 # public/css/app.css
 # public/js/chart.js
