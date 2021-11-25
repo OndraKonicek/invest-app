@@ -33,7 +33,7 @@
                                 @if ($deposit->status == 'Pending')
                             <form action="{{action('Admin\PendingTransactionController@deposits', $deposit->id)}}"  method="post">
                                 @csrf
-                                <button class="complete-btn">Accept</button>
+                                <button class="accept-btn">Accept</button>
                             </form>
                             
                             <form action="{{ action('Admin\PendingTransactionController@denydeposits', $deposit->id) }}" method="post">
@@ -77,7 +77,7 @@
                                 @if ($withdrawal->status == 'Pending')
                             <form action="{{action('Admin\PendingTransactionController@withdrawals', $withdrawal->id)}}"  method="post">
                                 @csrf
-                                <button class="complete-btn">Accept</button> 
+                                <button class="accept-btn">Accept</button> 
                             </form>
                             
                             <form action="{{ action('Admin\PendingTransactionController@denywithdrawals', $withdrawal->id) }}" method="post">

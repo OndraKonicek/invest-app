@@ -53,7 +53,7 @@ table {
     width: 69%;
 }
 
-.complete-btn {
+.accept-btn {
     background-color: rgb(10, 117, 0);
     color: snow;
     border-radius: 10px;
@@ -63,7 +63,7 @@ table {
     cursor: pointer;
 }
 
-.complete-btn:hover {
+.accept-btn:hover {
     background-color: rgb(8, 91, 0);
 }
 
@@ -72,7 +72,7 @@ table {
     color: snow;
     border-radius: 10px;
     border: none;
-    padding: 13% 20%;
+    padding: 10% 20%;
     margin: 0 30px 0 20px;
     cursor: pointer;
 }
