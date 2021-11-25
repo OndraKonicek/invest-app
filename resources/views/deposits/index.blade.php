@@ -34,7 +34,7 @@
                 <div class="alert alert-success">
                     {{ Session::get('success_message') }}
                 </div>
-            @endif
+                @endif
             </form>
             </div>
             <br>
