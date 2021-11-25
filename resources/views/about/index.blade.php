@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="wrapper-about">
+    <div class="content-wrapper wrapper-about">
 
         <section class="about_section">
 

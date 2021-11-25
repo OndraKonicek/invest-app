@@ -16,6 +16,16 @@
 @import "my-account/my-account.scss";
 @import "loader/loader.scss";
 
+.body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex-grow: 1;
+}
+
 table {
     width: 50%;
     margin: auto;

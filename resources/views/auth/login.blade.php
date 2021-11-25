@@ -16,9 +16,9 @@
       <form action="{{ route('login') }}" method="post">
          @csrf
             <label class="email-label">Email</label><br/>
-         <input class="email-input" type="email" name="email" value="konovina@gmail.com"><br/><br/>
+         <input class="email-input" type="email" name="email" value="investor@investor.com"><br/><br/>
             <label class="password-label">Password</label><br/>
-         <input class="password-input" type="password" name="password" value="ondrejondrej"><br/><br/>
+         <input class="password-input" type="password" name="password" value="investorinvestor"><br/><br/>
          <button class="login-button">Login</button><br />
          <a href="/register">Register</a>
       </form>

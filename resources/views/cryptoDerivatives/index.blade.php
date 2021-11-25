@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="wrapper-cryptoDerivatives">
+    <div class="content-wrapper wrapper-cryptoDerivatives">
 
         <section class="cryptoDerivatives_section">
 

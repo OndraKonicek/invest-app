@@ -1,7 +1,7 @@
 @extends('layouts/main')
 
 @section('content')
-<div class="admin-transactions-wrapper">
+<div class="content-wrapper admin-transactions-wrapper">
 
     <div class="admin-transactions-top-section">
         <h1>Transactions</h1>

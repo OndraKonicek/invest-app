@@ -1,7 +1,7 @@
 @extends('layouts/main')
 
 @section('content')
-    <div class="admin-users-wrapper">
+    <div class="content-wrapper admin-users-wrapper">
 
         <div class="admin-user-top-section">
             <h1>Users</h1>
