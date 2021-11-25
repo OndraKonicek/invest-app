@@ -9,7 +9,7 @@
             <form action="/deposits" method="post">
                 @csrf
                 <label for="deposit">Amount:</label><br>
-                <input class=deposit-amount-input type="text" id="deposit" name="amount" placeholder="Your Deposit" required>
+                <input class=deposit-amount-input type="number" id="deposit" name="amount" placeholder="Your Deposit" required>
                 <br>
                 <br>
                   <label for="full_name">Full Name:</label>
@@ -18,15 +18,15 @@
                 <br><br>
                 <label for="card_number">Card Number:</label>
                 <br>
-                <input class="withdrawal-amount-input" class="deposit-input" type="text" id="card_number" name="card_number" required placeholder="- - - -   - - - -   - - - -   - - - -">
+                <input class="withdrawal-amount-input" class="deposit-input" type="number" id="card_number" name="card_number" required placeholder="- - - -   - - - -   - - - -   - - - -">
                 <br><br>
                 <label for="expiry_date">Expiry Date:</label>
                 <br>
-                <input class="withdrawal-amount-input" class="deposit-input" type="date" id="expiry_date" name="expiry_date" required placeholder="DD/MM/YYYY">
+                <input class="withdrawal-amount-input" class="deposit-input" type="number" id="expiry_date" name="expiry_date" required placeholder="DD/MM/YYYY">
                 <br><br>
                 <label for="expiry_date">CVC:</label>
                 <br>
-                <input class="withdrawal-amount-input" class="deposit-input" type="text" id="CVC" name="CVC" required placeholder="- - -">
+                <input class="withdrawal-amount-input" class="deposit-input" type="number" id="CVC" name="CVC" required placeholder="- - -">
                 
                 <input class="deposit-btn" type="submit" value="Confirm Deposit"><br /><br />
 
