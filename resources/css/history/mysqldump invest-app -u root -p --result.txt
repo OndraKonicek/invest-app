@@ -1,0 +1,1 @@
+mysqldump invest-app -u root -p --result-file=investapp_export.sql --opt --quick --add-drop-table --add-locks --default-character-set=utf8 --disable-keys --extended-insert --lock-tables --no-create-db --triggers
