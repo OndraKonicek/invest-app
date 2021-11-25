@@ -1,6 +1,6 @@
 @extends('layouts/main')
 @section('content')
-    <div class="wrapper-withdrawals">
+    <div class="content-wrapper wrapper-withdrawals">
         {{-- <section class="withdrawals_section">
             <h1>Withdrawals</h1>
         </section> --}}

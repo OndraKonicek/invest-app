@@ -2,13 +2,13 @@
 
 @section('content')
 
-<div class="my-account-body">
+<div class="content-wrapper my-account-body">
 
 {{-- <p><b>First name: </b>{{Auth::user()->first_name}}</p>
 <p><b>Last name: </b>{{Auth::user()->last_name}}</p>
 <p><b>Email: </b>{{Auth::user()->email}}</p>     --}}
 
-<div class="my-account-wrapper">
+<div class="content-wrapper my-account-wrapper">
         <div class="my-account-header">
             <h1>My account</h1>
         </div>

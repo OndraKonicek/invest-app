@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="wrapper-history">
+    <div class="content-wrapper wrapper-history">
 
         <section class="history_section">
 

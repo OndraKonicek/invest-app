@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="wrapper_approval">
+    <div class="content-wrapper wrapper_approval">
         <section class="approval_section">
             <h1>Hi {{Auth::user()->first_name}}</h1>
             <h2>Your account has been succesfully created</h2> 

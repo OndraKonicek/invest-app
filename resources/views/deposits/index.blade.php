@@ -1,7 +1,7 @@
 @extends('layouts/main')
 
 @section('content')
-    <div class="wrapper_deposits">
+    <div class="content-wrapper wrapper_deposits">
         <section class="deposits_content">
             <div class="form-section">
             <h1>Deposit Now</h1>

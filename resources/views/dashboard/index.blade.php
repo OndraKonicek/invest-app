@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="wrapper_dashboard">
+<div class="content-wrapper wrapper_dashboard">
 
         <section class="dashboard_section">
             <h1>Your Portfolio</h1>
